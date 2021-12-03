@@ -1,0 +1,27 @@
+body {
+	color: black;
+	background: white;
+	font-family: Helvetica, sans-serif;
+	margin: 1em
+}
+
+a { text-decoration: none }
+a:link { color: blue }
+a:visited { color: navy }
+a:hover { color: red; background: #ffc; text-decoration: underline }
+
+div.imgl { float: left; margin-right: 1em; margin-bottom: 1em }
+div.imgr { float: right; margin-left: 1em; margin-bottom: 1em }
+
+.cl { clear: both }
+.dl { font-weight: bold }
+
+pre {
+	background: #ccc;
+	font-family: monospace;
+	font-size: xx-small;
+	border: 1px solid;
+	padding: .5em;
+	margin-top: 0;
+	margin-bottom: 1em
+}

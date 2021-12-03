@@ -1,0 +1,20 @@
+th { background: #ccc }
+
+table {
+	background: white;
+	margin-left: 0;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	padding: .5em;
+	empty-cells: hide;
+	float: left
+}
+
+table, th, td.yes, td.no { border: 1px dotted }
+td, th { text-align: left; padding-left: .15em }
+th { font-weight: bold; padding-right: .15em }
+td { padding-left: .5em }
+td.yes { background: #cfc }
+td.no { background: #fcc }
+
+#note { margin-left: .5em }
