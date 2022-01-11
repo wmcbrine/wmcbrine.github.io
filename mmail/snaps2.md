@@ -8,27 +8,35 @@ Default color scheme, MS-DOS version
 From DOSEmu in X.
 
 ![](mm/mm_packet.png)
+
 Startup screen -- packet list
 
 ![](mm/mm_filter.png)
+
 With a filter, in expert mode
 
 ![](mm/mm_areas.png)
+
 Area list, Blue Wave
 
 ![](mm/mm_areas2.png)
+
 Area list, QWK
 
 ![](mm/mm_llist.png)
+
 Letter list, BBS
 
 ![](mm/mm_llist2.png)
+
 Letter list, Usenet
 
 ![](mm/mm_letter.png)
+
 Letter window
 
 ![](mm/mm_ansi.png)
+
 ANSI viewer
 
 ---
@@ -41,9 +49,11 @@ An example of a light-background scheme. This xterm was started with "-fn
 vga -tn linux" -- useful for viewing ANSI pics.
 
 ![](mm/aqua_packet.png)
+
 Startup screen -- expert mode
 
 ![](mm/aqua_letter.png)
+
 Letter window
 
 ---
@@ -58,6 +68,7 @@ color.) This can be used to good effect with a light-background scheme like
 aqua.col. Here I'm using the standard iso-8859-1 character set, 10x20
 font.
 
+| | |
 | -:- | -:- |
 | ![](mm/s_marble_packet.png) | ![](mm/s_marble_letter.png) |
 | Startup screen -- expert mode | Letter window |
@@ -65,12 +76,14 @@ font.
 The standard color scheme, but with the background set to blue and made
 transparent. (Click for full-size versions.)
 
+| | |
 | -:- | -:- |
 | ![](mm/s_trans_areas.jpg) | ![](mm/s_trans_letter.jpg) |
 | Area list -- expert mode | Letter window |
 
 
 ---
+
 
 Not all terminals are created equal
 -----------------------------------
@@ -85,6 +98,7 @@ something like this (contributed by Alan Zisman -- click for full-size
 version):
 
 ![](mm/darwin.jpg)
+
 MultiMail running under Macintosh OS X, aka Darwin
 
 I'm happy to report that performance under Mac OS X's Terminal has
@@ -94,4 +108,5 @@ but that's the same as in xterm without the "-fn vga -tn linux". I
 should probably work on that.)
 
 ![](mm/darwin2.png)
+
 With OS X 10.3.9
