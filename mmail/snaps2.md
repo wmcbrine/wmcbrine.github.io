@@ -11,29 +11,36 @@ From DOSEmu in X.
 
 Startup screen -- packet list
 
+
 ![](mm/mm_filter.png)
 
 With a filter, in expert mode
+
 
 ![](mm/mm_areas.png)
 
 Area list, Blue Wave
 
+
 ![](mm/mm_areas2.png)
 
 Area list, QWK
+
 
 ![](mm/mm_llist.png)
 
 Letter list, BBS
 
+
 ![](mm/mm_llist2.png)
 
 Letter list, Usenet
 
+
 ![](mm/mm_letter.png)
 
 Letter window
+
 
 ![](mm/mm_ansi.png)
 
@@ -52,6 +59,7 @@ vga -tn linux" -- useful for viewing ANSI pics.
 
 Startup screen -- expert mode
 
+
 ![](mm/aqua_letter.png)
 
 Letter window
@@ -68,7 +76,7 @@ color.) This can be used to good effect with a light-background scheme like
 aqua.col. Here I'm using the standard iso-8859-1 character set, 10x20
 font.
 
-| | |
+|     |     |
 | -:- | -:- |
 | ![](mm/s_marble_packet.png) | ![](mm/s_marble_letter.png) |
 | Startup screen -- expert mode | Letter window |
@@ -76,11 +84,10 @@ font.
 The standard color scheme, but with the background set to blue and made
 transparent. (Click for full-size versions.)
 
-| | |
+|     |     |
 | -:- | -:- |
 | ![](mm/s_trans_areas.jpg) | ![](mm/s_trans_letter.jpg) |
 | Area list -- expert mode | Letter window |
-
 
 ---
 
