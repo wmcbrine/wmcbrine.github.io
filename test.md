@@ -1,20 +1,20 @@
 William McBrine
 ===============
 
-![](images/meandmisty2.jpg)
+!images/meandmisty2.jpg
 
 Things you might be looking for --
 
 
-[TiVo-related projects](tivo/)
-------------------------------
+[TiVo-related projects]
+-----------------------
 
 [pyTivo], my [Network Remote Control for TiVo], [Remote Proxy for TiVo],
 [HME for Python], [HME/VLC], and [Reversi].
 
 
-[PDCurses](https://pdcurses.org/)
----------------------------------
+[PDCurses]
+----------
 
 A public domain curses implementation for environments that don't fit
 the termcap/terminfo model.
