@@ -39,7 +39,7 @@ Older stuff
 [HME for Python]: tivo/index.html#hme
 [HME/VLC]: tivo/index.html#hmevlc
 [Reversi]: tivo/index.html#reversi
-[Multimail QWK reader]: mmail/
+[Multimail QWK reader]: MultiMail/
 [Searchlight BBS stuff]: sl/
 [Saucer]: saucer/
 [Email]: mailto:wmcbrine@gmail.com
