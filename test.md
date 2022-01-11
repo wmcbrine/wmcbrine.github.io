@@ -1,9 +1,7 @@
 William McBrine
 ===============
 
-![pic]{float: left}
-
-Things you might be looking for --
+| ![pic] | Things you might be looking for -- |
 
 
 [TiVo-related projects]
