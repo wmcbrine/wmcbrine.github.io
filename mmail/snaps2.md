@@ -58,15 +58,15 @@ color.) This can be used to good effect with a light-background scheme like
 aqua.col. Here I'm using the standard iso-8859-1 character set, 10x20
 font.
 
-| --- | --- |
 | ![](mm/s_marble_packet.png) | ![](mm/s_marble_letter.png) |
+| --- | --- |
 | Startup screen -- expert mode | Letter window |
 
 The standard color scheme, but with the background set to blue and made
 transparent. (Click for full-size versions.)
 
-| --- | --- |
 | ![](mm/s_trans_areas.jpg) | ![](mm/s_trans_letter.jpg) |
+| --- | --- |
 | Area list -- expert mode | Letter window |
 
 ---
@@ -81,8 +81,7 @@ box-drawing characters, or both. In many cases, this isn't really the fault of
 the terminal, but of the corresponding entry in the terminfo database --
 you can sometimes edit that to fix the problem. In other cases, changing the
 font can help. Anyway, the "lowest common denominator" MultiMail display looks
-something like this (contributed by Alan Zisman -- click for full-size
-version):
+something like this (contributed by Alan Zisman):
 
 ![](mm/darwin.jpg)  
 MultiMail running under Macintosh OS X, aka Darwin
