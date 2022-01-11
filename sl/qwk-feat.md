@@ -6,11 +6,10 @@ discussion of its pros and cons vs. Valence. I decided to make a feature
 comparison chart, and include QWKRick and the now-defunct SLQWiK. This
 list is by no means complete:
 
-|--------------------------------------------------------------------|
 |                            | Valence | QWK/SL  | QWKRick | SLQWiK  |
-|----------------------------|---------|---------|---------|---------|
-| Searchlight features:      |         |         |         |         |
-|----------------------------|---------|---------|---------|---------|
+| -------------------------- | ------- | ------- | ------- | ------- |
+| **Searchlight features:**  |         |         |         |         |
+|                            |         |         |         |         |
 | Netmail                    |  Yes    |  Yes    |  No     |  No     |
 | Internet email             |  Yes    |  Yes    |  No     |  No     |
 | Long subjects (>25 chars.) |  Yes    |  No     |  No     |  No     |
@@ -21,12 +20,12 @@ list is by no means complete:
 | Post with alias            |  Yes    |  Yes    |  No     |  No     |
 | Language strings           |  No     |  Yes    |  No     |  Yes    |
 | Edit subboard list         |  Yes    |  Yes    |  No     |  No     |
-| Over ~1000 subboards       |  Yes*   |  Yes    |  No     |  No     |
+| Over ~1000 subboards       |  Yes[^1]|  Yes    |  No     |  No     |
 | Max. lines per message     |  650    |  1000   |  400    |  400    |
 | Version compatibility      |  2.15+  |  4.5+   |  3.0+   |  2.15+  |
-|----------------------------|---------|---------|---------|---------|
-| QWK features:              |         |         |         |         |
-|----------------------------|---------|---------|---------|---------|
+| -------------------------- | ------- | ------- | ------- | ------- |
+| **QWK features:**          |         |         |         |         |
+|                            |         |         |         |         |
 | Control messages           |  Yes    |  No     |  Yes    |  Yes    |
 | DOOR.ID                    |  Yes    |  No     |  Yes    |  Yes    |
 | Ordered CONTROL.DAT        |  Yes    |  No     |  No     |  No     |
@@ -42,21 +41,21 @@ list is by no means complete:
 | Personal/to All scanning   |  Yes    |  No     |  No     |  No     |
 | Multiple packets in one D/L|  Yes    |  No     |  No     |  No     |
 | Text packets               |  Yes    |  No     |  No     |  Yes    |
-|----------------------------|---------|---------|---------|---------|
-| RIP features:              |         |         |         |         |
-|----------------------------|---------|---------|---------|---------|
+| -------------------------- | ------- | ------- | ------- | ------- |
+| **RIP features:**          |         |         |         |         |
+|                            |         |         |         |         |
 | Mouse support in --        |         |         |         |         |
 |  Subboard list             |  Yes    |  Yes    |  N/A    |  N/A    |
 |  Prompts                   |  Yes    |  Yes    |  No     |  No     |
 |  Options                   |  No     |  Yes    |  Yes    |  No     |
 |                            |         |         |         |         |
 | High-resolution display    |  No     |  Yes    |  No     |  No     |
-|----------------------------|---------|---------|---------|---------|
-| Time:                      |         |         |         |         |
-|----------------------------|---------|---------|---------|---------|
+| -------------------------- | ------- | ------- | ------- | ------- |
+| **Time:**                  |         |         |         |         |
+|                            |         |         |         |         |
 | Secs to scan ~3700 messages|  37     |  85     |  75     |  N/A    |
 | Secs to scan and pack      |  90     |  165    |  135    |  N/A    |
-|--------------------------------------------------------------------|
+
 
 In the time test, SLQWiK was excluded because it couldn't get through
 the scan without locking up. Scanning is the only part of the process
@@ -72,4 +71,4 @@ Versions compared: Valence 1.4x, QWK/SL 1.1, QWKRick 1.01, SLQWiK 1.02d.
 (The QWK/SL version number was found only in the FILE_ID.DIZ; I
 understand there's a newer version which is supposed to be faster.)
 
-* As of Valence 1.7.
+[^1]: As of Valence 1.7.
