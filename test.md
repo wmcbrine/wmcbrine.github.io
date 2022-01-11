@@ -1,7 +1,7 @@
 William McBrine
 ===============
 
-![](images/meandmisty2.jpg)
+![pic]
 
 Things you might be looking for --
 
@@ -30,6 +30,7 @@ Older stuff
 
 *[Email] / [GitHub] / [SourceForge] / [PayPal Me] / [Privacy]*
 
+[pic]: images/meandmisty2.jpg
 [TiVo-related projects]: tivo/
 [PDCurses]: https://pdcurses.org/
 [pyTivo]: tivo/index.html#pytivo
