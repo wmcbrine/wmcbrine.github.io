@@ -28,7 +28,7 @@ Older stuff
 
 ---
 
-* [Email] / [GitHub] / [SourceForge] / [PayPal Me] / [Privacy] *
+*[Email] / [GitHub] / [SourceForge] / [PayPal Me] / [Privacy]*
 
 [TiVo-related projects]: tivo/
 [PDCurses]: https://pdcurses.org/
