@@ -7,43 +7,28 @@ Default color scheme, MS-DOS version
 
 From DOSEmu in X.
 
-![](mm/mm_packet.png)
-
+![](mm/mm_packet.png)  
 Startup screen -- packet list
 
-
-![](mm/mm_filter.png)
-
+![](mm/mm_filter.png)  
 With a filter, in expert mode
 
-
-![](mm/mm_areas.png)
-
+![](mm/mm_areas.png)  
 Area list, Blue Wave
 
-
-![](mm/mm_areas2.png)
-
+![](mm/mm_areas2.png)  
 Area list, QWK
 
-
-![](mm/mm_llist.png)
-
+![](mm/mm_llist.png)  
 Letter list, BBS
 
-
-![](mm/mm_llist2.png)
-
+![](mm/mm_llist2.png)  
 Letter list, Usenet
 
-
-![](mm/mm_letter.png)
-
+![](mm/mm_letter.png)  
 Letter window
 
-
-![](mm/mm_ansi.png)
-
+![](mm/mm_ansi.png)  
 ANSI viewer
 
 ---
@@ -55,13 +40,10 @@ Aqua color scheme, Linux version, in xterm
 An example of a light-background scheme. This xterm was started with "-fn
 vga -tn linux" -- useful for viewing ANSI pics.
 
-![](mm/aqua_packet.png)
-
+![](mm/aqua_packet.png)  
 Startup screen -- expert mode
 
-
-![](mm/aqua_letter.png)
-
+![](mm/aqua_letter.png)  
 Letter window
 
 ---
@@ -102,8 +84,7 @@ font can help. Anyway, the "lowest common denominator" MultiMail display looks
 something like this (contributed by Alan Zisman -- click for full-size
 version):
 
-![](mm/darwin.jpg)
-
+![](mm/darwin.jpg)  
 MultiMail running under Macintosh OS X, aka Darwin
 
 I'm happy to report that performance under Mac OS X's Terminal has
@@ -112,6 +93,5 @@ characters now work. (The background is still made up of octothorpes,
 but that's the same as in xterm without the "-fn vga -tn linux". I
 should probably work on that.)
 
-![](mm/darwin2.png)
-
+![](mm/darwin2.png)  
 With OS X 10.3.9
