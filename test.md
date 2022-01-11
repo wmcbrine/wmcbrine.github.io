@@ -1,7 +1,7 @@
 William McBrine
 ===============
 
-!(images/meandmisty2.jpg)
+![](images/meandmisty2.jpg)
 
 Things you might be looking for --
 
