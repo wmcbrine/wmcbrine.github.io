@@ -23,7 +23,7 @@ list is by no means complete:
 | Over ~1000 subboards       |  Yes[^1]|  Yes    |  No     |  No     |
 | Max. lines per message     |  650    |  1000   |  400    |  400    |
 | Version compatibility      |  2.15+  |  4.5+   |  3.0+   |  2.15+  |
-| -------------------------- | ------- | ------- | ------- | ------- |
+|                            |         |         |         |         |
 | **QWK features:**          |         |         |         |         |
 |                            |         |         |         |         |
 | Control messages           |  Yes    |  No     |  Yes    |  Yes    |
@@ -41,7 +41,7 @@ list is by no means complete:
 | Personal/to All scanning   |  Yes    |  No     |  No     |  No     |
 | Multiple packets in one D/L|  Yes    |  No     |  No     |  No     |
 | Text packets               |  Yes    |  No     |  No     |  Yes    |
-| -------------------------- | ------- | ------- | ------- | ------- |
+|                            |         |         |         |         |
 | **RIP features:**          |         |         |         |         |
 |                            |         |         |         |         |
 | Mouse support in --        |         |         |         |         |
@@ -50,7 +50,7 @@ list is by no means complete:
 |  Options                   |  No     |  Yes    |  Yes    |  No     |
 |                            |         |         |         |         |
 | High-resolution display    |  No     |  Yes    |  No     |  No     |
-| -------------------------- | ------- | ------- | ------- | ------- |
+|                            |         |         |         |         |
 | **Time:**                  |         |         |         |         |
 |                            |         |         |         |         |
 | Secs to scan ~3700 messages|  37     |  85     |  75     |  N/A    |
