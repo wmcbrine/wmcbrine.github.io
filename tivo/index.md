@@ -33,7 +33,7 @@ incorporated the work of many collaborators. I only maintain one
 fork.
 
 * [pyTivo Wiki], with install instructions, etc.
-* [TCF thread 1]
+* [TCF thread][1]
 
 
 Network Remote Control for TiVo
@@ -77,7 +77,7 @@ App Store still has 0.31.
 * Download [version 0.32]
 * [macOS app]
 * [Demo video]
-* [TCF thread 2]
+* [TCF thread][2]
 * [![Get it from the Mac App Store](appstore.svg)](https://itunes.apple.com/us/app/network-remote-for-tivo/id914331224?ls=1&amp;mt=12)
 
 
@@ -94,7 +94,7 @@ app.
 This program is compatible with Python 3.
 
 * Download [version 0.7]
-* [TCF thread 3]
+* [TCF thread][3]
 
 
 Inactive / Obsolete Projects
@@ -135,7 +135,7 @@ Besides HME/VLC and Reversi, HME for Python was also used in [Jeff
 Bernardis]' "Jukebox" and "pyTivo Video Manager".
 
 * Download [version 0.20]
-* [TCF thread 4]
+* [TCF thread][4]
 
 
 ### HME/VLC video streamer
@@ -161,7 +161,7 @@ Many of the streams have been discontinued since the last release of
 HME/VLC, with no replacements available.
 
 * Download [version 3.6]
-* [TCF thread 5]
+* [TCF thread][5]
 
 
 ### Reversi
@@ -187,7 +187,7 @@ down when I lost my old static IP. (Adding apps had relied on IPs rather
 than domain names, presumably for ease of entry via the remote, but
 complicating hosting.)
 
-* [TCF thread 6]
+* [TCF thread][6]
 
 
 [TiVo]: https://www.tivo.com/
@@ -218,9 +218,9 @@ complicating hosting.)
 [Jeff Bernardis]: https://github.com/jbernardis
 [Reversi.py]: https://github.com/wilbeibi/AI_Reversi/blob/master/reversi.py
 
-[TCF thread 1]: https://www.tivocommunity.com/community/index.php?threads/pytivo-transcoding-server.328459/
-[TCF thread 2]: https://www.tivocommunity.com/community/index.php?threads/tivo-ui-control-via-telnet-no-hacking-required.392385/
-[TCF thread 3]: https://www.tivocommunity.com/community/index.php?threads/multiple-network-remotes.517604/
-[TCF thread 4]: https://www.tivocommunity.com/community/index.php?threads/hme-for-python.382883/
-[TCF thread 5]: https://www.tivocommunity.com/community/index.php?threads/hme-vlc-video-streamer-v1-0-watch-nasa-tv-etc.403174/
-[TCF thread 6]: https://www.tivocommunity.com/community/index.php?threads/reversi-new-game-on-apps-tv.408432/
+[1]: https://www.tivocommunity.com/community/index.php?threads/pytivo-transcoding-server.328459/
+[2]: https://www.tivocommunity.com/community/index.php?threads/tivo-ui-control-via-telnet-no-hacking-required.392385/
+[3]: https://www.tivocommunity.com/community/index.php?threads/multiple-network-remotes.517604/
+[4]: https://www.tivocommunity.com/community/index.php?threads/hme-for-python.382883/
+[5]: https://www.tivocommunity.com/community/index.php?threads/hme-vlc-video-streamer-v1-0-watch-nasa-tv-etc.403174/
+[6]: https://www.tivocommunity.com/community/index.php?threads/reversi-new-game-on-apps-tv.408432/
