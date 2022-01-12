@@ -191,26 +191,33 @@ complicating hosting.)
 
 
 [TiVo]: https://www.tivo.com/
-[Python]: https://www.python.org/
-[GitHub]: https://github.com/wmcbrine/
 [HMO]: https://pytivo.sourceforge.io/forum/hmo-specifications-t122.html
-[FFmpeg]: https://ffmpeg.org/
-[pyTivo Wiki]: http://pytivo.org/
-[your old PDA]: remote-wince.jpg
+[HME SDK]: http://tivohme.sourceforge.net/
 [documented]: https://github.com/RogueProeliator/IndigoPlugin-TiVo-Network-Remote/blob/master/Documentation/TiVo_TCP_Network_Remote_Control_Protocol.pdf
+
+[Python]: https://www.python.org/
+[FFmpeg]: https://ffmpeg.org/
+[VLC]: https://www.videolan.org/vlc/index.html
+[Streambaby]: https://code.google.com/p/streambaby/
+
+[GitHub]: https://github.com/wmcbrine/
+[pyTivo Wiki]: http://pytivo.org/
+[macOS app]: https://github.com/wmcbrine/tivoremote/releases/download/0.32/network-remote-0.32b.dmg
+[Demo video]: https://youtube.com/watch?v=OSAPzpQ9j6I
+
+[your old PDA]: remote-wince.jpg
+
 [version 0.32]: network-remote-0.32.zip
 [version 0.7]: rproxy-0.7.zip
 [version 0.20]: hme-python-0.20.zip
 [version 3.6]: hme-vlc-3.6.zip
-[macOS app]: https://github.com/wmcbrine/tivoremote/releases/download/0.32/network-remote-0.32b.dmg
-[Demo video]: https://youtube.com/watch?v=OSAPzpQ9j6I
-[HME SDK]: http://tivohme.sourceforge.net/
+
 [LGPL 2.1]: https://www.gnu.org/licenses/lgpl-2.1.html
 [Common Public License]: https://en.wikipedia.org/wiki/Common_Public_License
+
 [Jeff Bernardis]: https://github.com/jbernardis
-[Streambaby]: https://code.google.com/p/streambaby/
-[VLC]: https://www.videolan.org/vlc/index.html
 [Reversi.py]: https://github.com/wilbeibi/AI_Reversi/blob/master/reversi.py
+
 [TCF thread 1]: https://www.tivocommunity.com/community/index.php?threads/pytivo-transcoding-server.328459/
 [TCF thread 2]: https://www.tivocommunity.com/community/index.php?threads/tivo-ui-control-via-telnet-no-hacking-required.392385/
 [TCF thread 3]: https://www.tivocommunity.com/community/index.php?threads/multiple-network-remotes.517604/
