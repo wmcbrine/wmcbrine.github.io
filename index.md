@@ -34,10 +34,10 @@ Older stuff
 [TiVo-related projects]: tivo/
 [PDCurses]: https://pdcurses.org/
 [pyTivo]: tivo/index.html#pytivo
-[Network Remote Control for TiVo]: tivo/index.html#remote
-[Remote Proxy for TiVo]: tivo/index.html#rproxy
-[HME for Python]: tivo/index.html#hme
-[HME/VLC]: tivo/index.html#hmevlc
+[Network Remote Control for TiVo]: tivo/index.html#network-remote-control-for-tivo
+[Remote Proxy for TiVo]: tivo/index.html#remote-proxy-for-tivo
+[HME for Python]: tivo/index.html#hme-for-python
+[HME/VLC]: tivo/index.html#hmevlc-video-streamer
 [Reversi]: tivo/index.html#reversi
 [Multimail QWK reader]: MultiMail/
 [Searchlight BBS stuff]: sl/
