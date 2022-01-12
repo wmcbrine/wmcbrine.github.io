@@ -107,14 +107,16 @@ interface.
 
 ### HME for Python
 
-```import hme
+```
+import hme
 
 TITLE = 'Hello World'
 
 class Hello(hme.Application):
     def startup(self):
         hme.Font(self, size=36, style=hme.FONT_BOLD)
-        self.root.set_text('Hello, world!')```
+        self.root.set_text('Hello, world!')
+```
 
 An alternative to TiVo's Java-based [HME SDK], this package helped you 
 to develop HME applications in Python. Note that doing so nowadays is a 
