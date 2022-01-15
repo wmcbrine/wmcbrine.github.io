@@ -9,7 +9,7 @@ Things you might be looking for --
 [TiVo-related projects]
 -----------------------
 
-[pyTivo], my [Network Remote Control for TiVo], [Remote Proxy for TiVo],
+My [Network Remote Control for TiVo], [Remote Proxy for TiVo], [pyTivo],
 [HME for Python], [HME/VLC], and [Reversi].
 
 
@@ -33,15 +33,18 @@ Older stuff
 [pic]: images/meandmisty2.jpg
 [TiVo-related projects]: tivo/
 [PDCurses]: https://pdcurses.org/
-[pyTivo]: tivo/index.md#pytivo
+
 [Network Remote Control for TiVo]: tivo/index.md#network-remote-control-for-tivo
 [Remote Proxy for TiVo]: tivo/index.md#remote-proxy-for-tivo
+[pyTivo]: tivo/index.md#pytivo
 [HME for Python]: tivo/index.md#hme-for-python
 [HME/VLC]: tivo/index.md#hmevlc-video-streamer
 [Reversi]: tivo/index.md#reversi
+
 [Multimail QWK reader]: MultiMail/
 [Searchlight BBS stuff]: sl/
 [Saucer]: saucer/
+
 [Email]: mailto:wmcbrine@gmail.com
 [GitHub]: https://github.com/wmcbrine/
 [SourceForge]: https://sourceforge.net/u/wmcbrine/

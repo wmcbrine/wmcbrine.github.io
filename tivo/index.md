@@ -11,31 +11,6 @@ Please note that I'm not an employee of TiVo Inc., and these aren't
 TiVo products.
 
 
-pyTivo
-------
-
-An alternative to TiVo Desktop Plus, pyTivo is an [HMO (Home Media
-Option) server][HMO], that can transfer video to and from the TiVo
-(Series 2 or later), and previously could also provide music and photos
-to the TiVo. With the help of [FFmpeg], it can transcode videos from a
-wide variety of sources to a TiVo-compatible format, on the fly.
-
-Despite the similar names, HMO is unrelated to the later HME (q.v.,
-below), and has survived better; but it, too, has been increasingly
-crippled over the years. pyTivo's main function -- transferring video to
-the TiVo -- doesn't work in the latest TiVo UI (which means it can never
-work on the TiVo Edge). "Push" transfers, to the TiVo but initiated from
-the pyTivo side, have been completely broken for some time, along with
-photos and music. Transfers _from_ the TiVo still work, for now.
-
-pyTivo was created by Jason Michalski, and over the years has
-incorporated the work of many collaborators. I only maintain one
-fork.
-
-* [pyTivo Wiki], with install instructions, etc.
-* [TCF thread][1]
-
-
 Network Remote Control for TiVo
 -------------------------------
 
@@ -77,7 +52,7 @@ App Store still has 0.31.
 * [Download version 0.32][remote]
 * [macOS app]
 * [Demo video]
-* [TCF thread][2]
+* [TCF thread][1]
 * [![Get it from the Mac App Store](appstore.svg)][appstore]
 
 
@@ -94,6 +69,31 @@ app.
 This program is compatible with Python 3.
 
 * [Download version 0.7][rproxy]
+* [TCF thread][2]
+
+
+pyTivo
+------
+
+An alternative to TiVo Desktop Plus, pyTivo is an [HMO (Home Media
+Option) server][HMO], that can transfer video to and from the TiVo
+(Series 2 or later), and previously could also provide music and photos
+to the TiVo. With the help of [FFmpeg], it can transcode videos from a
+wide variety of sources to a TiVo-compatible format, on the fly.
+
+Despite the similar names, HMO is unrelated to the later HME (q.v.,
+below), and has survived better; but it, too, has been increasingly
+crippled over the years. pyTivo's main function -- transferring video to
+the TiVo -- doesn't work in the latest TiVo UI (which means it can never
+work on the TiVo Edge). "Push" transfers, to the TiVo but initiated from
+the pyTivo side, have been completely broken for some time, along with
+photos and music. Transfers _from_ the TiVo still work, for now.
+
+pyTivo was created by Jason Michalski, and over the years has
+incorporated the work of many collaborators. I only maintain one
+fork.
+
+* [pyTivo Wiki], with install instructions, etc.
 * [TCF thread][3]
 
 
@@ -219,9 +219,9 @@ complicating hosting.)
 [Jeff Bernardis]: https://github.com/jbernardis
 [Reversi.py]: https://github.com/wilbeibi/AI_Reversi/blob/master/reversi.py
 
-[1]: https://www.tivocommunity.com/community/index.php?threads/pytivo-transcoding-server.328459/
-[2]: https://www.tivocommunity.com/community/index.php?threads/tivo-ui-control-via-telnet-no-hacking-required.392385/
-[3]: https://www.tivocommunity.com/community/index.php?threads/multiple-network-remotes.517604/
+[1]: https://www.tivocommunity.com/community/index.php?threads/tivo-ui-control-via-telnet-no-hacking-required.392385/
+[2]: https://www.tivocommunity.com/community/index.php?threads/multiple-network-remotes.517604/
+[3]: https://www.tivocommunity.com/community/index.php?threads/pytivo-transcoding-server.328459/
 [4]: https://www.tivocommunity.com/community/index.php?threads/hme-for-python.382883/
 [5]: https://www.tivocommunity.com/community/index.php?threads/hme-vlc-video-streamer-v1-0-watch-nasa-tv-etc.403174/
 [6]: https://www.tivocommunity.com/community/index.php?threads/reversi-new-game-on-apps-tv.408432/
