@@ -92,6 +92,22 @@ fork.
 * [TCF thread][3]
 
 
+tivodecode-ng
+-------------
+
+tivodecode-ng ("ng" for "next generation") is a portable command-line
+tool for decrypting .TiVo video files into program streams or transport
+streams, depending on the source. It also will decrypt the metadata
+(title, description, etc.). It's based on tivodecode by Jeremy Drake,
+with enhancements by several contributors. tivodecode-ng adds support
+for transport streams, although that's a work in progress. (Note that
+support for program streams is as complete as ever.)
+
+tivodecode-ng is written in C++ (no Python dependencies).
+
+* [Download version 0.5][tdng]
+
+
 Inactive / Obsolete Projects
 ----------------------------
 
@@ -189,6 +205,8 @@ complicating hosting.)
 [rproxy]: rproxy-0.7.zip
 [hme4py]: hme-python-0.20.zip
 [hmevlc]: hme-vlc-3.6.zip
+
+[tdng]: https://github.com/wmcbrine/tivodecode-ng/releases/tag/0.5
 
 [TiVo]: https://www.tivo.com/
 [HMO]: https://pytivo.sourceforge.io/forum/hmo-specifications-t122.html

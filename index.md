@@ -10,7 +10,7 @@ Things you might be looking for --
 -----------------------
 
 My [Network Remote Control for TiVo], [Remote Proxy for TiVo], [pyTivo],
-[HME for Python], [HME/VLC], and [Reversi].
+[tivodecode-ng], [HME for Python], [HME/VLC], and [Reversi].
 
 
 [PDCurses]
@@ -37,6 +37,7 @@ Older stuff
 [Network Remote Control for TiVo]: tivo/index.md#network-remote-control-for-tivo
 [Remote Proxy for TiVo]: tivo/index.md#remote-proxy-for-tivo
 [pyTivo]: tivo/index.md#pytivo
+[tivodecode-ng]: tivo/index.md#tivodecode-ng
 [HME for Python]: tivo/index.md#hme-for-python
 [HME/VLC]: tivo/index.md#hmevlc-video-streamer
 [Reversi]: tivo/index.md#reversi
