@@ -202,10 +202,10 @@ complicating hosting.)
 
 
 [remote]: network-remote-0.32.zip
-[rproxy]: rproxy-0.7.zip
 [hme4py]: hme-python-0.20.zip
 [hmevlc]: hme-vlc-3.6.zip
 
+[rproxy]: https://github.com/wmcbrine/rproxy/archive/refs/tags/0.7.zip
 [tdng]: https://github.com/wmcbrine/tivodecode-ng/releases/tag/0.5
 
 [TiVo]: https://www.tivo.com/
