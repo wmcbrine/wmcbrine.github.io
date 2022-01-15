@@ -63,7 +63,7 @@ font.
 | Startup screen -- expert mode | Letter window |
 
 The standard color scheme, but with the background set to blue and made
-transparent. (Click for full-size versions.)
+transparent.
 
 | ![](mm/s_trans_areas.jpg) | ![](mm/s_trans_letter.jpg) |
 | --- | --- |
