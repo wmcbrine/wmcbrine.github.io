@@ -44,11 +44,6 @@ Although the "Crestron" interface used here is [now officially (though
 incompletely) documented][remdoc], I developed this program based on
 discoveries by TCF user Omikron (see the thread, below).
 
-*NOTE:* Apple broke all Tkinter apps with the upgrade to macOS 11.1, but
-the apps are working again in macOS 11.2. In the meantime, I prepared
-version 0.32b (below), which _is_ compatible with macOS 11.1; but the
-App Store still has 0.31.
-
 * [Download version 0.32][remote]
 * [macOS app]
 * [Demo video]
