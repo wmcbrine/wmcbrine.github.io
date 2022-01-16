@@ -6,13 +6,6 @@ William McBrine
 Things you might be looking for --
 
 
-[TiVo-related projects]
------------------------
-
-My [Network Remote Control for TiVo], [Remote Proxy for TiVo], [pyTivo],
-[tivodecode-ng], [HME for Python], [HME/VLC], and [Reversi].
-
-
 [PDCurses]
 ----------
 
@@ -20,10 +13,24 @@ A public domain curses implementation for environments that don't fit
 the termcap/terminfo model.
 
 
-Older stuff
------------
+[TiVo-related projects]
+-----------------------
 
-[Multimail QWK reader], [Searchlight BBS stuff], [Saucer].
+My [Network Remote Control for TiVo], [Remote Proxy for TiVo], [pyTivo],
+[tivodecode-ng], [HME for Python], [HME/VLC], and [Reversi].
+
+
+BBS-related projects
+--------------------
+
+* [Multimail QWK reader]
+* [Searchlight stuff]
+
+
+Really old stuff
+----------------
+
+* [Saucer]
 
 
 ---
@@ -31,9 +38,10 @@ Older stuff
 *[Email] / [GitHub] / [SourceForge] / [PayPal Me] / [Privacy]*
 
 [pic]: images/meandmisty2.jpg
-[TiVo-related projects]: tivo/
+
 [PDCurses]: https://pdcurses.org/
 
+[TiVo-related projects]: tivo/
 [Network Remote Control for TiVo]: tivo/index.md#network-remote-control-for-tivo
 [Remote Proxy for TiVo]: tivo/index.md#remote-proxy-for-tivo
 [pyTivo]: tivo/index.md#pytivo
@@ -43,7 +51,8 @@ Older stuff
 [Reversi]: tivo/index.md#reversi
 
 [Multimail QWK reader]: MultiMail/
-[Searchlight BBS stuff]: sl/
+[Searchlight stuff]: sl/
+
 [Saucer]: saucer/
 
 [Email]: mailto:wmcbrine@gmail.com
