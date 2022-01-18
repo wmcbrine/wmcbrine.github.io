@@ -178,7 +178,7 @@ maximum lenght for the name of the board in the header is 30 characters.
 Longer names may result in the line exceeding 80 characters and this may 
 cause problems with some of the readers.
 
-The Date-string should follow the format of dd-mmm-yy, where dd is the 
+The Date string should follow the format of dd-mmm-yy, where dd is the 
 date, mmm is 3 character abbreviation of the month (e.g. Jan, Feb...) 
 and yy is the 2 last digits of the year.
 
@@ -256,7 +256,7 @@ INFOxy.BBS:
 This file contains additional information for the reader software. The 
 file must be pure ASCII. The overall format of the file is:
 
-<label>:<option>
+`<label>:<option>`
 
 The following labels have been currently defined:
 
