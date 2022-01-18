@@ -5,7 +5,7 @@ Version 1.2
 Copyright (c) 1992-1993 Rhys Weatherley <rhys@cs.uq.oz.au>  
 Last Update: 14 August 1993
 
-Markdown by [William McBrine] om 17 January 2022
+Markdown by [William McBrine] on 17 January 2022
 
 
 Distribution
@@ -384,7 +384,7 @@ the area kind to 'm' to inform the packet reader that the message area
 contains private e-mail rather than news.
 
 The 'b' (binary mail) and 'B' (binary news) formats are identical.  The
-contents of each message must conform to [RFC-822]/[RFC-1036] and may
+contents of each message must conform to [RFC-822] / [RFC-1036] and may
 contain content information compatible with [RFC-1341] (MIME).  The only
 difference between the messages of these formats and the preceding
 formats is that no assumption is made about line lengths, and any of the
