@@ -1,8 +1,8 @@
 Simple Offline USENET Packet Format (SOUP)
 ==========================================
 
-Version 1.2
-Copyright (c) 1992-1993 Rhys Weatherley <rhys@cs.uq.oz.au>
+Version 1.2  
+Copyright (c) 1992-1993 Rhys Weatherley <rhys@cs.uq.oz.au>  
 Last Update: 14 August 1993
 
 
@@ -64,15 +64,15 @@ messages could be accomodated within the same packet as USENET messages.
 Revision history
 ----------------
 
-1.2
+__1.2__
 : Add COMMANDS and ERRORS files.  Renamed to "Simple Offline USENET
   Packet Format".  A few extra fields and type codes for the AREAS and
   LIST files.  Message area summaries.
 
-1.1
+__1.1__
 : Add description of the LIST file.  Everything else is identical to 1.0.
 
-1.0
+__1.0__
 : Original version of the document.
 
 Previously, this document was known as the "Helldiver Packet Format" (HDPF).
@@ -85,56 +85,56 @@ less product-oriented.
 Terminology
 -----------
 
-Packet
+__Packet__
 : a set of files, collected into a compressed archive.
 
-Message packet
+__Message packet__
 : the primary kind of packet which contains messages for the user to read.
 
-Reply packet
+__Reply packet__
 : a special kind of packet which contains replies composed by the user,
   usually in response to the messages in a message packet.
 
-Packet generator
+__Packet generator__
 : a program which generates packets to be downloaded and read, and which
   processes uploaded reply packets.
 
-Packet reader
+__Packet reader__
 : a program which reads packets, usually by presenting the messages in a
   packet to the user, and which generates reply packets.
 
-Packet processor
+__Packet processor__
 : either a packet generator or a packet reader.
 
-Generating host
+__Generating host__
 : the computer on which the packet generator executes.
 
-Reading host
+__Reading host__
 : the computer on which the packet reader executes.
 
-Download
+__Download__
 : the transfer of a packet from the generating host to the reading host.
   This transfer may take place in any fashion, although the most common
   method is through the use of a file transfer protocol such as Zmodem
   or Kermit.
 
-Upload
+__Upload__
 : the transfer of a packet from the reading host to the generating host.
 
-Packet stream
+__Packet stream__
 : a logical link between the generating and reading hosts over which
   downloads and uploads of packets take place.
 
-Message area
+__Message area__
 : a collection of messages which are related by a common topic or
   purpose.  Examples of message areas include USENET newsgroups, Unix
   mailboxes, and FidoNet conferences.
 
-Reply message area
+__Reply message area__
 : a special kind of message area which contains replies being uploaded
   to a generating host.
 
-Text file
+__Text file__
 : an ASCII file consisting of lines terminated by linefeed characters
   (LF, 10 decimal).  Some operating systems terminate lines in a text
   file by CRLF pairs: such files must be converted to LF-terminated
@@ -421,7 +421,7 @@ following form:
 line-wrapping occurs in the index files).  The fields have the following
 semantics:
 
-offset
+`offset`
 : Seek position in the message file of where the corresponding
   message starts.  The first seek position is 0.  For the 'u'
   format, this indicates the start of the line following the
@@ -431,28 +431,28 @@ offset
   sequence.  For the 'b' and 'B' formats, this indicates the
   first byte of the message after the 4-byte message length.
 
-subject
+`subject`
 : The "Subject:" line from the message.
 
-author
+`author`
 : The "From:" line from the message.
 
-date
+`date`
 : The "Date:" line from the message.
 
-mesgid
+`mesgid`
 : The "Message-Id:" line from the message.
 
-refs
+`refs`
 : The "References:" line from the message.
 
-bytes
+`bytes`
 : The number of bytes in the message.  If this field is zero,
   then it indicates that there is no corresponding message
   in the message file.  This is used for summaries: see the
   section "MESSAGE AREA SUMMARIES" for more details.
 
-lines
+`lines`
 : The "Lines:" line from the message.  Note that this field
   is pretty useless these days on USENET, but is still popular.
   It is meant to indicate the number of lines in the body of
@@ -460,7 +460,7 @@ lines
   this value if it is not present in the original message,
   but this is not required.
 
-selector
+`selector`
 : A string used for summaries to request that a message be
   sent in a future packet.  See the section "MESSAGE AREA
   SUMMARIES" for more details.  This string will usually be
@@ -478,7 +478,7 @@ conform to the Internet RFC documents RFC-822 or RFC-1036.
 
 Optionally, a header line may end with one or more extra TAB-separated fields
 for other RFC-compliant header fields, together with the header field names.
-e.g. "Supersedes: <1234@foovax>".  These fields are not defined by this
+e.g. `Supersedes: <1234@foovax>`.  These fields are not defined by this
 version of the specification, and are by arrangement between the generating
 host and the reading host only.
 
