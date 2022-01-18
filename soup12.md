@@ -64,13 +64,13 @@ messages could be accomodated within the same packet as USENET messages.
 Revision history
 ----------------
 
-1.2	Add COMMANDS and ERRORS files.  Renamed to "Simple Offline USENET
+1.2.	Add COMMANDS and ERRORS files.  Renamed to "Simple Offline USENET
 	Packet Format".  A few extra fields and type codes for the AREAS and
 	LIST files.  Message area summaries.
 
-1.1	Add description of the LIST file.  Everything else is identical to 1.0.
+1.1.	Add description of the LIST file.  Everything else is identical to 1.0.
 
-1.0	Original version of the document.
+1.0.	Original version of the document.
 
 Previously, this document was known as the "Helldiver Packet Format" (HDPF).
 A variant of HDPF, called the "Simple Local News Packet format" (SLNP) was
