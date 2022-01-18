@@ -64,13 +64,16 @@ messages could be accomodated within the same packet as USENET messages.
 Revision history
 ----------------
 
-1.2 - Add COMMANDS and ERRORS files.  Renamed to "Simple Offline USENET
-      Packet Format".  A few extra fields and type codes for the AREAS and
-      LIST files.  Message area summaries.
+1.2
+: Add COMMANDS and ERRORS files.  Renamed to "Simple Offline USENET
+  Packet Format".  A few extra fields and type codes for the AREAS and
+  LIST files.  Message area summaries.
 
-1.1 - Add description of the LIST file.  Everything else is identical to 1.0.
+1.1
+: Add description of the LIST file.  Everything else is identical to 1.0.
 
-1.0 - Original version of the document.
+1.0
+: Original version of the document.
 
 Previously, this document was known as the "Helldiver Packet Format" (HDPF).
 A variant of HDPF, called the "Simple Local News Packet format" (SLNP) was
@@ -153,14 +156,14 @@ systems where case matters (e.g. Unix).
 
 The following file specifications may appear in a packet:
 
-	INFO		Optional textual information.
-	LIST		List of message areas on the generating host.
-	AREAS		Index of the message areas within the packet.
-	REPLIES		Index of the reply message areas from the reading host.
-	*.MSG		Text of the messages in a particular message area.
-	*.IDX		Index information for messages in a message area.
-	COMMANDS	Extra commands sent along with a packet.
-	ERRORS		Errors that occurred during the execution of commands.
+    INFO      Optional textual information.
+    LIST      List of message areas on the generating host.
+    AREAS     Index of the message areas within the packet.
+    REPLIES   Index of the reply message areas from the reading host.
+    *.MSG     Text of the messages in a particular message area.
+    *.IDX     Index information for messages in a message area.
+    COMMANDS  Extra commands sent along with a packet.
+    ERRORS    Errors that occurred during the execution of commands.
 
 Other filenames may also appear in the packet, but are not defined by this
 specification, so they should be avoided by generating software, and ignored
@@ -216,7 +219,7 @@ specifies a single message area, its encoding and the name of the message/index
 file pair in which the messages appear.  In particular, each line has the
 following form:
 
-	prefix<TAB>area name<TAB>encoding[<TAB>description[<TAB>number]]
+    prefix<TAB>area name<TAB>encoding[<TAB>description[<TAB>number]]
 
 where "prefix" specifies the name of the message/index file pair, "area name"
 is the name of the message area, "encoding" specifies the formats of the
@@ -247,12 +250,12 @@ specifies the format of the index file, and the optional third specifies the
 kind of area (private or public).  The following message file formats are
 currently defined (case is significant):
 
-	u	USENET news articles
-	m	Unix mailbox articles
-	M	Mailbox articles in the MMDF format
-	b	Binary 8-bit clean mail format
-	B	Binary 8-bit clean news format
-	i	Index file only
+    u   USENET news articles
+    m   Unix mailbox articles
+    M   Mailbox articles in the MMDF format
+    b   Binary 8-bit clean mail format
+    B   Binary 8-bit clean news format
+    i   Index file only
 
 The individual message file encodings are explained further in the next
 section.  The format 'i' indicates that no message file is present, and
@@ -261,10 +264,10 @@ area.  This is explained further in the section "[Message area summaries]".
 The following index file formats are currently defined (again, case is
 significant):
 
-	n	No index file
-	c	C-news overview database format
-	C	Shorter C-news overview database format
-	i	Offset/length pairs delineating the messages
+    n   No index file
+    c   C-news overview database format
+    C   Shorter C-news overview database format
+    i   Offset/length pairs delineating the messages
 
 These types are explained further in the section "[Index files]" below.
 
@@ -275,9 +278,9 @@ generators and packet readers.
 The following kind of message areas are currently defined (again, case is
 significant):
 
-	m	The message area contains private mail
-	n	The message area contains public messages, or news
-	u	The message area kind is unknown (the default)
+    m   The message area contains private mail
+    n   The message area contains public messages, or news
+    u   The message area kind is unknown (the default)
 
 This third letter is optional.  If it is not present or unknown, the kind
 of area depends on the message file type.  Message types 'm', 'M', and 'b'
@@ -309,13 +312,13 @@ handled by generating a separate packet containing the area contination.
 
 The following examples demonstrate the capabilities of the AREAS file:
 
-0000000	Email	mn
-0000001	comp.lang.c	uc	C Programming Language Discussions	125
-0000002	news.future	Bc	Future of USENET	38
+    0000000 Email       mn
+    0000001 comp.lang.c uc        C Programming Language Discussions   125
+    0000002 news.future Bc        Future of USENET                     38
 
-EMAIL	/usr/spool/mail/fred	unm	Private e-mail for fred
-U000001	comp.bbs.misc	MCn
-U000002 comp.bbs.waffle	ui
+    EMAIL   /usr/spool/mail/fred  unm   Private e-mail for fred
+    U000001 comp.bbs.misc         MCn
+    U000002 comp.bbs.waffle       ui
 
 
 Message files
@@ -411,52 +414,61 @@ message that occurs in the message file.  The lines in the index file should
 be in the same order as the corresponding messages.  Each line has the
 following form:
 
-	offset<TAB>subject<TAB>author<TAB>date<TAB>mesgid<TAB>
-	refs<TAB>bytes<TAB>lines[<TAB>selector]
+    offset<TAB>subject<TAB>author<TAB>date<TAB>mesgid<TAB>
+    refs<TAB>bytes<TAB>lines[<TAB>selector]
 
-[Note: the line-wrapping here is for document-formating purposes only.  No
-line-wrapping occurs in the index files].  The fields have the following
+(Note: the line-wrapping here is for document-formating purposes only.  No
+line-wrapping occurs in the index files).  The fields have the following
 semantics:
 
-	offset	Seek position in the message file of where the corresponding
-		message starts.  The first seek position is 0.  For the 'u'
-		format, this indicates the start of the line following the
-		rnews header line.  For the 'm' format, this indicates the
-		start of the "From " line and for the 'M' format, this
-		indicates the start of the article after the Control-A
-		sequence.  For the 'b' and 'B' formats, this indicates the
-		first byte of the message after the 4-byte message length.
+offset
+: Seek position in the message file of where the corresponding
+  message starts.  The first seek position is 0.  For the 'u'
+  format, this indicates the start of the line following the
+  rnews header line.  For the 'm' format, this indicates the
+  start of the "From " line and for the 'M' format, this
+  indicates the start of the article after the Control-A
+  sequence.  For the 'b' and 'B' formats, this indicates the
+  first byte of the message after the 4-byte message length.
 
-	subject	The "Subject:" line from the message.
+subject
+: The "Subject:" line from the message.
 
-	author	The "From:" line from the message.
+author
+: The "From:" line from the message.
 
-	date	The "Date:" line from the message.
+date
+: The "Date:" line from the message.
 
-	mesgid	The "Message-Id:" line from the message.
+mesgid
+: The "Message-Id:" line from the message.
 
-	refs	The "References:" line from the message.
+refs
+: The "References:" line from the message.
 
-	bytes	The number of bytes in the message.  If this field is zero,
-		then it indicates that there is no corresponding message
-		in the message file.  This is used for summaries: see the
-		section "MESSAGE AREA SUMMARIES" for more details.
+bytes
+: The number of bytes in the message.  If this field is zero,
+  then it indicates that there is no corresponding message
+  in the message file.  This is used for summaries: see the
+  section "MESSAGE AREA SUMMARIES" for more details.
 
-	lines	The "Lines:" line from the message.  Note that this field
-		is pretty useless these days on USENET, but is still popular.
-		It is meant to indicate the number of lines in the body of
-		the message.  Generating software may elect to re-generate
-		this value if it is not present in the original message,
-		but this is not required.
+lines
+: The "Lines:" line from the message.  Note that this field
+  is pretty useless these days on USENET, but is still popular.
+  It is meant to indicate the number of lines in the body of
+  the message.  Generating software may elect to re-generate
+  this value if it is not present in the original message,
+  but this is not required.
 
-	selector A string used for summaries to request that a message be
-		sent in a future packet.  See the section "MESSAGE AREA
-		SUMMARIES" for more details.  This string will usually be
-		a number, but other values such as Message-ID's could be
-		used.  Packet readers should treat this string as an
-		indivisible string to be sent in a "sendme" command in the
-		COMMANDS file.  A zero-length string indicates that there
-		is no selector string.
+selector
+: A string used for summaries to request that a message be
+  sent in a future packet.  See the section "MESSAGE AREA
+  SUMMARIES" for more details.  This string will usually be
+  a number, but other values such as Message-ID's could be
+  used.  Packet readers should treat this string as an
+  indivisible string to be sent in a "sendme" command in the
+  COMMANDS file.  A zero-length string indicates that there
+  is no selector string.
 
 If any of these fields contained TAB's, newlines or other white space in the
 original articles, they should be converted into single spaces.  All fields
@@ -483,7 +495,7 @@ readers which perform subject threading (i.e. sort on the subject line and
 then on the date and/or arrival order) do not require such information.  The
 format of the header lines in this case is as follows:
 
-   offset<TAB>subject<TAB>author<TAB>date<TAB>bytes<TAB>lines[<TAB>selector]
+    offset<TAB>subject<TAB>author<TAB>date<TAB>bytes<TAB>lines[<TAB>selector]
 
 Further TAB-separated fields may be added in future versions of this
 specification.
@@ -493,9 +505,9 @@ an RFC-822 format address, it is just the author's name, extracted from the
 "From:" line of the message.  Most RFC-822 and RFC-1036 "From:" lines have one
 of the following forms:
 
-		address
-		address (name)
-		name <address>
+    address
+    address (name)
+    name <address>
 
 Names may sometimes be surrounded by double-quote characters, have embedded
 "(...)" sequences, or contain "useless" information after a comma (",") or
@@ -524,14 +536,14 @@ being fed back into a network erroneously.
 The REPLIES file has a similar format to the AREAS file.  Each line has the
 following form:
 
-	prefix<TAB>reply kind<TAB>encoding
+    prefix<TAB>reply kind<TAB>encoding
 
 The "prefix" and "encoding" fields are as before.  The "reply kind" field
 indicates the mechanism to use when transmitting the messages in the message
 file.  The following values are currently defined:
 
-	mail	Transmit an RFC-822 compliant personal mail message
-	news	Transmit an RFC-1036 compliant USENET news posting
+    mail   Transmit an RFC-822 compliant personal mail message
+    news   Transmit an RFC-1036 compliant USENET news posting
 
 On a Unix system, transmission of mail and news is usually performed with the
 "sendmail" and "inews" programs respectively.  Additional kinds may be
@@ -572,10 +584,10 @@ same packet was considered, but was rejected for security reasons.
 
 The following example demonstrates the capabilities of the REPLIES file:
 
-R001	mail	bn
-R002	mail	bi
-R003	news	Bn
-R004	news	Bi
+    R001    mail    bn
+    R002    mail    bi
+    R003    news    Bn
+    R004    news    Bi
 
 
 LIST file
@@ -585,7 +597,7 @@ The LIST file may be used to send a list of available message areas to the
 receiving system.  Its format is similar to the AREAS file, with the prefix
 field deleted.  Each line has the following form:
 
-	area name<TAB>encoding[<TAB>description]
+    area name<TAB>encoding[<TAB>description]
 
 where "area name" is the name of the message area, "encoding" is a 2, 3 or 4
 letter message, index, area kind, and subscription code, and "description"
@@ -595,8 +607,8 @@ added in a future version of this specification.
 The message, index, and area kind codes are the same as for the AREAS file.
 The subscription code has one of the following values:
 
-	y	The user is subscribed to the message area
-	n	The user is not subscribed to the message area
+    y   The user is subscribed to the message area
+    n   The user is not subscribed to the message area
 
 If this field is not present, it defaults to 'n'.
 
@@ -606,11 +618,11 @@ Private e-mail message areas will normally not appear in the list.
 
 The following example demonstrates the capabilities of the LIST file:
 
-alt.flame	ucnn
-comp.bbs.misc	ucny
-comp.bbs.waffle	ucny
-comp.lang.c	ucnn	C Programming Language Discussions
-news.future	ucny	Future of USENET
+    alt.flame        ucnn
+    comp.bbs.misc    ucny
+    comp.bbs.waffle  ucny
+    comp.lang.c      ucnn    C Programming Language Discussions
+    news.future      ucny    Future of USENET
 
 
 Sending commands between systems
@@ -635,135 +647,119 @@ files, etc.  The names of the commands are NOT case significant, but SHOULD
 be sent in lower case.  Any commands that are not understood by a program
 should be ignored.
 
-version n.m
+`version n.m`
+: The command specifies the version of this specification that the
+  packet conforms to.  For this document the version is "1.2".
 
-	The command specifies the version of this specification that the
-	packet conforms to.  For this document the version is "1.2".
+`date dd mmm ccyy hh:mm:ss [zone]`
+: The date and time when the packet was created.  To prevent confusion
+  with different country's date formats, the date MUST always appear
+  as "dd mmm ccyy".  For example, "25 Jul 1993".  This date format can
+  be converted to local conventions if desired.  "hh:mm:ss" is a
+  24-hour clock time value.  The "zone" field is the number of hours
+  and minutes that the timezone is offset from Greenwich Mean Time as
+  "+HHMM" or "-HHMM".  For example, US Eastern Standard Time (EST) is
+  "-0500", and Australian Eastern Standard Time is "+1000".  If the
+  zone is omitted, it defaults to "local time", however the zone should
+  only be omitted if there is no way to determine it.
 
-date dd mmm ccyy hh:mm:ss [zone]
+`subscribe name`
+: This command requests the packet generating program to subscribe to
+  a new message area.  The area name may contain spaces, but not TABs.
+  Additional fields may be added in a future version of this
+  specification after a separating TAB.  For now, ignore anything after
+  a TAB.  This command may generate an error message if the message area
+  does not exist, or cannot be subscribed to.
 
-	The date and time when the packet was created.  To prevent confusion
-	with different country's date formats, the date MUST always appear
-	as "dd mmm ccyy".  For example, "25 Jul 1993".  This date format can
-	be converted to local conventions if desired.  "hh:mm:ss" is a
-	24-hour clock time value.  The "zone" field is the number of hours
-	and minutes that the timezone is offset from Greenwich Mean Time as
-	"+HHMM" or "-HHMM".  For example, US Eastern Standard Time (EST) is
-	"-0500", and Australian Eastern Standard Time is "+1000".  If the
-	zone is omitted, it defaults to "local time", however the zone should
-	only be omitted if there is no way to determine it.
+`unsubscribe name`
+: This command requests the packet generating program to unsubscribe
+  from a message area.  The same remarks about TABs and errors above
+  also apply to this command.
 
-subscribe name
+`catchup [name]`
+: This command requests the packet generating program to catchup on
+  the nominated message area.  That is, to mark all messages in the
+  area as read and continue batching from the next message received.
+  If the area name is not present, the packet generating program
+  should catchup on all message areas.
 
-	This command requests the packet generating program to subscribe to
-	a new message area.  The area name may contain spaces, but not TABs.
-	Additional fields may be added in a future version of this
-	specification after a separating TAB.  For now, ignore anything after
-	a TAB.  This command may generate an error message if the message area
-	does not exist, or cannot be subscribed to.
+`list [always\|never]`
+: This command requests the packet generating program to send a
+  full list of all available message areas as a LIST file in
+  the next packet.  If the argument "always" is present, then
+  the LIST file should be sent in every packet.  The argument
+  value "never" reverses this.  For minimal compliance,
+  "list always" should be treated as "list", and "list never"
+  should be ignored.
 
-unsubscribe name
+`hostname string`
+: This command specifies the name of the host or BBS the packet was
+  generated on.  It serves an informational role only.  The string
+  can be any sequence of printable ASCII characters.
 
-	This command requests the packet generating program to unsubscribe
-	from a message area.  The same remarks about TABs and errors above
-	also apply to this command.
+`software string`
+: This command specifies the name and version of the software which
+  generated the packet.  It servers an informational role only.  The
+  string can be any sequence of printable ASCII characters.
 
-catchup [name]
+`sendme<TAB>area<TAB>selector[<TAB>selector[...]]`
+: This command requests that the packet generator send a number of
+  messages from the nominated message area.  The "selector" arguments
+  are taken from the "selector" fields in a 'c' or 'C' index file.
+  Multiple "sendme" commands for the same message area may be present
+  in a COMMANDS file.  The maximum length for this command is 500
+  characters.  Note that other commands use spaces to separate
+  arguments, but this command uses TAB's.
 
-	This command requests the packet generating program to catchup on
-	the nominated message area.  That is, to mark all messages in the
-	area as read and continue batching from the next message received.
-	If the area name is not present, the packet generating program
-	should catchup on all message areas.
+`mail y`  
+`mail n`
+: This command changes whether or not private e-mail should be sent
+  in generated packets.
 
-list [always|never]
+`deletemail y`  
+`deletemail n`
+: This command changes whether or not the user's private mailbox should
+  be deleted after being batched into a packet.
 
-	This command requests the packet generating program to send a
-	full list of all available message areas as a LIST file in
-	the next packet.  If the argument "always" is present, then
-	the LIST file should be sent in every packet.  The argument
-	value "never" reverses this.  For minimal compliance,
-	"list always" should be treated as "list", and "list never"
-	should be ignored.
+`mailindex x`
+: Set the preferred mail index format, where 'x' is one of the values
+  'n', 'c', 'C' or 'i'.
 
-hostname string
+`newsindex x`
+: Set the preferred news index format, where 'x' is one of the values
+  'n', 'c', 'C' or 'i'.
 
-	This command specifies the name of the host or BBS the packet was
-	generated on.  It serves an informational role only.  The string
-	can be any sequence of printable ASCII characters.
+`get filename [putname]`
+: Request that a file on the generating side be placed into a packet
+  and sent to the packet reader.  "putname" specifies the "filename"
+  argument for the corresponding "put" command.  If "putname" is
+  not specified, the default is to use the base name of "filename".
+  If directory paths are specified, the separator must be '/'.  It
+  should be noted that security could be breached through the use
+  of this command, so programs which support this command should be
+  very careful, preferably restricting requests to a particular
+  directory tree.
 
-software string
+`put pktname filename`
+: This command is usually sent in response to a "get" command, although
+  it can be sent on its own.  "pktname" specifies the name of the file
+  in the packet which contains the requested file's contents.  The
+  "filename" argument specifies destination file to write the contents
+  to.  Note that security could be breached with this command, so
+  the destination filename should be checked, or restricted to a
+  particular directory tree.  It is also recommended that the user
+  be prompted for confirmation before writing the file.  If directory
+  paths are specified in "filename", the separator must be '/'.  It
+  is recommended that the extension "FIL" be used for files in a
+  packet which contain data sent with this command.  For example,
+  "put 001.FIL abc.zip"
 
-	This command specifies the name and version of the software which
-	generated the packet.  It servers an informational role only.  The
-	string can be any sequence of printable ASCII characters.
-
-sendme<TAB>area<TAB>selector[<TAB>selector[...]]
-
-	This command requests that the packet generator send a number of
-	messages from the nominated message area.  The "selector" arguments
-	are taken from the "selector" fields in a 'c' or 'C' index file.
-	Multiple "sendme" commands for the same message area may be present
-	in a COMMANDS file.  The maximum length for this command is 500
-	characters.  Note that other commands use spaces to separate
-	arguments, but this command uses TAB's.
-
-mail y
-mail n
-
-	This command changes whether or not private e-mail should be sent
-	in generated packets.
-
-deletemail y
-deletemail n
-
-	This command changes whether or not the user's private mailbox should
-	be deleted after being batched into a packet.
-
-mailindex x
-
-	Set the preferred mail index format, where 'x' is one of the values
-	'n', 'c', 'C' or 'i'.
-
-newsindex x
-
-	Set the preferred news index format, where 'x' is one of the values
-	'n', 'c', 'C' or 'i'.
-
-get filename [putname]
-
-	Request that a file on the generating side be placed into a packet
-	and sent to the packet reader.  "putname" specifies the "filename"
-	argument for the corresponding "put" command.  If "putname" is
-	not specified, the default is to use the base name of "filename".
-	If directory paths are specified, the separator must be '/'.  It
-	should be noted that security could be breached through the use
-	of this command, so programs which support this command should be
-	very careful, preferably restricting requests to a particular
-	directory tree.
-
-put pktname filename
-
-	This command is usually sent in response to a "get" command, although
-	it can be sent on its own.  "pktname" specifies the name of the file
-	in the packet which contains the requested file's contents.  The
-	"filename" argument specifies destination file to write the contents
-	to.  Note that security could be breached with this command, so
-	the destination filename should be checked, or restricted to a
-	particular directory tree.  It is also recommended that the user
-	be prompted for confirmation before writing the file.  If directory
-	paths are specified in "filename", the separator must be '/'.  It
-	is recommended that the extension "FIL" be used for files in a
-	packet which contain data sent with this command.  For example,
-	"put 001.FIL abc.zip"
-
-supported cmd ...
-
-	This command is usually sent from a packet generator to inform a
-	packet reader as to which commands are supported by the generating
-	program.  The argument is a space-separated list of command names.
-	For example, "supported subscribe unsubscribe list", or "supported
-	subscribe unsubscribe catchup list mail deletemail".
+`supported cmd ...`
+: This command is usually sent from a packet generator to inform a
+  packet reader as to which commands are supported by the generating
+  program.  The argument is a space-separated list of command names.
+  For example, "supported subscribe unsubscribe list", or "supported
+  subscribe unsubscribe catchup list mail deletemail".
 
 It is recommended that at least "subscribe", "unsubscribe" and "list" (with
 no arguments) be supported.  Packet generators are recommended to add a
@@ -778,23 +774,23 @@ file takes precedence over any previous commands.
 The following example demonstrates a typical COMMANDS file sent from a
 packet generator:
 
-	version 1.2
-	date 25 Jul 1993 12:34:38 +1000
-	hostname frobozz.domain.com
-	software Fubar 1.3
-	supported subscribe unsubscribe catchup list sendme get
-	put 001.FIL abc.zip
-	put 002.FIL def.txt
+    version 1.2
+    date 25 Jul 1993 12:34:38 +1000
+    hostname frobozz.domain.com
+    software Fubar 1.3
+    supported subscribe unsubscribe catchup list sendme get
+    put 001.FIL abc.zip
+    put 002.FIL def.txt
 
 The following example demonstrates a typical COMMANDS file sent from a
 packet reader:
 
-	subscribe comp.lang.c
-	subscribe comp.lang.misc
-	unsubscribe alt.swedish.chef.bork.bork.bork
-	list
-	get xyzzy.zip
-	get /usr/local/lib/fubar.txt frobozz.txt
+    subscribe comp.lang.c
+    subscribe comp.lang.misc
+    unsubscribe alt.swedish.chef.bork.bork.bork
+    list
+    get xyzzy.zip
+    get /usr/local/lib/fubar.txt frobozz.txt
 
 
 Message area summaries
