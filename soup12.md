@@ -89,15 +89,15 @@ Message packet
 : the primary kind of packet which contains messages for the user to read.
 
 Reply packet
-: a special kind of packet which contains replies composed by the user, 
+: a special kind of packet which contains replies composed by the user,
   usually in response to the messages in a message packet.
 
 Packet generator
-: a program which generates packets to be downloaded and read, and which 
+: a program which generates packets to be downloaded and read, and which
   processes uploaded reply packets.
 
 Packet reader
-: a program which reads packets, usually by presenting the messages in a 
+: a program which reads packets, usually by presenting the messages in a
   packet to the user, and which generates reply packets.
 
 Packet processor
@@ -110,31 +110,31 @@ Reading host
 : the computer on which the packet reader executes.
 
 Download
-: the transfer of a packet from the generating host to the reading host.  
-  This transfer may take place in any fashion, although the most common 
-  method is through the use of a file transfer protocol such as Zmodem 
+: the transfer of a packet from the generating host to the reading host.
+  This transfer may take place in any fashion, although the most common
+  method is through the use of a file transfer protocol such as Zmodem
   or Kermit.
 
 Upload
 : the transfer of a packet from the reading host to the generating host.
 
 Packet stream
-: a logical link between the generating and reading hosts over which 
+: a logical link between the generating and reading hosts over which
   downloads and uploads of packets take place.
 
 Message area
-: a collection of messages which are related by a common topic or 
-  purpose.  Examples of message areas include USENET newsgroups, Unix 
+: a collection of messages which are related by a common topic or
+  purpose.  Examples of message areas include USENET newsgroups, Unix
   mailboxes, and FidoNet conferences.
 
 Reply message area
-: a special kind of message area which contains replies being uploaded 
+: a special kind of message area which contains replies being uploaded
   to a generating host.
 
 Text file
-: an ASCII file consisting of lines terminated by linefeed characters 
-  (LF, 10 decimal).  Some operating systems terminate lines in a text 
-  file by CRLF pairs: such files must be converted to LF-terminated 
+: an ASCII file consisting of lines terminated by linefeed characters
+  (LF, 10 decimal).  Some operating systems terminate lines in a text
+  file by CRLF pairs: such files must be converted to LF-terminated
   lines for transmission in a packet.
 
 
