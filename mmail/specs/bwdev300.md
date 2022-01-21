@@ -1958,43 +1958,43 @@ and should be ignored.
 [cp]: #copyright-and-restrictions
 [tr]: #trademark-notices
 
-[ch1]: #chapter-1-introduction-and-overview
-[s11]: #11-introduction
-[s12]: #12-overview-of-the-developers-kit
+[ch1]: #chapter-1--introduction-and-overview
+[s11]: #section-11--introduction
+[s12]: #section-12--overview-of-the-developers-kit
 
-[ch2]: #chapter-2-a-short-history-of-offline-mail
-[s21]: #21-necessity-is-a-mother
-[s22]: #22-the-pioneers-of-offline-mail
-[s23]: #23-open-standards-and-the-blue-wave-format
+[ch2]: #chapter-2--a-short-history-of-offline-mail
+[s21]: #section-21--necessity-is-a-mother
+[s22]: #section-22--the-pioneers-of-offline-mail
+[s23]: #section-23--open-standards-and-the-blue-wave-format
 
-[ch3]: #chapter-3-description-of-blue-wave-packets
-[s31]: #31-filename-conventions
-[s32]: #32-the-packet-id
-[s33]: #33-the-blue-wave-mail-packet
-[s34]: #34-the-blue-wave-reply-packet
+[ch3]: #chapter-3--description-of-blue-wave-packets
+[s31]: #section-31--filename-conventions
+[s32]: #section-32--the-packet-id
+[s33]: #section-33--the-blue-wave-mail-packet
+[s34]: #section-34--the-blue-wave-reply-packet
 
-[ch4]: #chapter-4-file-structure-technical-information
-[s41]: #41-data-types
-[s42]: #42-using-the-file-structures
-[s43]: #43-using-the-structure-length-fields
-[s44]: #44-unused-and-reserved-fields
+[ch4]: #chapter-4--file-structure-technical-information
+[s41]: #section-41--data-types
+[s42]: #section-42--using-the-file-structures
+[s43]: #section-43--using-the-structure-length-fields
+[s44]: #section-44--unused-and-reserved-fields
 
-[ch5]: #chapter-5-blue-wave-format-detailed-analysis
-[s51]: #51-the-inf-file
-[s52]: #52-the-mix-file
-[s53]: #53-the-fti-file
-[s54]: #54-the-dat-file
-[s55]: #55-the-upl-file
-[s56]: #56-reply-message-text
-[s57]: #57-the-req-file
-[s58]: #58-the-olc-file
+[ch5]: #chapter-5--blue-wave-format-detailed-analysis
+[s51]: #section-51--the-inf-file
+[s52]: #section-52--the-mix-file
+[s53]: #section-53--the-fti-file
+[s54]: #section-54--the-dat-file
+[s55]: #section-55--the-upl-file
+[s56]: #section-56--reply-message-text
+[s57]: #section-57--the-req-file
+[s58]: #section-58--the-olc-file
 
-[apa]: #appendix-a-obsolete-blue-wave-structures
-[aa1]: #a1-the-upi-file
-[aa2]: #a2-the-net-file
-[aa3]: #a3-the-pdq-file
+[apa]: #appendix-a--obsolete-blue-wave-structures
+[aa1]: #section-a1--the-upi-file
+[aa2]: #section-a2--the-net-file
+[aa3]: #section-a3--the-pdq-file
 
-[apb]: #appendix-b-microsoft-windows-ini-format
+[apb]: #appendix-b--the-microsoft-windows-ini-format
 
 [bluewave.inc]: bluewave.inc
 [bluewave.h]: https://wmcbrine.com/MultiMail/mmail/bluewave.h
