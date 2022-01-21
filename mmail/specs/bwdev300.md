@@ -13,7 +13,6 @@ Documentation by Martin Pollard
 Markdown by [William McBrine] on 21 January 2022
 
 
------------------
 TABLE OF CONTENTS
 -----------------
 
@@ -52,7 +51,6 @@ TABLE OF CONTENTS
 - [APPENDIX B:  THE MICROSOFT WINDOWS INI FORMAT][apb]
 
 
---------------------------
 COPYRIGHT AND RESTRICTIONS
 --------------------------
 
@@ -82,7 +80,6 @@ does not, however, restrict the ability to describe the application as a
 Wave-Compatible Offline Mail Door for Widget BBS").
 
 
------------------
 TRADEMARK NOTICES
 -----------------
 
@@ -104,10 +101,8 @@ following individuals and/or companies:
 Any omissions from this list are purely unintentional.
 
 
--------------------------------------
 Chapter 1:  INTRODUCTION AND OVERVIEW
 -------------------------------------
-
 
 ### Section 1.1  Introduction
 
@@ -182,7 +177,6 @@ mind.  It is NOT a tutorial on programming, compilers, or operating
 systems; that would be far beyond the scope of this developer's kit.
 
 
--------------------------------------------
 Chapter 2:  A SHORT HISTORY OF OFFLINE MAIL
 -------------------------------------------
 
@@ -304,7 +298,6 @@ are now including Blue Wave offline mail as an integral part of the BBS
 software, with more sure to follow.
 
 
---------------------------------------------
 Chapter 3:  DESCRIPTION OF BLUE WAVE PACKETS
 --------------------------------------------
 
@@ -482,7 +475,6 @@ extension ".NEW".  For example, a reply packet destined for The Wild!
 Blue BBS would be assigned the name "WILDBLUE.NEW".
 
 
-------------------------------------------------
 Chapter 4:  FILE STRUCTURE TECHNICAL INFORMATION
 ------------------------------------------------
 
@@ -645,7 +637,6 @@ disk; a little work now will save everyone a whole lot of grief in the
 long run.
 
 
-----------------------------------------------
 Chapter 5:  BLUE WAVE FORMAT DETAILED ANALYSIS
 ----------------------------------------------
 
@@ -1668,7 +1659,6 @@ sections for all areas which the user has kept active.  It's not the
 most sophisticated system, true, but it's simple and easy to implement.
 
 
-------------------------------------------
 APPENDIX A:  OBSOLETE BLUE WAVE STRUCTURES
 ------------------------------------------
 
@@ -1917,7 +1907,6 @@ earlier than version 3; otherwise, a *.OLC file should be generated.
 Doors should process a *.PDQ file only if a *.OLC file is not present.
 
 
----------------------------------------------
 APPENDIX B:  THE MICROSOFT WINDOWS INI FORMAT
 ---------------------------------------------
 
