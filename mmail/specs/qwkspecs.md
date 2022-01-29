@@ -336,7 +336,7 @@ by Patrick Y. Lee
 
 **Version 1.5 - July 30, 1992**
 : Added off-line commands for Cam-Mail door.  Fixed error in the
-  status flag section.  The descriptions for `*' and `+' are
+  status flag section.  The descriptions for '*' and '+' are
   incorrect.  Thanks to Bob Blaylock for bringing this up.
 
 **Version 1.4 - July 18, 1992**
