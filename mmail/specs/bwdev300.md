@@ -1997,7 +1997,7 @@ and should be ignored.
 [apb]: #appendix-b--the-microsoft-windows-ini-format
 
 [bluewave.inc]: bluewave.inc
-[bluewave.h]: https://wmcbrine.com/MultiMail/mmail/bluewave.h
+[bluewave.h]: ../../MultiMail/mmail/bluewave.h
 
 [FTS-0001]: https://nsrc.org/networks/fidonet/standards/fts-0001.016
 [FTS-0004]: https://nsrc.org/networks/fidonet/standards/fts-0004.txt
