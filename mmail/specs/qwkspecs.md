@@ -14,3 +14,10 @@ Markdown by [William McBrine](https://wmcbrine.com/), January 2022
 - [QWK Mail Packet File Layout](qwklay.md) - v1.6, 1992, by Patrick Y. Lee
 - [The Programmer's Guide to 1stReader](qwk1st.md) - v2.0, 1995, by Mark Herring
 - [QWKE Specifications](qwke.md) - v1.02, 1997, by Peter Rocca
+
+
+See also:
+---------
+
+- [Synchronet QWK reference](https://wiki.synchro.net/ref:qwk) - covers 
+  QWK, QWKE, and Synchronet extensions to QWK
