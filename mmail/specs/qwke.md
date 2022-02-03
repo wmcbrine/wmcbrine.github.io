@@ -1,7 +1,7 @@
 QWKE Specifications 1.02
 ========================
 
-(also known as EQWK - pronounced Quicky, and E-quick respectively)
+(also known as EQWK - pronounced Quicky, and E-quick respectively)  
 Copyright 1994-1997, Peter Rocca
 
 This documentation may be freely used to enhance/create 1st, 2nd or 3rd
