@@ -37,7 +37,7 @@ Really old stuff
 
 *[Email] / [GitHub] / [SourceForge] / [PayPal Me] / [Privacy]*
 
-[pic]: images/meandtoothy2.jpg
+[pic]: https://s.gravatar.com/avatar/8f346585e5c2b436ad98d6317256bc38?s=300
 
 [PDCurses]: https://pdcurses.org/
 
