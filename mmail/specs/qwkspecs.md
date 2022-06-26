@@ -22,3 +22,11 @@ See also:
 
 - [Synchronet QWK reference](https://wiki.synchro.net/ref:qwk) - covers
   QWK, QWKE, and Synchronet extensions to QWK
+
+
+Other Formats
+=============
+
+- [Blue Wave](bwdev300.md)
+- [OMEN](omen-i.md)
+- [SOUP](soup12.md)
