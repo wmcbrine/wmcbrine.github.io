@@ -25,6 +25,7 @@ BBS-related projects
 
 * [Multimail QWK reader]
 * [Searchlight stuff]
+* [QWK and other offline formats]
 
 
 Really old stuff
@@ -52,6 +53,7 @@ Really old stuff
 
 [Multimail QWK reader]: MultiMail/
 [Searchlight stuff]: sl/
+[QWK and other offline formats]: mmail/specs/qwkspecs.md
 
 [Saucer]: saucer/
 

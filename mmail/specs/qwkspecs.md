@@ -30,3 +30,10 @@ Other Formats
 - [Blue Wave](bwdev300.md)
 - [OMEN](omen-i.md)
 - [SOUP](soup12.md)
+
+
+Implementations
+===============
+
+- [MultiMail Offline Reader](https://wmcbrine.com/MultiMail/)
+- [Valence QWK door for SLBBS](https://wmcbrine.com/sl)
