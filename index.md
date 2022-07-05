@@ -42,7 +42,7 @@ Really old stuff
 
 [PDCurses]: https://pdcurses.org/
 [TiVo-related projects]: tivo/
-[Multimail QWK reader]: MultiMail/
+[Multimail QWK reader]: https://wmcbrine.com/MultiMail/
 [Searchlight stuff]: sl/
 [QWK and other offline formats]: mmail/specs/qwkspecs.md
 [Saucer]: saucer/
