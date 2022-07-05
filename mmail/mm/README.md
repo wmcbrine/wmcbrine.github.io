@@ -7,28 +7,28 @@ Default color scheme, MS-DOS version
 
 From DOSEmu in X.
 
-![](mm/mm_packet.png)  
+![](mm_packet.png)
 Startup screen -- packet list
 
-![](mm/mm_filter.png)  
+![](mm_filter.png)
 With a filter, in expert mode
 
-![](mm/mm_areas.png)  
+![](mm_areas.png)
 Area list, Blue Wave
 
-![](mm/mm_areas2.png)  
+![](mm_areas2.png)
 Area list, QWK
 
-![](mm/mm_llist.png)  
+![](mm_llist.png)
 Letter list, BBS
 
-![](mm/mm_llist2.png)  
+![](mm_llist2.png)
 Letter list, Usenet
 
-![](mm/mm_letter.png)  
+![](mm_letter.png)
 Letter window
 
-![](mm/mm_ansi.png)  
+![](mm_ansi.png)
 ANSI viewer
 
 ---
@@ -40,10 +40,10 @@ Aqua color scheme, Linux version, in xterm
 An example of a light-background scheme. This xterm was started with "-fn
 vga -tn linux" -- useful for viewing ANSI pics.
 
-![](mm/aqua_packet.png)  
+![](aqua_packet.png)
 Startup screen -- expert mode
 
-![](mm/aqua_letter.png)  
+![](aqua_letter.png)
 Letter window
 
 ---
@@ -58,14 +58,14 @@ color.) This can be used to good effect with a light-background scheme like
 aqua.col. Here I'm using the standard iso-8859-1 character set, 10x20
 font.
 
-| ![](mm/s_marble_packet.png) | ![](mm/s_marble_letter.png) |
+| ![](s_marble_packet.png) | ![](s_marble_letter.png) |
 | --- | --- |
 | Startup screen -- expert mode | Letter window |
 
 The standard color scheme, but with the background set to blue and made
 transparent.
 
-| ![](mm/s_trans_areas.jpg) | ![](mm/s_trans_letter.jpg) |
+| ![](s_trans_areas.jpg) | ![](s_trans_letter.jpg) |
 | --- | --- |
 | Area list -- expert mode | Letter window |
 
@@ -83,7 +83,7 @@ you can sometimes edit that to fix the problem. In other cases, changing the
 font can help. Anyway, the "lowest common denominator" MultiMail display looks
 something like this (contributed by Alan Zisman):
 
-![](mm/darwin.jpg)  
+![](darwin.jpg)
 MultiMail running under Macintosh OS X, aka Darwin
 
 I'm happy to report that performance under Mac OS X's Terminal has
@@ -92,5 +92,5 @@ characters now work. (The background is still made up of octothorpes,
 but that's the same as in xterm without the "-fn vga -tn linux". I
 should probably work on that.)
 
-![](mm/darwin2.png)  
+![](darwin2.png)
 With OS X 10.3.9
