@@ -44,7 +44,7 @@ Really old stuff
 [TiVo-related projects]: tivo/
 [Multimail QWK reader]: https://wmcbrine.com/MultiMail/
 [Searchlight stuff]: sl/
-[QWK and other offline formats]: mmail/specs/qwkspecs.md
+[QWK and other offline formats]: mmail/specs/
 [Saucer]: saucer/
 
 [Email]: mailto:wmcbrine@gmail.com
