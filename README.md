@@ -28,8 +28,8 @@ BBS-related projects
 * [QWK and other offline formats]
 
 
-Really old stuff
-----------------
+8-bit stuff
+-----------
 
 * [Saucer]
 
