@@ -29,4 +29,4 @@ cleaning.) But it looks and plays the same.
 
 [Download Saucer (ASCII)](saucer12.bas)
 
-[Screenshot]: saucer-screenshotx2-2.gif
+[Screenshot]: saucer.png

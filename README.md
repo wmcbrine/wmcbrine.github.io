@@ -31,7 +31,7 @@ BBS-related projects
 8-bit stuff
 -----------
 
-* [Saucer]
+* [Saucer], a game for the CoCo.
 
 
 ---
