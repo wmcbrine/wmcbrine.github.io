@@ -50,7 +50,7 @@ colors, with the idea that I'd get around to that.
 
 Self-portrait of a Timex Sinclair 2068, which I'll describe further later.
 
-Since there vastly more Spectrums than 2068s in the world -- and the
+Since there are vastly more Spectrums than 2068s in the world -- and the
 picture format is the same -- I've labelled this converter as being for
 Spectrum images.
 
