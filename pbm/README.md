@@ -1,11 +1,12 @@
-A couple of converters that I wrote for [NetPBM], that I always meant to
-publish, but never quite got around to. These are standard ANSI C89.
+A couple of image format converters that I wrote for [NetPBM], that I
+always meant to publish, but never quite got around to. These are standard
+ANSI C89.
 
 
 rletopbm
 ========
 
-CompuServe RLE was a very simple, 1-bit monochrome, 256 by 192 pixel
+CompuServe RLE was a very simple, 1-bit monochrome, 256 by 192 pixel image
 format, supposedly based on PMODE 4 of the TRS-80 Color Computer (as it
 happens, the same mode used by [Saucer]).
 
