@@ -1,6 +1,6 @@
 A couple of image format converters that I wrote for [NetPBM], that I
-always meant to publish, but never quite got around to. These are standard
-ANSI C89.
+always meant to publish, but never quite got around to. These are written
+in standard ANSI C89.
 
 
 rletopbm
@@ -17,7 +17,7 @@ created this image by "hand digitizing" the cover of Kate Bush's "The
 Whole Story", using graph paper, artistic license, and a lot of pixel
 twiddling.)
 
-I first learned about RLE from an article in Time Designs magazine,
+I first learned about RLE from an [article in Time Designs] magazine,
 which included a BASIC program to render them to the screen on a Timex
 Sinclair 2068. From there, I wrote my own converters, as part of Draw 512,
 and later this one. I never did get a proper specification for the format
@@ -65,5 +65,6 @@ version (ppmtozx).
 [Saucer]: https://wmcbrine.com/saucer/
 [Kate]: kate.png
 [kate.rle]: kate.rle
+[article in Time Designs]: https://www.timexsinclair.com/article/run-length-encoded-graphics/
 [2068]: self2068.png
 [ibiblio]: https://www.ibiblio.org/pub/Linux/system/emulators/zx/!INDEX.html
