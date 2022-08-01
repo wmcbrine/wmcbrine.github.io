@@ -31,8 +31,8 @@ BBS-related projects
 8-bit stuff
 -----------
 
-* [Saucer], a game for the CoCo.
-
+* [Saucer], a game for the CoCo
+* [NetPBM converters] for RLE and ZX Spectrum images
 
 ---
 
@@ -46,6 +46,7 @@ BBS-related projects
 [Searchlight stuff]: sl/
 [QWK and other offline formats]: mmail/specs/
 [Saucer]: saucer/
+[NetPBM converters]: pbm/
 
 [Email]: mailto:wmcbrine@gmail.com
 [GitHub]: https://github.com/wmcbrine/
