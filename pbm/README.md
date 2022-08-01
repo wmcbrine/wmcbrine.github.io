@@ -16,10 +16,10 @@ created this image by "hand digitizing" the cover of Kate Bush's "The
 Whole Story", using graph paper, artistic license, and a lot of pixel
 twiddling.)
 
-I first learned about RLE from an article in Time Designs magazine, which
-included a BASIC program to render them to the screen on a Timex Sinclair
-2068. From there, I wrote my own converters, as part of Draw 512, and
-later this one. I never did get a proper specification for the format
+I first learned about RLE from an article in Time Designs magazine,
+which included a BASIC program to render them to the screen on a Timex
+Sinclair 2068. From there, I wrote my own converters, as part of Draw 512,
+and later this one. I never did get a proper specification for the format
 (still haven't), just worked off the article and some sample files I got
 from BBSes.
 
