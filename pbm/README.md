@@ -29,7 +29,7 @@ from BBSes.
 Nowadays, NetPBM comes with RLE support included, so you probably don't
 need this. But it's still interesting to see the different approaches.
 Since the "RLE" identifier was already being used for Utah RLE, they chose
-"CIS" (Compuserve Information Services), i.e. cistopbm and pbmtocis.
+"CIS" (Compuserve Information Service), i.e. cistopbm and pbmtocis.
 
 I'd already converted all my RLEs, so I haven't really used cistopbm,
 except to verify that it produced the same output as rletopbm on kate.rle.
