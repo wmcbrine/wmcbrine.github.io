@@ -27,6 +27,6 @@ The version here isn't the original. I had a variety of undated versions
 bits and cleaned it up a little. (It could still use a little more
 cleaning.) But it looks and plays the same.
 
-[Download Saucer (ASCII)](saucer12.bas)
+{% gist 9471b25910bd7fe0caa21a0f1afab34e %}
 
 [Screenshot]: saucer.png
