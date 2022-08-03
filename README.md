@@ -36,7 +36,7 @@ BBS-related projects
 
 ---
 
-*[Email] / [GitHub] / [SourceForge] / [PayPal Me] / [Privacy]*
+*[Email] / [GitHub] / [Gists] / [SourceForge] / [PayPal Me] / [Privacy]*
 
 [pic]: https://s.gravatar.com/avatar/8f346585e5c2b436ad98d6317256bc38?s=300
 
@@ -49,7 +49,8 @@ BBS-related projects
 [NetPBM converters]: pbm/
 
 [Email]: mailto:wmcbrine@gmail.com
-[GitHub]: https://github.com/wmcbrine/
-[SourceForge]: https://sourceforge.net/u/wmcbrine/
+[GitHub]: https://github.com/wmcbrine
+[Gists]: https://gist.github.com/wmcbrine
+[SourceForge]: https://sourceforge.net/u/wmcbrine/profile/
 [PayPal Me]: https://paypal.me/wmcbrine
 [Privacy]: privacy.md
