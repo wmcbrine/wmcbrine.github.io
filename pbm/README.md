@@ -1,10 +1,13 @@
+rletopbm / zxtopbm
+==================
+
 A couple of image format converters that I wrote for [NetPBM], that I
 always meant to publish, but never quite got around to. These are written
 in standard ANSI C89.
 
 
 rletopbm
-========
+--------
 
 CompuServe RLE was a very simple, 1-bit monochrome, 256 by 192 pixel image
 format, supposedly based on PMODE 4 of the TRS-80 Color Computer (as it
@@ -38,7 +41,7 @@ quite like my 2068-generated version. :)
 
 
 zxtopbm
-=======
+-------
 
 The main display mode of the Timex Sinclair 2068 -- based on that of the
 original ZX Spectrum -- has the same 256 x 192 pixel resolution, but with
