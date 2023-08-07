@@ -7,29 +7,37 @@ Default color scheme, MS-DOS version
 
 From DOSEmu in X.
 
-![](mm_packet.png)
-Startup screen -- packet list
+| ![](mm_packet.png) |
+| --- |
+| Startup screen -- packet list |
 
-![](mm_filter.png)
-With a filter, in expert mode
+| ![](mm_filter.png) |
+| --- |
+| With a filter, in expert mode |
 
-![](mm_areas.png)
-Area list, Blue Wave
+| ![](mm_areas.png) |
+| --- |
+| Area list, Blue Wave |
 
-![](mm_areas2.png)
-Area list, QWK
+| ![](mm_areas2.png) |
+| --- |
+| Area list, QWK |
 
-![](mm_llist.png)
-Letter list, BBS
+| ![](mm_llist.png) |
+| --- |
+| Letter list, BBS |
 
-![](mm_llist2.png)
-Letter list, Usenet
+| ![](mm_llist2.png) |
+| --- |
+| Letter list, Usenet |
 
-![](mm_letter.png)
-Letter window
+| ![](mm_letter.png) |
+| --- |
+| Letter window |
 
-![](mm_ansi.png)
-ANSI viewer
+| ![](mm_ansi.png) |
+| --- |
+| ANSI viewer |
 
 ---
 
@@ -40,11 +48,13 @@ Aqua color scheme, Linux version, in xterm
 An example of a light-background scheme. This xterm was started with "-fn
 vga -tn linux" -- useful for viewing ANSI pics.
 
-![](aqua_packet.png)
-Startup screen -- expert mode
+| ![](aqua_packet.png) |
+| --- |
+| Startup screen -- expert mode |
 
-![](aqua_letter.png)
-Letter window
+| ![](aqua_letter.png) |
+| --- |
+| Letter window |
 
 ---
 
@@ -83,8 +93,9 @@ you can sometimes edit that to fix the problem. In other cases, changing the
 font can help. Anyway, the "lowest common denominator" MultiMail display looks
 something like this (contributed by Alan Zisman):
 
-![](darwin.jpg)
-MultiMail running under Macintosh OS X, aka Darwin
+| ![](darwin.jpg) |
+| --- |
+| MultiMail running under Macintosh OS X, aka Darwin |
 
 I'm happy to report that performance under Mac OS X's Terminal has
 improved since that snapshot was taken; colors and box-drawing
@@ -92,5 +103,6 @@ characters now work. (The background is still made up of octothorpes,
 but that's the same as in xterm without the "-fn vga -tn linux". I
 should probably work on that.)
 
-![](darwin2.png)
-With OS X 10.3.9
+| ![](darwin2.png) |
+| --- |
+| With OS X 10.3.9 |
