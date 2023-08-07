@@ -48,5 +48,9 @@ real difference is that Member List has been updated for Y2K.
 
 [Download version 1.3 (70k)](slmisc13.zip)
 
+---
+*[Home]*
+
 [Y2K issues in Searchlight BBS]: sl-y2k.md
 [QWK comparison chart]: qwk-feat.md
+[Home]: https://wmcbrine.com/

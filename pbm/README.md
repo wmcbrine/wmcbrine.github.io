@@ -64,6 +64,9 @@ Little did I realize that zxtoppm was already a thing, by Russell Marks --
 find it in the "zspeccyutils" package at [ibiblio]. He also did a reverse
 version (ppmtozx).
 
+---
+*[Home]*
+
 [NetPBM]: http://netpbm.sourceforge.net/
 [Saucer]: https://wmcbrine.com/saucer/
 [Kate]: kate.png
@@ -71,3 +74,4 @@ version (ppmtozx).
 [article in Time Designs]: https://www.timexsinclair.com/article/run-length-encoded-graphics/
 [2068]: self2068.png
 [ibiblio]: https://www.ibiblio.org/pub/Linux/system/emulators/zx/!INDEX.html
+[Home]: https://wmcbrine.com/

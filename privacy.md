@@ -19,3 +19,8 @@ Remote is the one that has to have a Privacy Policy, to go into the App
 Store.
 
 -- William McBrine, 2020-12-27
+
+---
+*[Home]*
+
+[Home]: https://wmcbrine.com/

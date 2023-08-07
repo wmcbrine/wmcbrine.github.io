@@ -72,3 +72,9 @@ Versions compared: Valence 1.4x, QWK/SL 1.1, QWKRick 1.01, SLQWiK 1.02d.
 understand there's a newer version which is supposed to be faster.)
 
 [^1]: As of Valence 1.7.
+
+---
+*[Home] / [Searchlight]*
+
+[Home]: https://wmcbrine.com/
+[Searchlight]: https://wmcbrine.com/sl/

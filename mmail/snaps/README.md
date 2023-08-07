@@ -106,3 +106,8 @@ should probably work on that.)
 | ![](darwin2.png) |
 | --- |
 | With OS X 10.3.9 |
+
+---
+*[MultiMail]*
+
+[MultiMail]: https://wmcbrine.com/MultiMail/
