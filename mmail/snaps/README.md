@@ -8,35 +8,27 @@ Default color scheme, MS-DOS version
 From DOSEmu in X.
 
 | ![](mm_packet.png) |
-| --- |
 | Startup screen -- packet list |
 
 | ![](mm_filter.png) |
-| --- |
 | With a filter, in expert mode |
 
 | ![](mm_areas.png) |
-| --- |
 | Area list, Blue Wave |
 
 | ![](mm_areas2.png) |
-| --- |
 | Area list, QWK |
 
 | ![](mm_llist.png) |
-| --- |
 | Letter list, BBS |
 
 | ![](mm_llist2.png) |
-| --- |
 | Letter list, Usenet |
 
 | ![](mm_letter.png) |
-| --- |
 | Letter window |
 
 | ![](mm_ansi.png) |
-| --- |
 | ANSI viewer |
 
 ---
