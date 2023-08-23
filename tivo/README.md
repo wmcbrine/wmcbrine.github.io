@@ -88,7 +88,7 @@ pyTivo was created by Jason Michalski, and over the years has
 incorporated the work of many collaborators. I only maintain one
 fork.
 
-* [pyTivo Wiki], with install instructions, etc.
+* [My pyTivo fork]
 * [TCF thread][3]
 
 
@@ -221,7 +221,7 @@ complicating hosting.)
 [Streambaby]: https://code.google.com/p/streambaby/
 
 [GitHub]: https://github.com/wmcbrine/
-[pyTivo Wiki]: http://pytivo.org/
+[My pyTivo fork]: http://pytivo.org/
 [macOS app]: https://github.com/wmcbrine/tivoremote/releases/download/0.32/network-remote-0.32b.dmg
 [appstore]: https://itunes.apple.com/us/app/network-remote-for-tivo/id914331224?ls=1&amp;mt=12
 [Demo video]: https://youtube.com/watch?v=OSAPzpQ9j6I
