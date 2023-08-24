@@ -70,11 +70,11 @@ This program is compatible with Python 3.
 pyTivo
 ------
 
-An alternative to TiVo Desktop Plus, pyTivo is an HMO (Home Media Option)
-server, that can transfer video to and from the TiVo (Series 2 or later),
-and previously could also provide music and photos to the TiVo. With the
-help of [FFmpeg], it can transcode videos from a wide variety of sources
-to a TiVo-compatible format, on the fly.
+An alternative to TiVo Desktop Plus, pyTivo is an HMO server, that can
+transfer video to and from the TiVo (Series 2 or later), and previously
+could also provide music and photos to the TiVo. With the help of
+[FFmpeg], it can transcode videos from a wide variety of sources to a
+TiVo-compatible format, on the fly.
 
 Despite the similar names, HMO is unrelated to the later HME (q.v.,
 below), and has survived better; but it, too, has been increasingly
@@ -89,7 +89,7 @@ incorporated the work of many collaborators. I only maintain one
 fork.
 
 * [My pyTivo fork]
-* [HMO] specification
+* [HMO] (Home Media Option) specification
 * [TiVo Connect Discovery] -- the pre-Zeroconf method for TiVos and HMO
   servers to find each other on the LAN
 * [TCF thread][3]
