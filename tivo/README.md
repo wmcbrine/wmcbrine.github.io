@@ -90,8 +90,8 @@ fork.
 
 * [My pyTivo fork]
 * [HMO] specification
-* [TiVo Connect Discovery] protocol -- the older, non-Zeroconf method for
-  TiVos and HMO servers to find each other on the LAN
+* [TiVo Connect Discovery] -- the pre-Zeroconf method for TiVos and HMO
+  servers to find each other on the LAN
 * [TCF thread][3]
 
 
