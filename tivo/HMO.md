@@ -1,6 +1,5 @@
-TiVo Home Media Option: \
+# TiVo Home Media Option: \
 Music and Photos Server Protocol Specification
-==============================================
 
 Revision: 1.1.0, Last updated: 3/5/2003  
 Copyright © 2003, [TiVo Inc.] All rights reserved.  
@@ -1096,7 +1095,7 @@ Armed with this data, the Client knows:
   named "Music".
 - The content of the root-level container for the class can be retrieved
   using
-  http://{machine}/TiVoConnect?Command=QueryContainer&Container=/TheMusic
+  `http://{machine}/TiVoConnect?Command=QueryContainer&Container=/TheMusic`
   (where {machine} is the same machine the XML was retrieved from.
 
 #### 5.4.12 Example 2
