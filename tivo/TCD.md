@@ -339,5 +339,4 @@ promptly execute the update procedure described in section 3.5.
 [RFC 768]: https://datatracker.ietf.org/doc/html/rfc768
 [RFC 793]: https://datatracker.ietf.org/doc/html/rfc793
 [RFC 922]: https://datatracker.ietf.org/doc/html/rfc922
-[Original PDF]:
-https://github.com/wcbonner/WimTiVoServer/blob/master/TiVoDocs/TiVoConnectDiscovery.pdf
+[Original PDF]: https://github.com/wcbonner/WimTiVoServer/blob/master/TiVoDocs/TiVoConnectDiscovery.pdf
