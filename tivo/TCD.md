@@ -157,7 +157,7 @@ always simply ignore it, moving on the to the next line (if any).
 
 This value indicates the particular flavor of TiVo Connect Automatic
 Machine Discovery Protocol supported by the originating TCM. For now,
-<number> should always be "1".
+`<number>` should always be "1".
 
 As the one exception to the previously stated ordering assumptions, this
 value must always appear at the very beginning of every packet so the
