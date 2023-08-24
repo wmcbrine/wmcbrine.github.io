@@ -140,7 +140,7 @@ TCP packet), formatted in ASCII as simple name/value pairs, one per line:
     services=<name>[:<port>][/<protocol>], ...
     swversion=<string>
 
-The <name> portion of each pair is case-insensitive, so "PLATFORM" and
+The `<name>` portion of each pair is case-insensitive, so "PLATFORM" and
 "pLatFOrm" both identify the same value.
 
 In the future, this format can be extended without disturbing any existing
@@ -170,7 +170,7 @@ This value is not optional.
 ### 3.1.2 method
 
 This value indicates the way in which the packet was transmitted, where
-<method> should be one of the following values:
+`<method>` should be one of the following values:
 
 - broadcast (for packets sent using UDP)
 - connected (for packets sent using TCP)
@@ -179,17 +179,17 @@ This value is not optional.
 
 ### 3.1.3 platform
 
-This value indicates what kind of TCM sent the packet, where <type> should
-be one of the following values:
+This value indicates what kind of TCM sent the packet, where `<type>`
+should be one of the following values:
 
 - tcd (for TiVo DVR beacons)
 - pc (for Windows computer beacons)
 
-The use of unique values for <type> creates platform "namespaces", within
-which various values for the optional <sub-type> portion can be freely
-determined by the associated software development groups without risk of
-conflict. Future development efforts should use their own value for <type>
-(e.g., "c64" for Commodore-64 software applications).
+The use of unique values for `<type>` creates platform "namespaces",
+within which various values for the optional `<sub-type>` portion can be
+freely determined by the associated software development groups without
+risk of conflict. Future development efforts should use their own value
+for `<type>` (e.g., "c64" for Commodore-64 software applications).
 
 This value is not optional.
 
@@ -198,9 +198,9 @@ This value is not optional.
 This value contains human readable text, naming the TCM, suitable for
 display to the user.
 
-Windows computer beacons should set <string> to the Windows computer name.
-TiVo DVR beacons should set <string> to the name of the DVR (e.g., "The
-Upstairs Master Bedroom Closet TiVo"). Packets originating from other
+Windows computer beacons should set `<string>` to the Windows computer
+name. TiVo DVR beacons should set `<string>` to the name of the DVR (e.g.,
+"The Upstairs Master Bedroom Closet TiVo"). Packets originating from other
 platforms should contain a similar suitable string.
 
 This value is optional (or can be left blank) if the machine does not have
@@ -214,10 +214,10 @@ unique, but certainly unique across the local network). This information
 is intended to allow TCMs to unambiguously identify each other even when
 their names or IP addresses have changed.
 
-TiVo DVR beacons should set <string> to the DVR's serial number. Windows
-computer packets should set <string> to a GUID (generated once and stored
-in the registry), formatted using the StringFromGUID2() function of the
-Windows API.
+TiVo DVR beacons should set `<string>` to the DVR's serial number. Windows
+computer packets should set `<string>` to a GUID (generated once and
+stored in the registry), formatted using the StringFromGUID2() function of
+the Windows API.
 
 This value is not optional.
 
@@ -233,7 +233,7 @@ necessarily provide any services.
 ### 3.1.7 swversion
 
 This value describes the "primary" software running on the TCM. There is
-no required format for <string>.
+no required format for `<string>`.
 
 This value is optional.
 
