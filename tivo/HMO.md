@@ -1638,4 +1638,4 @@ This element contains an URL that can be used to retrieve the image data.
 [RFC 1738]: https://datatracker.ietf.org/doc/html/rfc1738
 [RFC 2068]: https://datatracker.ietf.org/doc/html/rfc2068
 [Extensible Markup Language (XML) 1.0]: https://www.w3.org/TR/REC-xml/
-[Original PDF]: HmoMusicPhotosSpecv1.1.pdf
+[Original PDF]: https://github.com/wcbonner/WimTiVoServer/blob/master/TiVoDocs/HmoMusicPhotosSpecv1.1.pdf
