@@ -211,7 +211,7 @@ complicating hosting.)
 [tdng]: https://github.com/wmcbrine/tivodecode-ng/releases/tag/0.5
 
 [TiVo]: https://www.tivo.com/
-[HMO]: HmoMusicPhotosSpecv1.1.pdf
+[HMO]: HMO.md
 [HME SDK]: http://tivohme.sourceforge.net/
 [remdoc]: https://github.com/RogueProeliator/IndigoPlugin-TiVo-Network-Remote/blob/master/Documentation/TiVo_TCP_Network_Remote_Control_Protocol.pdf
 
