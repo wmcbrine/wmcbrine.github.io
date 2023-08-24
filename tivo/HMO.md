@@ -860,6 +860,7 @@ source data will often be transformed in some way by the Server
 Each URL that appears in the meta-data can be either "absolute" or
 "relative". An absolute URL always begins with "http://{machine}". A
 relative URL always begins with "/TiVoConnect".
+
 Also, the double-encoding scheme described in section 4.2 applies to all
 URLs that appear in the meta-data. URLs appearing in meta-data will
 additionally be escaped according to the rules for CDATA sections in XML.
@@ -881,7 +882,8 @@ format.
       <Version>{version}</Version>
       <InternalName>{text}</InternalName>
       <InternalVersion>{text}</InternalVersion>
-      <Organization>{text}</Organization> <Comment>{text}</Comment>
+      <Organization>{text}</Organization>
+      <Comment>{text}</Comment>
     </TiVoServer>
 
 The TiVo DVR does not currently use this command. In the future, this
