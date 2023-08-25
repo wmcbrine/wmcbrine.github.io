@@ -1255,7 +1255,7 @@ CMD_RECEIVER_TRANSITION | memento cannot exceed 10KB
 6 Miscellaneous
 ---------------
 
-TiVo is the registered trademark of TiVo Inc.
+TiVo is the registered trademark of TiVo Inc.  
 TrueType is the registered trademark of Apple Computer, Inc.
 
 All other trademarks are the properties of their respective owners.
