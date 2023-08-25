@@ -1064,7 +1064,7 @@ The following key codes are recognized:
 Code            | Type     | Description
 --------------- | -------- | ----------------------
 KEY_UNKNOWN     | 0        | key not known
-KEY_TIVO*       | 1        | TiVo® or equivalent
+KEY_TIVO[^1]    | 1        | TiVo® or equivalent
 KEY_UP          | 2        | arrow up
 KEY_DOWN        | 3        | arrow down
 KEY_LEFT        | 4        | arrow left
@@ -1085,7 +1085,7 @@ KEY_CHANNELUP   | 18       | channel up
 KEY_CHANNELDOWN | 19       | channel down
 KEY_MUTE        | 20       | mute
 KEY_RECORD      | 21       | record
-KEY_LIVETV*     | 23       | back to live TV
+KEY_LIVETV[^1]  | 23       | back to live TV
 KEY_INFO        | 25       | info
 KEY_DISPLAY     | KEY_INFO | display, same as info
 KEY_CLEAR       | 28       | clear
@@ -1101,36 +1101,32 @@ KEY_NUM7        | 47       | 7
 KEY_NUM8        | 48       | 8
 KEY_NUM9        | 49       | 9
 
-* Keys reserved for internal TiVo use.
-
 #### 4.4.3 Optional Key Codes
 
 The following key codes are recognized, but considered optional from the
 standpoint of support by the protocol.
 
-Code             | Type           | Description
----------------- | -------------- | ----------------------
-KEY_OPT_WINDOW   | 22             | Window
-KEY_OPT_PIP      | KEY_OPT_WINDOW | Picture in picture, same as window
-KEY_OPT_ASPECT   | KEY_OPT_WINDOW | Aspect, same code as window
-KEY_OPT_EXIT*    | 24             | exit
-KEY_OPT_LIST*    | 26             | list now playing
-KEY_OPT_GUIDE*   | 27             | guide
-KEY_OPT_STOP     | 51             | stop
-KEY_OPT_MENU     | 52             | dvd menu
-KEY_OPT_TOP_MENU | 53             | dvd top menu
-KEY_OPT_ANGLE    | 54             | angle
-KEY_OPT_DVD*     | 55             | dvd
-KEY_OPT_A        | 56             | A key or yellow triangle key
-KEY_OPT_B        | 57             | B key or blue square key
-KEY_OPT_C        | 58             | C key or red circle key
-KEY_OPT_D        | 59             | D key or green diamond key
-KEY_OPT_TV_POWER | 60             | TV power key
-KEY_OPT_TV_INPUT | 61             | TV input key
-KEY_OPT_VOD      | 62             | video on demand or VOD key
-KEY_OPT_POWER    | 63             | power key for the set top box
-
-* Keys reserved for internal TiVo use.
+Code              | Type           | Description
+----------------- | -------------- | ----------------------------------
+KEY_OPT_WINDOW    | 22             | Window
+KEY_OPT_PIP       | KEY_OPT_WINDOW | Picture in picture, same as window
+KEY_OPT_ASPECT    | KEY_OPT_WINDOW | Aspect, same code as window
+KEY_OPT_EXIT[^1]  | 24             | exit
+KEY_OPT_LIST[^1]  | 26             | list now playing
+KEY_OPT_GUIDE[^1] | 27             | guide
+KEY_OPT_STOP      | 51             | stop
+KEY_OPT_MENU      | 52             | dvd menu
+KEY_OPT_TOP_MENU  | 53             | dvd top menu
+KEY_OPT_ANGLE     | 54             | angle
+KEY_OPT_DVD[^1]   | 55             | dvd
+KEY_OPT_A         | 56             | A key or yellow triangle key
+KEY_OPT_B         | 57             | B key or blue square key
+KEY_OPT_C         | 58             | C key or red circle key
+KEY_OPT_D         | 59             | D key or green diamond key
+KEY_OPT_TV_POWER  | 60             | TV power key
+KEY_OPT_TV_INPUT  | 61             | TV input key
+KEY_OPT_VOD       | 62             | video on demand or VOD key
+KEY_OPT_POWER     | 63             | power key for the set top box
 
 ### 4.5 EVT_IDLE
 
@@ -1259,6 +1255,8 @@ TiVo is the registered trademark of TiVo Inc.
 TrueType is the registered trademark of Apple Computer, Inc.
 
 All other trademarks are the properties of their respective owners.
+
+[^1]: Keys reserved for internal TiVo use.
 
 [HME SDK]: https://tivohme.sourceforge.net/
 [TiVo, Inc.]: https://www.tivo.com/
