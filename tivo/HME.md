@@ -1,13 +1,16 @@
 HME Protocol
 ============
 
-Copyright © 2004-2006 TiVo, Inc.  All Rights Reserved
+From [HME SDK] 1.4.1  
+Copyright © 2004-2006 [TiVo, Inc.]  All Rights Reserved  
+Distributed under the [Common Public License]  
+Markdown and tweaks by [William McBrine], August 2023
 
 
 1 Protocol Overview
 -------------------
 
-![hme architecture](hme-protocol.png)
+![hme architecture]
 
 The TiVo® HME protocol operates over a TCP/IP socket connection and is
 bi-directional. The application sends commands to the TiVo DVR, and the
@@ -1259,3 +1262,9 @@ TiVo is the registered trademark of TiVo Inc.
 TrueType is the registered trademark of Apple Computer, Inc.
 
 All other trademarks are the properties of their respective owners.
+
+[HME SDK]: https://tivohme.sourceforge.net/
+[TiVo, Inc.]: https://www.tivo.com/
+[Common Public License]: https://opensource.org/license/cpl1-0-txt/
+[William McBrine]: https://wmcbrine.com/
+[hme architecture]: hme-protocol.png
