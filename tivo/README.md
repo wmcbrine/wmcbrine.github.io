@@ -115,8 +115,7 @@ Inactive / Obsolete Projects
 ----------------------------
 
 No longer functional due to changes made by TiVo, this code is here for
-reference. These depend on the old "Home Media Extensions" ("HME")
-interface.
+reference. These depend on the old HME interface.
 
 
 ### HME for Python
@@ -149,6 +148,7 @@ Besides HME/VLC and Reversi, HME for Python was also used in [Jeff
 Bernardis]' "Jukebox" and "pyTivo Video Manager".
 
 * [Download version 0.20][hme4py]
+* [HME] (Home Media Extensions) specification
 * [TCF thread][4]
 
 
@@ -217,6 +217,7 @@ complicating hosting.)
 [HMO]: HMO.md
 [TiVo Connect Discovery]: TCD.md
 [HME SDK]: http://tivohme.sourceforge.net/
+[HME]: HME.md
 [remdoc]: https://github.com/RogueProeliator/IndigoPlugin-TiVo-Network-Remote/blob/master/Documentation/TiVo_TCP_Network_Remote_Control_Protocol.pdf
 
 [Python]: https://www.python.org/
