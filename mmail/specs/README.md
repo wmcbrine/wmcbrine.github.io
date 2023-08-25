@@ -39,6 +39,4 @@ Implementations
 - [Valence QWK door for SLBBS](https://wmcbrine.com/sl)
 
 ---
-*[Home]*
-
-[Home]: https://wmcbrine.com/
+*[Home](https://wmcbrine.com/)*
