@@ -238,7 +238,7 @@ format for a message header is:
     END TYPE
 
 
-"Status" is a string variable of one byte's length.  It can contain one
+**Status** is a string variable of one byte's length.  It can contain one
 of the following values:
 
    - PUBLIC message (message that anyone can read):
@@ -258,44 +258,44 @@ of the following values:
        - (#) - A message which has been read by the addressee
        - ($) - A message which was addressed to ALL
 
-"Number" is the message number as it exists on the bulletin board
+**Number** is the message number as it exists on the bulletin board
 system.  This field is seven bytes in length and is left justified.
 
-"Date" and "Time" store the date and time the message was written to the
-bulletin board system.
+**Date** and **Time** store the date and time the message was written to
+the bulletin board system.
 
-"MsgTo" is a 25 byte field that stores the name of the user to whom the
+**MsgTo** is a 25 byte field that stores the name of the user to whom the
 message was addressed.
 
-"MsgFrom" is a 25 byte field that stores the name of the author of the
+**MsgFrom** is a 25 byte field that stores the name of the author of the
 message.
 
-"Subject" is a 25 byte field that stores the subject of the message.
+**Subject** is a 25 byte field that stores the subject of the message.
 
-"Password" is a 12 byte field that contains the password of the message,
+**Password** is a 12 byte field that contains the password of the message,
 if any.  Note that 1stReader does not require a password in order to
 read the message since it is the mail door's responsibility to insure
 that you only receive messages that YOU can read.
 
-"Reference" is an eight byte field.  If this message is a reply to a
+**Reference** is an eight byte field.  If this message is a reply to a
 previous message then this field stores that previous message's number
 on the BBS.
 
-"Blocks" stores the number of 128 byte records used to store this
+**Blocks** stores the number of 128 byte records used to store this
 message.  Note that the message *is* counted as one of these blocks.
 
-"Delete" is usually set to ASCII 225 to indicate that the message has
+**Delete** is usually set to ASCII 225 to indicate that the message has
 not been deleted.  If the message is deleted then this value stores
 ASCII 226.
 
-"Conference" is a two byte INTEGER field that stores the conference
+**Conference** is a two byte INTEGER field that stores the conference
 number that contains this message.  For example, if this message was
 found in conference #100 then this field will store "100" (in a signed
 INTEGER format).
 
-"Blank" is set to NULLs.
+**Blank** is set to NULLs.
 
-"Tag" is set to "*" if the message was processed by our own QNet mail
+**Tag** is set to "*" if the message was processed by our own QNet mail
 tosser.
 
 The text of the message always follows the message header. ASCII 227 is
