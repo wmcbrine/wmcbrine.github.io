@@ -110,7 +110,7 @@ float     | 4     | 4-byte IEEE floating point number
 vint      | 1..n  | variable length signed integer
 vuint     | 1..n  | variable length unsigned integer
 string    | 1..n  | UTF8 encoded string (see below)
-vdata     | 1..n  | Variable length collection of bytes (see below)
+vdata     | 1..n  | variable length collection of bytes (see below)
 
 ### 1.5 Variable Length Integers
 
@@ -791,10 +791,10 @@ parameters. If this command fails the receiver will send an app info event
 codes which will be included in the case of a transition failure:
 
 Error Code                   | Condition
----------------------------- | -------------------------------------------
-APP_ERROR_BAD_ARGUMENT       | Can't transition to the given URI.
-APP_ERROR_BAD_COMMAND        | The receiver can't perform transitions.
-APP_ERROR_INVALID_TRANSITION | From embedded app, or 'back' with no stack.
+---------------------------- | ------------------------------------------
+APP_ERROR_BAD_ARGUMENT       | can't transition to the given URI
+APP_ERROR_BAD_COMMAND        | the receiver can't perform transitions
+APP_ERROR_INVALID_TRANSITION | from embedded app, or 'back' with no stack
 
 ##### 3.3.2.1 Transition Types
 
@@ -1009,11 +1009,11 @@ The following keys are optionally sent for video resources in addition to
 the common keys specified above:
 
 Key         | Description
------------ | -----------------------------------------------------
-framerate   | The number of frames of video per second in the media
-channel     | A Trio Mind globally unique channel identifier
-audiotrack  | The current audio track selected
-audiotracks | Available audio tracks in a comma separated list
+----------- | ------------------------------------------------
+framerate   | frames of video per second in the media
+channel     | a Trio Mind globally unique channel identifier
+audiotrack  | the current audio track selected
+audiotracks | available audio tracks in a comma separated list
 
 The format for an audio track is `<language> <modifier> <text>`, where:
 
@@ -1024,7 +1024,7 @@ The format for an audio track is `<language> <modifier> <text>`, where:
   receiver)
 - the remaining text (including spaces) is a non-localizable string
   suitable for display to the user (e.g. actor or director name, etc.)
-- commas must be escaped with "\," and backslash must be escaped with "\\"
+- commas must be escaped with `\,` and backslash must be escaped with `\\`
 
 The audiotrack value is optional, but must be sent if a list of
 audiotracks is sent; the list is optional, but must contain the current
@@ -1108,9 +1108,9 @@ standpoint of support by the protocol.
 
 Code              | Type           | Description
 ----------------- | -------------- | ----------------------------------
-KEY_OPT_WINDOW    | 22             | Window
-KEY_OPT_PIP       | KEY_OPT_WINDOW | Picture in picture, same as window
-KEY_OPT_ASPECT    | KEY_OPT_WINDOW | Aspect, same code as window
+KEY_OPT_WINDOW    | 22             | window
+KEY_OPT_PIP       | KEY_OPT_WINDOW | picture in picture, same as window
+KEY_OPT_ASPECT    | KEY_OPT_WINDOW | aspect, same code as window
 KEY_OPT_EXIT[^1]  | 24             | exit
 KEY_OPT_LIST[^1]  | 26             | list now playing
 KEY_OPT_GUIDE[^1] | 27             | guide
@@ -1119,10 +1119,10 @@ KEY_OPT_MENU      | 52             | dvd menu
 KEY_OPT_TOP_MENU  | 53             | dvd top menu
 KEY_OPT_ANGLE     | 54             | angle
 KEY_OPT_DVD[^1]   | 55             | dvd
-KEY_OPT_A         | 56             | A key or yellow triangle key
-KEY_OPT_B         | 57             | B key or blue square key
-KEY_OPT_C         | 58             | C key or red circle key
-KEY_OPT_D         | 59             | D key or green diamond key
+KEY_OPT_A         | 56             | 'A' key or yellow triangle key
+KEY_OPT_B         | 57             | 'B' key or blue square key
+KEY_OPT_C         | 58             | 'C' key or red circle key
+KEY_OPT_D         | 59             | 'D' key or green diamond key
 KEY_OPT_TV_POWER  | 60             | TV power key
 KEY_OPT_TV_INPUT  | 61             | TV input key
 KEY_OPT_VOD       | 62             | video on demand or VOD key
