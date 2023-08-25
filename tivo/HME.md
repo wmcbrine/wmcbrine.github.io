@@ -7,7 +7,7 @@ Copyright © 2004-2006 TiVo, Inc.  All Rights Reserved
 1 Protocol Overview
 -------------------
 
-hme architecture
+![hme architecture](hme-protocol.png)
 
 The TiVo® HME protocol operates over a TCP/IP socket connection and is
 bi-directional. The application sends commands to the TiVo DVR, and the
