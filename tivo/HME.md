@@ -1148,9 +1148,6 @@ long pause in user input.  EVT_IDLE events that indicate the receiver is
 entering the idle state should be acknowledged with an
 CMD_RECEIVER_ACKNOWLEDGE_IDLE message.
 
-See the Idle Timeout description in the HME Receiver Compliance document
-for details on idle timeout behavior.
-
 ### 4.6 EVT_FONT_INFO
 
 A font info event is generated when a font resource is created.  It
