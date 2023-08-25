@@ -65,7 +65,4 @@ to represent 2000 through 2049, while 50 through 99 mean 1950 through 1999.
 This system will work through 2099.
 
 ---
-*[Home] / [Searchlight]*
-
-[Home]: https://wmcbrine.com/
-[Searchlight]: https://wmcbrine.com/sl/
+*[Home](https://wmcbrine.com/) / [Searchlight](https://wmcbrine.com/sl/)*

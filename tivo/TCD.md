@@ -331,7 +331,6 @@ should be removed. Whenever either occurs, the affected TCM should
 promptly execute the update procedure described in section 3.5.
 
 ---
-
 *[Original PDF]*
 
 [TiVo Inc.]: https://www.tivo.com/

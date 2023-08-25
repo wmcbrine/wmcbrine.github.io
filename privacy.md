@@ -21,6 +21,4 @@ Store.
 -- William McBrine, 2020-12-27
 
 ---
-*[Home]*
-
-[Home]: https://wmcbrine.com/
+*[Home](https://wmcbrine.com/)*

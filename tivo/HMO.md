@@ -1632,7 +1632,6 @@ such links are "Icon", "CoverArtwork", and "BackgroundImage".
 This element contains an URL that can be used to retrieve the image data.
 
 ---
-
 *[Original PDF]*
 
 [TiVo Inc.]: https://www.tivo.com/

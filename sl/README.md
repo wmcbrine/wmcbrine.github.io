@@ -13,7 +13,7 @@ Searchlight's internal QWK. It has full support of color codes, included
 files, metacharacters, bulletins, and much more. Powerful, flexible,
 fast, easy setup. It also does QWK networking. For all versions of
 Searchlight BBS from 2.15C on. Freeware. See also [Y2K issues in
-Searchlight BBS] and [QWK comparison chart].
+Searchlight BBS](sl-y2k.md) and [QWK comparison chart](qwk-feat.md).
 
 [Download version 1.7d (149k)](valen17d.zip)
 
@@ -49,8 +49,4 @@ real difference is that Member List has been updated for Y2K.
 [Download version 1.3 (70k)](slmisc13.zip)
 
 ---
-*[Home]*
-
-[Y2K issues in Searchlight BBS]: sl-y2k.md
-[QWK comparison chart]: qwk-feat.md
-[Home]: https://wmcbrine.com/
+*[Home](https://wmcbrine.com/)*
