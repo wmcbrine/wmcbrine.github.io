@@ -68,16 +68,16 @@ color.) This can be used to good effect with a light-background scheme like
 aqua.col. Here I'm using the standard iso-8859-1 character set, 10x20
 font.
 
-| ![](s_marble_packet.png) | ![](s_marble_letter.png) |
-| --- | --- |
-| Startup screen -- expert mode | Letter window |
+![](s_marble_packet.png) | ![](s_marble_letter.png)
+--- | ---
+Startup screen -- expert mode | Letter window
 
 The standard color scheme, but with the background set to blue and made
 transparent.
 
-| ![](s_trans_areas.jpg) | ![](s_trans_letter.jpg) |
-| --- | --- |
-| Area list -- expert mode | Letter window |
+![](s_trans_areas.jpg) | ![](s_trans_letter.jpg)
+--- | ---
+Area list -- expert mode | Letter window
 
 ---
 
@@ -108,6 +108,4 @@ should probably work on that.)
 | With OS X 10.3.9 |
 
 ---
-*[MultiMail]*
-
-[MultiMail]: https://wmcbrine.com/MultiMail/
+*[MultiMail](https://wmcbrine.com/MultiMail/)*
