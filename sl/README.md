@@ -12,8 +12,9 @@ The most popular offline mail system for SL, offering much more than
 Searchlight's internal QWK. It has full support of color codes, included
 files, metacharacters, bulletins, and much more. Powerful, flexible,
 fast, easy setup. It also does QWK networking. For all versions of
-Searchlight BBS from 2.15C on. Freeware. See also [Y2K issues in
-Searchlight BBS](sl-y2k.md) and [QWK comparison chart](qwk-feat.md).
+Searchlight BBS from 2.15C on. Freeware. See also
+[Y2K issues in Searchlight BBS](sl-y2k.md) and
+[QWK comparison chart](qwk-feat.md).
 
 [Download version 1.7d (149k)](valen17d.zip)
 
