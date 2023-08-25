@@ -148,7 +148,7 @@ Besides HME/VLC and Reversi, HME for Python was also used in [Jeff
 Bernardis]' "Jukebox" and "pyTivo Video Manager".
 
 * [Download version 0.20][hme4py]
-* [HME] (Home Media Extensions) specification
+* [HME] (Home Media Engine) specification
 * [TCF thread][4]
 
 
