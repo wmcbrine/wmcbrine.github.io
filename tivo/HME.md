@@ -705,10 +705,10 @@ multiple speeds. For example, MP3 streams can have a speed of 0 (paused),
 or 1 (playing).
 
 Field | Type  | Description
------ | ----- | --------------------
+----- | ----- | -------------------
 cmd   | vint  | 42
 id    | vint  | ID of the resource
-speed | float | 0 = paused, 1 = play
+speed | float | 0 = pause, 1 = play
 
 #### 3.2.12 CMD_RSRC_SEND_EVENT
 
