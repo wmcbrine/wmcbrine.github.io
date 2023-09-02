@@ -78,16 +78,16 @@ device that may be useful to applications.
 After sending a device info event, the device will send an
 EVT_RESOLUTION_INFO event to the application.  The event will contain the
 current resolution, as well as a list of all available resolutions.  See
-Section 4.8 for details on this event.  The initial current resolution for
-the receiver will always be 640x480 PAR 1/1.  Typically, applications will
-select their desired resolution via CMD_RECEIVER_SET_RESOLUTION just after
-receiving this event and before creating any views.
+[Section 4.8] for details on this event.  The initial current resolution
+for the receiver will always be 640x480 PAR 1/1.  Typically, applications
+will select their desired resolution via CMD_RECEIVER_SET_RESOLUTION just
+after receiving this event and before creating any views.
 
 #### 1.3.3 Init Information
 
 After sending a resolution info event, the device will send an
 EVT_INIT_INFO event to the application. The event may contain a memento
-and arguments for the target application. See Section 4.7 for details on
+and arguments for the target application. See [Section 4.7] for details on
 this event.
 
 #### 1.3.4 Application Information
@@ -652,7 +652,7 @@ url          | string | URL of the resource
 content-type | string | content-type hint
 play         | bool   | if true, the resource plays automatically
 
-See Section 2.7 for more information on how streamed resources are
+See [Section 2.7] for more information on how streamed resources are
 handled.
 
 #### 3.2.8 CMD_RSRC_ADD_ANIM
@@ -668,7 +668,7 @@ id       | vint  | ID of the new resource
 duration | vint  | duration of the animation in milliseconds
 ease     | float | -1..0 = ease in, 0 = linear, 0..1 = ease out
 
-See Section 2.6 for more information on animation resources.
+See [Section 2.6] for more information on animation resources.
 
 #### 3.2.9 CMD_RSRC_SET_ACTIVE
 
@@ -780,7 +780,7 @@ Field       | Type   | Description
 cmd         | vint   | 61
 id          | vint   | ID_ROOT_STREAM
 destination | string | URI to which to transition
-type        | vint   | enum (see 3.3.2.1 Transition Types)
+type        | vint   | enum (see [3.3.2.1 Transition Types])
 param       | dict   | parameters for the next (or previous) app
 memento     | vdata  | app state to put on the navigation stack
 
@@ -1263,3 +1263,8 @@ All other trademarks are the properties of their respective owners.
 [Common Public License]: https://opensource.org/license/cpl1-0-txt/
 [William McBrine]: https://wmcbrine.com/
 [hme architecture]: hme-protocol.png
+[3.3.2.1 Transition Types]: #3321-transition-types
+[Section 2.6]: #26-animation
+[Section 2.7]: #27-streams
+[Section 4.7]: #47-evt_init_info
+[Section 4.8]: #48-evt_resolution_info

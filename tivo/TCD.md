@@ -94,7 +94,7 @@ TCM. From the perspective of a single TCM, once identity and service
 availability have been established, the discovery phase is largely
 complete. From then on, other protocols (such as HTTP) can kick in,
 normally as part of accessing and/or providing various services. However,
-see section 3.5 for details about how updates to the discovered
+see [section 3.5] for details about how updates to the discovered
 information occur.
 
 ---
@@ -148,7 +148,7 @@ software through the addition of pairs with new names. As such, care
 should by taken in current software to avoid interpreting this data with
 any assumptions about the particular number, collection, or ordering of
 lines within the packet (with one exception for "tivoconnect", described
-in section 3.1.1).
+in [section 3.1.1]).
 
 TCMs encountering any unrecognized value (including an empty line) should
 always simply ignore it, moving on the to the next line (if any).
@@ -297,7 +297,7 @@ redundant packets from the other, just as with broadcast-based discovery.
 ### 3.5 Update Procedure
 
 When any information about a TCM changes, the affected TCM should switch
-back to high- frequency mode (again for 30 seconds, just as upon startup)
+back to high-frequency mode (again for 30 seconds, just as upon startup)
 broadcasting several packets containing the new information. This will
 allow the changes to propagate quickly to any other TCMs participating in
 broadcast-based discovery. In order to also propagate the changes to those
@@ -316,11 +316,11 @@ connection or not).
 When a new TCM arrives on the local network, its initial high-frequency
 broadcasts will allow other TCMs participating in broadcast-based
 discovery to detect it almost immediately. However, the new TCM itself may
-not immediately detect other TCMs that have already dropped into low-
-frequency mode. To combat this, it is suggested any TCM detecting a new
-TCM temporarily switch back to high-frequency mode itself (the recommended
-duration is again 30 seconds). In this way, the new TCM will to able to
-quickly discover the other TCMs as well.
+not immediately detect other TCMs that have already dropped into
+low-frequency mode. To combat this, it is suggested any TCM detecting a
+new TCM temporarily switch back to high-frequency mode itself (the
+recommended duration is again 30 seconds). In this way, the new TCM will
+to able to quickly discover the other TCMs as well.
 
 ### 4.2 Service Availability
 
@@ -328,7 +328,7 @@ Whenever a service becomes available on a TCM, a corresponding entry
 should be added to the "services" value in any subsequently transmitted
 beacon packets. Likewise, when the service becomes unavailable, the entry
 should be removed. Whenever either occurs, the affected TCM should
-promptly execute the update procedure described in section 3.5.
+promptly execute the update procedure described in [section 3.5].
 
 ---
 *[Original PDF]*
@@ -339,3 +339,5 @@ promptly execute the update procedure described in section 3.5.
 [RFC 793]: https://datatracker.ietf.org/doc/html/rfc793
 [RFC 922]: https://datatracker.ietf.org/doc/html/rfc922
 [Original PDF]: https://github.com/wcbonner/WimTiVoServer/blob/master/TiVoDocs/TiVoConnectDiscovery.pdf
+[section 3.1.1]: #311-tivoconnect
+[section 3.5]: #35-update-procedure
