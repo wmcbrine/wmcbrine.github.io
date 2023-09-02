@@ -144,12 +144,12 @@ The following conventions apply throughout this document.
 
 ### 3.1 Syntax
 
-Italicized text denotes optional portions of syntax or formats that may or
-may not be present in actual data. Curly-brace {enclosed} text denotes a
-specific "placeholder" in which actual data is inserted. Consider the
+_Italicized_ text denotes optional portions of syntax or formats that may
+or may not be present in actual data. Curly-brace {enclosed} text denotes
+a specific "placeholder" in which actual data is inserted. Consider the
 following URL syntax.
 
-    http://www.tivo.com/{document}
+  `http://www.tivo.com`_`/{document}`
 
 Here, the "/{document}" portion is optional and might not appear in an
 actual URL. Further, {document} represents the place within the URL where
