@@ -214,7 +214,7 @@ reasons.
   the correct script or plug-in).
 
 Consider what would happen if the QueryServer command request syntax
-(described in section 4.4.2) didn't contain "/TiVoConnect" and instead
+(described in [section 4.4.2]) didn't contain "/TiVoConnect" and instead
 looked like:
 
     http://{machine}?Command=QueryServer
@@ -228,7 +228,7 @@ behavior from an Apache server running on a Linux box somewhere at TiVo.
 ### 4.2 URL Encoding
 
 Clients should encode all URLs sent to the Server according to the
-relevant standards referenced in section 1.3. Particularly, special care
+relevant standards referenced in [section 1.3]. Particularly, special care
 should be taken to correctly encode any parameters embedded in the URL. If
 the value of a given parameter is itself another URL, note that this has
 the effect of "double-encoding" some characters within that URL. The
@@ -268,7 +268,7 @@ decoder.
 
 Clients should be prepared to handle errors returned from the Server while
 processing any request. The list of possible errors is defined by the
-HTTP/1.1 specification.
+[HTTP/1.1 specification][RFC 2068].
 
 ---
 
@@ -286,8 +286,9 @@ invalid or is not successful.
 #### 4.4.1 Parameters
 
 Every URL submitted to the Server, and specifically all parameter names
-and values within every URL, must be properly escaped according to "RFC
-1738, Uniform Resource Locators (URL)" referenced in section 1.3.
+and values within every URL, must be properly escaped according to "[RFC
+1738], Uniform Resource Locators (URL)" referenced in [section 1.3].
+
 For the sake of readability, the names and values of parameters appearing
 in the examples shown throughout this document have not been escaped.
 
@@ -305,7 +306,7 @@ This command takes no parameters.
 The TiVo DVR does not currently use this command. In the future, this
 command may be supported or even required by the TiVo DVR. Implementation
 of this command is a requirement for future-safe server design.
-The meta-data format is described in section 5.3.
+The meta-data format is described in [section 5.3].
 
 ---
 
@@ -327,7 +328,7 @@ The TiVo DVR does not currently use this command. In the future, this
 command may be supported or even required by the TiVo DVR. Implementation
 of this command is a requirement for future-safe Server design.
 
-For more details about sessions, see section 4.6.
+For more details about sessions, see [section 4.6].
 
 ---
 
@@ -338,7 +339,7 @@ containers available from the Server, and uses the following URL syntax.
 
     http://{machine}/TiVoConnect?Command=QueryContainer
 
-The meta-data format is described in section 5.4.
+The meta-data format is described in [section 5.4].
 
 ##### 4.4.4.1 Container
 
@@ -417,7 +418,7 @@ Possible values for the construction of {order} are:
   containers sort before non-container items. Containers representing
   folders sort before those representing playlists.
 - Title – Items appear alphabetically based on the text contained in their
-  associated Item.Details.Title element (described in section 5.7.1.1).
+  associated Item.Details.Title element (described in [section 5.7.1.1]).
 - CreationDate – Items appear sorted from oldest the newest based on an
   appropriate "creation" date (for example, the capture date of an image).
   If no such date is available, the creation date of the file containing
@@ -425,8 +426,8 @@ Possible values for the construction of {order} are:
 - LastChangeDate – Items appear sorted from most- to least-recently
   modified.
 - Random – Items appear in "randomized" order based on a "seed" supplied
-  by the Client (described in section 4.4.4.4). This value may not be used
-  with any other.
+  by the Client (described in [section 4.4.4.4]). This value may not be
+  used with any other.
 
 Any entry in the list can be prefixed with an exclamation point (!) to
 request sorting in the opposite direction at the corresponding level. For
@@ -476,7 +477,7 @@ This parameter is ignored unless the SortOrder parameter is "Random”.
 
 This optional parameter indicates the maximum number of items that should
 be described in the meta-data, relative to the "anchor" (described in
-section 4.4.4.7).
+[section 4.4.4.7]).
 
     http://{machine}/TiVoConnect?Command=QueryContainer&ItemCount={count}
 
@@ -498,7 +499,7 @@ the anchor) are described.
 This optional parameter supplies the URL of the item that should precede
 (or follow) the first (or last) item described in the meta-data, if
 possible. This item is known as the "anchor" and its exact meaning depends
-on the value of the ItemCount parameter (described in section 4.4.4.4).
+on the value of the ItemCount parameter (described in [section 4.4.4.6]).
 
     http://{machine}/TiVoConnect?Command=QueryContainer&AnchorItem={url}
 
@@ -511,7 +512,7 @@ immediately following (or preceding) the position in the container the
 missing item would have occupied is used as the anchor instead. If this
 position cannot be determined, the AnchorItem parameter is ignored.
 
-Note that {url} must be escaped as described in section 4.4.1.
+Note that {url} must be escaped as described in [section 4.4.1].
 
 ##### 4.4.4.8 AnchorOffset
 
@@ -592,7 +593,7 @@ The full URL for the queried item is passed as a parameter to allow the
 Client to request information about items that don't necessarily reside on
 the same Server processing the QueryItem command.
 
-Note that {url} must be escaped as described in section 4.4.1.
+Note that {url} must be escaped as described in [section 4.4.1].
 
 ---
 
@@ -646,7 +647,7 @@ This optional parameter applies to all command requests.
 
 {type} can be either "text/xml" or "text/html". When "text/xml" is
 specified, the Server's normal meta-data format (described throughout
-section 5) is returned. When "text/html" is specified, a Web page
+[section 5]) is returned. When "text/html" is specified, a Web page
 containing the same information is returned, suitable for display in any
 browser.
 
@@ -695,10 +696,10 @@ standard HTTP 415 (Unsupported Media Type) error is returned.
 If the requested document's general MIME type is "image" (as in
 "image/jpeg"), optional parameters named Width, Height, Rotate, and
 PixelShape apply, when supported. Support for these parameters can be
-determined using the AcceptsParams element (described in section 5.8.1.1)
+determined using the AcceptsParams element (described in [section 5.8.1])
 within the meta-data associated with the URL. If such meta-data is not
 already available, the Client can retrieve it using the QueryItem command
-described in section 4.4.5. Clients can append any combination of these
+described in [section 4.4.5]. Clients can append any combination of these
 parameters when requesting an image needed with a particular size,
 orientation, and/or pixel shape.
 
@@ -772,10 +773,10 @@ pixel system).
 If the requested document's general MIME type is "audio" (as in
 "audio/mpeg"), optional parameters named Seek and Duration apply, when
 supported. Support for these parameters can be determined using the
-AcceptsParams element (described in section 5.8.1.1) within the meta-data
-associated with the URL. If such meta-data is not already available, the
-Client can retrieve it using the QueryItem command described in section
-4.4.5.
+AcceptsParams element (described in [section 5.8.1]) within the
+meta-data associated with the URL. If such meta-data is not already
+available, the Client can retrieve it using the QueryItem command
+described in [section 4.4.5].
 
 ##### 4.5.3.1 Seek & Duration
 
@@ -861,7 +862,7 @@ Each URL that appears in the meta-data can be either "absolute" or
 "relative". An absolute URL always begins with "http://{machine}". A
 relative URL always begins with "/TiVoConnect".
 
-Also, the double-encoding scheme described in section 4.2 applies to all
+Also, the double-encoding scheme described in [section 4.2] applies to all
 URLs that appear in the meta-data. URLs appearing in meta-data will
 additionally be escaped according to the rules for CDATA sections in XML.
 
@@ -990,7 +991,7 @@ that included in the TiVoContainer.Item.Details associated with the
 container in the description of the enclosing container.
 
 Only one TiVoContainer.Details element appears in the meta-data. See
-section 5.7 for a complete description of the Details element.
+[section 5.7] for a complete description of the Details element.
 
 #### 5.4.3 TiVoContainer.ItemStart
 
@@ -1024,14 +1025,14 @@ most basic (type, title, etc.). If the general MIME type of the item is
 command can be used at any time to retrieve the complete set of details
 for any item.
 
-Only one TiVoContainer.Item.Details element appears per Item. See section
-5.7 for a complete description of the Details element.
+Only one TiVoContainer.Item.Details element appears per Item. See
+[section 5.7] for a complete description of the Details element.
 
 #### 5.4.8 Item.Links
 
 This element provides one or more URLs that can be used to retrieve data
 related to the item (for example, audio to accompany an image, or "cover
-artwork" for a container of music). See section 5.8 for a complete
+artwork" for a container of music). See [section 5.8] for a complete
 description of the Links element.
 
 Only one TiVoContainer.Item.Links element appears per Item.
@@ -1055,7 +1056,7 @@ the Item.Details.ContentType element. For example, if a particular
 root-level container's SourceFormat is "x-container/tivo-music", the
 general MIME type of all documents in all sub- containers can be expected
 to be "audio". A reasonable {title} for such a container might be "Music
-on SOME_PC". See section 5.7.1.2 for a complete list of the MIME types
+on SOME_PC". See [section 5.7.1.2] for a complete list of the MIME types
 that can appear in ContentType.
 
 Note that this specification does not preclude the presence of multiple
@@ -1383,7 +1384,7 @@ format.
 
 For any ContentType with a general MIME type of "x-container", the data
 returned is always meta-data using the QueryContainer reply format,
-described in section 5.4.
+described in [section 5.4].
 
 ##### 5.7.1.3 Details.SourceFormat
 
@@ -1640,3 +1641,20 @@ This element contains an URL that can be used to retrieve the image data.
 [RFC 2068]: https://datatracker.ietf.org/doc/html/rfc2068
 [Extensible Markup Language (XML) 1.0]: https://www.w3.org/TR/REC-xml/
 [Original PDF]: https://github.com/wcbonner/WimTiVoServer/blob/master/TiVoDocs/HmoMusicPhotosSpecv1.1.pdf
+[section 1.3]: #13-references
+[section 4.2]: #42-url-encoding
+[section 4.4.2]: #442-queryserver
+[section 4.4.5]: #445-queryitem
+[section 4.4.1]: #441-parameters
+[section 4.4.4.4]: #4444-randomseed
+[section 4.4.4.6]: #4446-itemcount
+[section 4.4.4.7]: #4447-anchoritem
+[section 4.6]: #46-session-identification
+[section 5]: #5-server-reply-formats
+[section 5.3]: #53-queryserver
+[section 5.4]: #54-querycontainer
+[section 5.7]: #57-the-details-element
+[section 5.7.1.1]: #5711-detailstitle
+[section 5.7.1.2]: #5721-detailscontenttype
+[section 5.8]: #58-the-links-element
+[section 5.8.1]: #581-link-nameacceptsparams
