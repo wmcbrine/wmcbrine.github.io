@@ -149,7 +149,7 @@ or may not be present in actual data. Curly-brace {enclosed} text denotes
 a specific "placeholder" in which actual data is inserted. Consider the
 following URL syntax.
 
-  `http://www.tivo.com`_`/{document}`
+  `http://www.tivo.com`_`/{document}`_
 
 Here, the "/{document}" portion is optional and might not appear in an
 actual URL. Further, {document} represents the place within the URL where
