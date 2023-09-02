@@ -144,16 +144,14 @@ The following conventions apply throughout this document.
 
 ### 3.1 Syntax
 
-_Italicized_ text denotes optional portions of syntax or formats that may
-or may not be present in actual data. Curly-brace {enclosed} text denotes
-a specific "placeholder" in which actual data is inserted. Consider the
-following URL syntax.
+Curly-brace {enclosed} text denotes a specific "placeholder" in which
+actual data is inserted. Consider the following URL syntax.
 
-`http://www.tivo.com`_`/{document}`_
+    http://www.tivo.com/{document}
 
-Here, the "/{document}" portion is optional and might not appear in an
-actual URL. Further, {document} represents the place within the URL where
-the optional text can be inserted.
+{document} represents the place within the URL where the optional text can
+be inserted. (The "/{document}" portion is optional and might not appear
+in an actual URL.)
 
 ### 3.2 Hierarchy
 
@@ -1618,12 +1616,10 @@ image data).
 
     <image-link>
       <Url>{url}</Url>
-_
       <AcceptsParams>{flag}</AcceptsParams>
       <RefreshInterval>{msecs}</RefreshInterval>
       <ShowStyle>{style}</ShowStyle>
       <ShowDelay>{msecs}</ShowDelay>
-_
     </image-link>
 
 Typically, {image-link} will be "Content", but future Links elements may
