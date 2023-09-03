@@ -80,7 +80,7 @@ After sending a device info event, the device will send an
 the current resolution, as well as a list of all available resolutions.
 The initial current resolution for the receiver will always be 640x480 PAR
 1/1.  Typically, applications will select their desired resolution via
-CMD_RECEIVER_SET_RESOLUTION just after receiving this event and before
+[CMD_RECEIVER_SET_RESOLUTION] just after receiving this event and before
 creating any views.
 
 #### 1.3.3 Init Information
@@ -228,16 +228,16 @@ displayed in the view as well as any children the view may have.
 A resource is an object that can be displayed in a view. The following
 resource types are defined:
 
-Command             | Resource
-------------------- | -----------------------------------
-CMD_RSRC_ADD_COLOR  | color
-CMD_RSRC_ADD_TTF    | TrueType® font
-CMD_RSRC_ADD_FONT   | font
-CMD_RSRC_ADD_TEXT   | UTF8 text
-CMD_RSRC_ADD_IMAGE  | GIF, PNG, JPEG, or single frame MPG
-CMD_RSRC_ADD_SOUND  | sound effect
-CMD_RSRC_ADD_STREAM | streaming resource
-CMD_RSRC_ADD_ANIM   | animation
+Command               | Resource
+--------------------- | -----------------------------------
+[CMD_RSRC_ADD_COLOR]  | color
+[CMD_RSRC_ADD_TTF]    | TrueType® font
+[CMD_RSRC_ADD_FONT]   | font
+[CMD_RSRC_ADD_TEXT]   | UTF8 text
+[CMD_RSRC_ADD_IMAGE]  | GIF, PNG, JPEG, or single frame MPG
+[CMD_RSRC_ADD_SOUND]  | sound effect
+[CMD_RSRC_ADD_STREAM] | streaming resource
+[CMD_RSRC_ADD_ANIM]   | animation
 
 Once a resource is created it can be assigned to multiple views. For
 example, a background image can be used in many views without reloading it
@@ -260,9 +260,9 @@ Type                  | Value | Description
 [EVT_RESOLUTION_INFO] | 8     | resolution info event
 
 Key events are sent to the active resource. It is possible to make a
-different resource active with CMD_RSRC_SET_ACTIVE. Some stream resources
-are capable of handling some keys directly. For example, an audio stream
-will correctly handle the pause key if it is made active.
+different resource active with [CMD_RSRC_SET_ACTIVE]. Some stream
+resources are capable of handling some keys directly. For example, an
+audio stream will correctly handle the pause key if it is made active.
 
 Idle events are sent to the root application stream.
 
@@ -362,7 +362,7 @@ output format, and will always appear full screen.
 Whenever the current resolution or the set of available resolutions
 changes, an [EVT_RESOLUTION_INFO] event is sent to the application.   Only
 the most recently received resolution info event should be used for future
-CMD_RECEIVER_SET_RESOLUTION commands.
+[CMD_RECEIVER_SET_RESOLUTION] commands.
 
 
 3 HME Commands
@@ -1143,7 +1143,7 @@ idle  | bool | true if the receiver is entering idle
 Receivers may decide to become idle at any time, but generally after some
 long pause in user input.  EVT_IDLE events that indicate the receiver is
 entering the idle state should be acknowledged with an
-CMD_RECEIVER_ACKNOWLEDGE_IDLE message.
+[CMD_RECEIVER_ACKNOWLEDGE_IDLE] message.
 
 ### 4.6 EVT_FONT_INFO
 
@@ -1236,17 +1236,17 @@ available PAR denom.    | vint | Available PAR denominator
 At a minimum, all HME devices can accept the following types of data.
 Devices are not required to accept data that exceeds these limits.
 
-Command                 | Minimum
------------------------ | -----------------------------
-CMD_RSRC_ADD_FONT       | point size cannot exceed 256
-CMD_RSRC_ADD_TTF        | fonts can be up to 1 MB
-CMD_RSRC_ADD_TEXT       | text can be up to 16 KB
-CMD_RSRC_ADD_IMAGE      | up to 512 KB, 1024x768 pixels
-CMD_RSRC_ADD_SOUND      | sounds can be up to 128 KB
-CMD_RSRC_ADD_STREAM     | URL can be up to 1 KB
-CMD_RECEIVER_TRANSITION | URL can be up to 1 KB
-CMD_RSRC_SEND_EVENT     | event can be up to 4 KB
-CMD_RECEIVER_TRANSITION | memento cannot exceed 10KB
+Command                   | Minimum
+------------------------- | -----------------------------
+[CMD_RSRC_ADD_FONT]       | point size cannot exceed 256
+[CMD_RSRC_ADD_TTF]        | fonts can be up to 1 MB
+[CMD_RSRC_ADD_TEXT]       | text can be up to 16 KB
+[CMD_RSRC_ADD_IMAGE]      | up to 512 KB, 1024x768 pixels
+[CMD_RSRC_ADD_SOUND]      | sounds can be up to 128 KB
+[CMD_RSRC_ADD_STREAM]     | URL can be up to 1 KB
+[CMD_RECEIVER_TRANSITION] | URL can be up to 1 KB
+[CMD_RSRC_SEND_EVENT]     | event can be up to 4 KB
+[CMD_RECEIVER_TRANSITION] | memento cannot exceed 10KB
 
 
 6 Miscellaneous
@@ -1264,9 +1264,22 @@ All other trademarks are the properties of their respective owners.
 [Common Public License]: https://opensource.org/license/cpl1-0-txt/
 [William McBrine]: https://wmcbrine.com/
 [hme architecture]: hme-protocol.png
-[3.3.2.1 Transition Types]: #3321-transition-types
 [Section 2.6]: #26-animation
 [Section 2.7]: #27-streams
+[CMD_RSRC_ADD_COLOR]: #321-cmd_rsrc_add_color
+[CMD_RSRC_ADD_TTF]: #322-cmd_rsrc_add_ttf
+[CMD_RSRC_ADD_FONT]: #323-cmd_rsrc_add_font
+[CMD_RSRC_ADD_TEXT]: #324-cmd_rsrc_add_text
+[CMD_RSRC_ADD_IMAGE]: #325-cmd_rsrc_add_image
+[CMD_RSRC_ADD_SOUND]: #326-cmd_rsrc_add_sound
+[CMD_RSRC_ADD_STREAM]: #327-cmd_rsrc_add_stream
+[CMD_RSRC_ADD_ANIM]: #328-cmd_rsrc_add_anim
+[CMD_RSRC_SET_ACTIVE]: #329-cmd_rsrc_set_active
+[CMD_RSRC_SEND_EVENT]: #3212-cmd_rsrc_send_event
+[CMD_RECEIVER_ACKNOWLEDGE_IDLE]: #331-cmd_receiver_acknowledge_idle
+[CMD_RECEIVER_TRANSITION]: #332-cmd_receiver_transition
+[3.3.2.1 Transition Types]: #3321-transition-types
+[CMD_RECEIVER_SET_RESOLUTION]: #333-cmd_receiver_set_resolution
 [EVT_DEVICE_INFO]: #41-evt_device_info
 [EVT_APP_INFO]: #42-evt_app_info
 [EVT_RSRC_INFO]: #43-evt_rsrc_info
