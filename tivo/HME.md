@@ -69,32 +69,32 @@ can continue interpreting the commands or events as before.
 
 #### 1.3.1 Device Information
 
-The device will send EVT_DEVICE_INFO to the application immediately
+The device will send [EVT_DEVICE_INFO] to the application immediately
 following a successful handshake. The event contains information about the
 device that may be useful to applications.
 
 #### 1.3.2 Resolution Information
 
 After sending a device info event, the device will send an
-EVT_RESOLUTION_INFO event to the application.  The event will contain the
-current resolution, as well as a list of all available resolutions.  See
-[Section 4.8] for details on this event.  The initial current resolution
-for the receiver will always be 640x480 PAR 1/1.  Typically, applications
-will select their desired resolution via CMD_RECEIVER_SET_RESOLUTION just
-after receiving this event and before creating any views.
+[EVT_RESOLUTION_INFO] event to the application.  The event will contain
+the current resolution, as well as a list of all available resolutions.
+The initial current resolution for the receiver will always be 640x480 PAR
+1/1.  Typically, applications will select their desired resolution via
+CMD_RECEIVER_SET_RESOLUTION just after receiving this event and before
+creating any views.
 
 #### 1.3.3 Init Information
 
 After sending a resolution info event, the device will send an
-EVT_INIT_INFO event to the application. The event may contain a memento
-and arguments for the target application. See [Section 4.7] for details on
-this event.
+[EVT_INIT_INFO] event to the application. The event may contain a memento
+and arguments for the target application.
 
 #### 1.3.4 Application Information
 
 Finally after the handshake, the device info event, the resolution info
 event and the init info event have been sent, the device sends an
-EVT_APP_INFO event telling the application that it is the active resource.
+[EVT_APP_INFO] event telling the application that it is the active
+resource.
 
 ### 1.4 Data Types
 
@@ -246,17 +246,18 @@ again.
 ### 2.4 Events
 
 Events are sent to applications in response to user input and status
-changes. There are 4 types of event that are used:
+changes.
 
-Type            | Value | Description
---------------- | ----- | --------------------------------
-EVT_DEVICE_INFO | 1     | device information
-EVT_APP_INFO    | 2     | application status change
-EVT_RSRC_INFO   | 3     | resource status change
-EVT_KEY         | 4     | remote control event
-EVT_IDLE        | 5     | receiver idle state change event
-EVT_FONT_INFO   | 6     | font info event
-EVT_INIT_INFO   | 7     | init info event
+Type                  | Value | Description
+--------------------- | ----- | --------------------------------
+[EVT_DEVICE_INFO]     | 1     | device information
+[EVT_APP_INFO]        | 2     | application status change
+[EVT_RSRC_INFO]       | 3     | resource status change
+[EVT_KEY]             | 4     | remote control event
+[EVT_IDLE]            | 5     | receiver idle state change event
+[EVT_FONT_INFO]       | 6     | font info event
+[EVT_INIT_INFO]       | 7     | init info event
+[EVT_RESOLUTION_INFO] | 8     | resolution info event
 
 Key events are sent to the active resource. It is possible to make a
 different resource active with CMD_RSRC_SET_ACTIVE. Some stream resources
@@ -359,7 +360,7 @@ that MPEG video background still images will scale according to the video
 output format, and will always appear full screen.
 
 Whenever the current resolution or the set of available resolutions
-changes, an EVT_RESOLUTION_INFO event is sent to the application.   Only
+changes, an [EVT_RESOLUTION_INFO] event is sent to the application.   Only
 the most recently received resolution info event should be used for future
 CMD_RECEIVER_SET_RESOLUTION commands.
 
@@ -753,7 +754,7 @@ that operate on the receiver.
 #### 3.3.1 CMD_RECEIVER_ACKNOWLEDGE_IDLE
 
 Notifies the receiver that the application acknowledged the receipt of the
-EVT_IDLE event.
+[EVT_IDLE] event.
 
 Field   | Type | Description
 ------- | ---- | --------------
@@ -765,8 +766,8 @@ handled | bool | see below
 screensaving. If false, the receiver will take action to prevent burn-in.
 
 The CMD_RECEIVER_ACKNOWLEDGE_IDLE message should only be sent to the
-receiver in response to an EVT_IDLE message that indicates the receiver is
-now idle.
+receiver in response to an [EVT_IDLE] message that indicates the receiver
+is now idle.
 
 #### 3.3.2 CMD_RECEIVER_TRANSITION
 
@@ -787,8 +788,8 @@ memento     | vdata  | app state to put on the navigation stack
 If this command succeeds the current application will exit and the
 application at the destination URI will be started with the given
 parameters. If this command fails the receiver will send an app info event
-(EVT_APP_INFO) indicating failure to transition. Below is a table of error
-codes which will be included in the case of a transition failure:
+([EVT_APP_INFO]) indicating failure to transition. Below is a table of
+error codes which will be included in the case of a transition failure:
 
 Error Code                   | Condition
 ---------------------------- | ------------------------------------------
@@ -834,8 +835,8 @@ transition may fail.
 Sets the receiver resolution to the specified values.  In order to be
 valid, the resolution must have been obtained from one of the valid
 resolution formats provided in the most recently received
-EVT_RESOLUTION_INFO events.  Requesting an unsupported resolution will
-result in an EVT_APP_INFO error event.
+[EVT_RESOLUTION_INFO] events.  Requesting an unsupported resolution will
+result in an [EVT_APP_INFO] error event.
 
 Field           | Type | Description
 --------------- | ---- | ------------------------------------
@@ -1266,5 +1267,11 @@ All other trademarks are the properties of their respective owners.
 [3.3.2.1 Transition Types]: #3321-transition-types
 [Section 2.6]: #26-animation
 [Section 2.7]: #27-streams
-[Section 4.7]: #47-evt_init_info
-[Section 4.8]: #48-evt_resolution_info
+[EVT_DEVICE_INFO]: #41-evt_device_info
+[EVT_APP_INFO]: #42-evt_app_info
+[EVT_RSRC_INFO]: #43-evt_rsrc_info
+[EVT_KEY]: #44-evt_key
+[EVT_IDLE]: #45-evt_idle
+[EVT_FONT_INFO]: #46-evt_font_info
+[EVT_INIT_INFO]: #47-evt_init_info
+[EVT_RESOLUTION_INFO]: #48-evt_resolution_info
