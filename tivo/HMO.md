@@ -149,9 +149,9 @@ actual data is inserted. Consider the following URL syntax.
 
     http://www.tivo.com/{document}
 
-{document} represents the place within the URL where the optional text can
-be inserted. (The "/{document}" portion is optional and might not appear
-in an actual URL.)
+Here, the "/{document}" portion is optional and might not appear in an
+actual URL. {document} represents the place within the URL where the
+optional text can be inserted.
 
 ### 3.2 Hierarchy
 
