@@ -279,6 +279,8 @@ lines...
 changes to be made to them, and create the proper TODOOR.EXT lines to
 alter the configuration.
 
+---
+
 
 TODOOR.EXT
 ----------
@@ -402,6 +404,8 @@ list, rather added to the list of keywords. To remove an entry, precede
 it with a minus sign (-), so an example to remove a keyword "bob" from
 the list of keywords would be "KEYWORD -bob"
 
+---
+
 
 Additional CONTROLTYPE= settings (DOOR.ID file)
 -----------------------------------------------
@@ -413,6 +417,8 @@ Additional CONTROLTYPE= settings (DOOR.ID file)
     CONTROLTYPE=ALLOWFILES       -> if the door allows files to be uploaded
     CONTROLTYPE=ALLOWREQUESTS    -> if the door allows files to be requested
     CONTROLTYPE=MAXREQUESTS      -> max number of daily file requests
+
+---
 
 
 History
