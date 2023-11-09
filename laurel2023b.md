@@ -1,5 +1,5 @@
-Official Laurel Election Results as of 2023-11-07
-=================================================
+Official Election Results
+=========================
 
 City of Laurel Mayor (1)  | Votes
 ------------------------- | -----:
