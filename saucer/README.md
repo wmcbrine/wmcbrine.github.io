@@ -27,14 +27,14 @@ The version here isn't the original. I had a variety of undated versions
 bits and cleaned it up a little. (It could still use a little more
 cleaning.) But it looks and plays the same.
 
-{% gist 9471b25910bd7fe0caa21a0f1afab34e %}
-
 ![Me and CoCo](meandcoco.jpg)
 
 The author and the original development machine at a math fair. I didn't
 write the game for this, but decided to enter it when I heard about it.
 Note the flowchart (done after the fact) to make it more mathy. Saucer got
 third place.
+
+{% gist 9471b25910bd7fe0caa21a0f1afab34e %}
 
 ---
 *[Home](https://wmcbrine.com/)*
