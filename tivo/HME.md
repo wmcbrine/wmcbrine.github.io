@@ -1263,7 +1263,7 @@ All other trademarks are the properties of their respective owners.
 [TiVo, Inc.]: https://www.tivo.com/
 [Common Public License]: https://opensource.org/license/cpl1-0-txt/
 [William McBrine]: https://wmcbrine.com/
-[hme architecture]: hme-protocol.png
+[hme architecture]: hme-protocol.webp
 [Section 2.6]: #26-animation
 [Section 2.7]: #27-streams
 [CMD_RSRC_ADD_COLOR]: #321-cmd_rsrc_add_color

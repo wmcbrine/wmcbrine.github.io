@@ -69,9 +69,9 @@ version (ppmtozx).
 
 [NetPBM]: http://netpbm.sourceforge.net/
 [Saucer]: https://wmcbrine.com/saucer/
-[Kate]: kate.png
+[Kate]: kate.webp
 [kate.rle]: kate.rle
 [article in Time Designs]: https://www.timexsinclair.com/article/run-length-encoded-graphics/
-[2068]: self2068.png
+[2068]: self2068.webp
 [ibiblio]: https://www.ibiblio.org/pub/Linux/system/emulators/zx/!INDEX.html
 [Home]: https://wmcbrine.com/

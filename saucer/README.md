@@ -1,7 +1,7 @@
 Saucer: A Space Duel
 ====================
 
-![Screenshot](saucer.png)
+![Screenshot](saucer.webp)
 
 Originally written over a weekend when I was in seventh grade. Saucer
 needs a TRS-80 Color Computer with Extended BASIC, at least 16K of RAM,

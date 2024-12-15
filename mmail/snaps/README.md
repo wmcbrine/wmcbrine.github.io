@@ -7,35 +7,35 @@ Default color scheme, MS-DOS version
 
 From DOSEmu in X.
 
-| ![](mm_packet.png) |
+| ![](mm_packet.webp) |
 | --- |
 | Startup screen -- packet list |
 
-| ![](mm_filter.png) |
+| ![](mm_filter.webp) |
 | --- |
 | With a filter, in expert mode |
 
-| ![](mm_areas.png) |
+| ![](mm_areas.webp) |
 | --- |
 | Area list, Blue Wave |
 
-| ![](mm_areas2.png) |
+| ![](mm_areas2.webp) |
 | --- |
 | Area list, QWK |
 
-| ![](mm_llist.png) |
+| ![](mm_llist.webp) |
 | --- |
 | Letter list, BBS |
 
-| ![](mm_llist2.png) |
+| ![](mm_llist2.webp) |
 | --- |
 | Letter list, Usenet |
 
-| ![](mm_letter.png) |
+| ![](mm_letter.webp) |
 | --- |
 | Letter window |
 
-| ![](mm_ansi.png) |
+| ![](mm_ansi.webp) |
 | --- |
 | ANSI viewer |
 
@@ -48,11 +48,11 @@ Aqua color scheme, Linux version, in xterm
 An example of a light-background scheme. This xterm was started with "-fn
 vga -tn linux" -- useful for viewing ANSI pics.
 
-| ![](aqua_packet.png) |
+| ![](aqua_packet.webp) |
 | --- |
 | Startup screen -- expert mode |
 
-| ![](aqua_letter.png) |
+| ![](aqua_letter.webp) |
 | --- |
 | Letter window |
 
@@ -68,14 +68,14 @@ color.) This can be used to good effect with a light-background scheme like
 aqua.col. Here I'm using the standard iso-8859-1 character set, 10x20
 font.
 
-![](s_marble_packet.png) | ![](s_marble_letter.png)
+![](s_marble_packet.webp) | ![](s_marble_letter.webp)
 --- | ---
 Startup screen -- expert mode | Letter window
 
 The standard color scheme, but with the background set to blue and made
 transparent.
 
-![](s_trans_areas.jpg) | ![](s_trans_letter.jpg)
+![](s_trans_areas.webp) | ![](s_trans_letter.webp)
 --- | ---
 Area list -- expert mode | Letter window
 
@@ -93,7 +93,7 @@ you can sometimes edit that to fix the problem. In other cases, changing the
 font can help. Anyway, the "lowest common denominator" MultiMail display looks
 something like this (contributed by Alan Zisman):
 
-| ![](darwin.jpg) |
+| ![](darwin.webp) |
 | --- |
 | MultiMail running under Macintosh OS X, aka Darwin |
 
@@ -103,7 +103,7 @@ characters now work. (The background is still made up of octothorpes,
 but that's the same as in xterm without the "-fn vga -tn linux". I
 should probably work on that.)
 
-| ![](darwin2.png) |
+| ![](darwin2.webp) |
 | --- |
 | With OS X 10.3.9 |
 

@@ -14,7 +14,7 @@ TiVo products.
 Network Remote Control for TiVo
 -------------------------------
 
-![](remote.jpg)
+![](remote.webp)
 
 A GUI, network-based virtual TiVo remote control for your computer, for
 Series 3 and up. Unlike the full-featured iOS and Android apps provided
@@ -154,7 +154,7 @@ Bernardis]' "Jukebox" and "pyTivo Video Manager".
 
 ### HME/VLC video streamer
 
-![](hmevlc.png)
+![](hmevlc.webp)
 
 The first third-party HME app to take advantage of the undocumented
 video streaming capability found in Series 3 and later TiVos, as seen
@@ -180,7 +180,7 @@ HME/VLC, with no replacements available.
 
 ### Reversi
 
-![](reversi-board.png)
+![](reversi-board.webp)
 
 The classic board game -- you could play against the computer, or
 against another human player, if one was online. Written using HME for
@@ -231,7 +231,7 @@ complicating hosting.)
 [appstore]: https://itunes.apple.com/us/app/network-remote-for-tivo/id914331224?ls=1&amp;mt=12
 [Demo video]: https://youtube.com/watch?v=OSAPzpQ9j6I
 
-[your old PDA]: remote-wince.jpg
+[your old PDA]: remote-wince.webp
 
 [LGPL 2.1]: https://www.gnu.org/licenses/lgpl-2.1.html
 [Common Public License]: https://en.wikipedia.org/wiki/Common_Public_License
