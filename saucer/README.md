@@ -30,7 +30,7 @@ cleaning.) But it looks and plays the same.
 ![Me and CoCo](meandcoco.jpg)
 
 The author and the original development machine at a math fair. I didn't
-write the game for this, but decided to enter it when I heard about it.
+write the game for the fair, but decided to enter when I heard about it.
 Note the flowchart (done after the fact) to make it more mathy. Saucer got
 third place.
 
