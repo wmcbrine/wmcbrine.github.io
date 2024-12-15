@@ -27,7 +27,7 @@ The version here isn't the original. I had a variety of undated versions
 bits and cleaned it up a little. (It could still use a little more
 cleaning.) But it looks and plays the same.
 
-![Me and CoCo](meandcoco.jpg)
+![Me and CoCo](meandcoco.webp)
 
 The author and the original development machine at a math fair. I didn't
 write the game for the fair, but decided to enter when I heard about it.
