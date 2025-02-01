@@ -5,9 +5,9 @@ Saucer: A Space Duel
 
 Originally written over a weekend when I was in seventh grade. Saucer
 needs a TRS-80 Color Computer with Extended BASIC, at least 16K of RAM,
-and two (!) joysticks. It probably can't be played in an emulator,
-because of the control system. (The screenshot here is a mock-up,
-accurate but enlarged.)
+and two joysticks, for a single human player. It probably can't be played
+in an emulator, because of the control system. (The screenshot here is a
+mock-up, accurate but enlarged.)
 
 Your enemy is a flying saucer, similar to your own. It fires back only
 when fired upon, but it also moves, randomly, and you have to move out
