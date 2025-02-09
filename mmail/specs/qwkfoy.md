@@ -14,7 +14,7 @@ format, he only gave very sketchy details as to the specifics of the
 format. This is quite understandable as he is a very busy person. That
 is the reason why I'm writing this article.
 
-In it's most basic form, a QWK file is simply a compressed file. In
+In its most basic form, a QWK file is simply a compressed file. In
 almost all cases, the QWK file has been compressed with PKZIP from
 PKWARE. With most mail doors, you can usually choose your favorite
 archiver so your QWK file may not be in PKZIP format.
