@@ -387,11 +387,11 @@ start in record 2. The header block is laid out as follows:
 The status flags are:
 
  Flag    | Description
- --------|:------------------------------------------------------
+ --------|:---------------------------------
  ` `     | public, unread
  `-`     | public, read
- `*`     | private, read by someone but not by intended recipient
- `+`     | private, read by official recipient
+ `*`     | private, unread
+ `+`     | private, read
  `~`     | comment to Sysop, unread
  `` ` `` | comment to Sysop, read
  `%`     | sender password protected, unread
