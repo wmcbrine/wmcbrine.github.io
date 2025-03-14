@@ -5,10 +5,10 @@ Three traditional BBS-circulated documents about the QWK format, based on
 reverse engineering; the official spec, excerpted from the documentation
 of 1stReader; and the official QWKE specification, all re-formatted with
 Markdown. Although I consider some of this material to be inaccurate,
-I've tried to avoid editing for content, except to remove references to
+I've mostly avoided editing for content, except to remove references to
 web sites, boards and addresses that are no longer working.
 
-Markdown by [William McBrine](https://wmcbrine.com/), January 2022
+Markdown by [William McBrine](https://wmcbrine.com/), Jan. 2022 - Mar. 2025
 
 - [The Mysterious QWK-File Format](qwkfoy.md) - 1991, by Jeffery Foy
 - [QWK mail format information](qwkmay.md) - 1991, by Mark May
