@@ -171,29 +171,24 @@ Format for CONTROL.DAT
 
 CONTROL.DAT is a text file with the following format:
 
-    Line#  Description
-    -----  -----------
-      1    Name of the bulletin board system (40 characters)
-      2    Blank
-      3    Bulletin board's telephone number
-      4    Name of the sysop
-      5    Qmail Door serial number and QWK ID.  These two fields are
-           separated by a comma.  The QWK ID is always stored in UPPER
-           case letters.
-      6    Date and time the QWK mail packet was created, separated by
-           commas.
-      7    User's login name
-      8    Name of Qmail DeLuxe² menu file.  This file was displayed to
-           users as a backdrop for the menu. 1stReader ignores this entry.
-      9    Normally zero.  If this entry contains "-1" then the user is
-           also the sysop.  This grants no special privs in our Qmail Door.
-           The value is only present for the QWK reader's needs (if any).
-     10    Usually zero, but if used it stores the total number of messages
-           in the QWK mail packet.
-     11    Number of conferences stored in CONTROL.DAT
+ Line# | Description
+ -----:|:-------------------------------------------------------------
+  1    | Name of the bulletin board system (40 characters)
+  2    | Blank
+  3    | Bulletin board's telephone number
+  4    | Name of the sysop
+  5    | Qmail Door serial number and QWK ID, separated by a comma
+  6    | Date and time the packet was created, separated by a comma
+  7    | User's login name
+  8    | Name of Qmail DeLuxe² menu file (unused by 1stReader)
+  9    | Normally zero; "-1" if user is also the sysop
+ 10    | Usually zero, but if used, the total number of msgs in packet
+ 11    | Number of conferences stored in CONTROL.DAT
+
+The QWK ID is always stored in UPPER case letters.
 
 The next lines in CONTROL.DAT store the conference number on the first
-line followed by the conference name on the next line.  This is repeated
+line followed by the conference name on the next line. This is repeated
 for as many conferences as stored in CONTROL.DAT.
 
 After the name of the last conference in the list in CONTROL.DAT the
@@ -367,10 +362,12 @@ following format (one line per entry):
 
     [conference #],[message #],[filename1],[filename2]
 
-    [conference #]      Conference where the request came from
-    [message #]         Message number where request came from
-    [filename1]         File as named inside the QWK mail packet
-    [filename2]         Original filename as stored on the BBS
+ Field                | Description
+ :--------------------|:----------------------------------------
+ `[conference #]`     | Conference where the request came from
+ `[message #]`        | Message number where request came from
+ `[filename1]`        | File as named inside the QWK mail packet
+ `[filename2]`        | Original filename as stored on the BBS
 
 
 The REP format
