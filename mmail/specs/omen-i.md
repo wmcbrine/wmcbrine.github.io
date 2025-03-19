@@ -5,7 +5,7 @@ Offline Message Environment
 (C) 1991 - 1995 by Omsoft  
 Rev. I
 
-Markdown by [William McBrine] on 18 January 2022
+Markdown by [William McBrine] on 18 January 2022, 19 March 2025
 
 Offline Message Environment system (OMEN) is designed to be used with
 any Bulletin Board Systems that have the capability to either pack
@@ -28,7 +28,7 @@ Omsoft and hereby declared Public Domain.
 
 
 OMEN in a BBS - Overview
-========================
+------------------------
 
 OMEN can be implemented into Bulletin Board Systems that comply with the
 following rules:
@@ -61,12 +61,12 @@ on which the user has rights to read or write messages.
 
 Optional files that can be added to the package are:
 
-```
-NFILExy.BBS     Listing of new files
-BULLETxy.BBS    System bulletin
-BNAMESxy.BBS    Names of the boards in system
-INFOxy.BBS      Additional information for the reader
-```
+ File           | Description
+ :--------------|:-------------------------------------
+ `NFILExy.BBS`  | Listing of new files
+ `BULLETxy.BBS` | System bulletin
+ `BNAMESxy.BBS` | Names of the boards in system
+ `INFOxy.BBS`   | Additional information for the reader
 
 All the files should be compressed with some compressing utility, for
 instance PKZIP, which would result in OMENxy.ZIP. This will be the file
@@ -94,8 +94,7 @@ follow. Byte is an 8-bit unsigned character and word is a 16-bit
 unsigned integer.
 
 
-SYSTEMxy.BBS:
--------------
+### SYSTEMxy.BBS
 
 ```
   SystemName:    String[40];
@@ -111,26 +110,25 @@ BrdRecord:
 Due to compatibility reasons the high byte of the board number is
 indicated in the third byte of the BrdRecord.
 
-```
-BrdStatus:
+#### BrdStatus
 
-  Bit 0:  Write rigths
-  Bit 1:  SysOp rights
-  Bit 2:  Private board
-  Bit 3:  Public board
-  Bit 4:  NetMail board
-  Bit 5:  Use of Alias allowed on board
-  Bit 6:  Board selected by user
-  Bit 7:  Reserved for future use
-```
+ Bit | Description
+ ---:|:-----------------------------
+ 0   | Write rigths
+ 1   | SysOp rights
+ 2   | Private board
+ 3   | Public board
+ 4   | NetMail board
+ 5   | Use of Alias allowed on board
+ 6   | Board selected by user
+ 7   | Reserved for future use
 
 Bit 5 is used only, if the alias is user selectable. If the alias is
 fixed by the software, the board should be flagged as a normal board and
 the fixed alias used instead of the real name.
 
 
-NEWMSGxy.TXT:
--------------
+### NEWMSGxy.TXT
 
 ```
   MsgBase:       Array[0..?] of MsgRecord;
@@ -214,22 +212,19 @@ not contain any other characters below ASCII 32 except TAB, LF and CR
 (09, 10, 13).
 
 
-NFILExy.BBS:
-------------
+### NFILExy.BBS
 
 This file should contain the names, sizes and descriptions of the new
 files in the system. The file must be pure ASCII. This file is optional.
 
 
-BULLETxy.BBS:
--------------
+### BULLETxy.BBS
 
 This file contains any bulletins the operator of the system wants the
 users to read. The file must be pure ASCII. This file is optional.
 
 
-BNAMESxy.BBS:
--------------
+### BNAMESxy.BBS
 
 This file contains the names of each board reprisented in the SYSTEMxy
 file. The names are presented with the number of each board followed by
@@ -238,11 +233,9 @@ presented in the same order as they appear in the SYSTEMxy file.
 
 Example:
 
-```
-1:General
-2:Private Mail
-3:SysOp Only
-```
+    1:General
+    2:Private Mail
+    3:SysOp Only
 
 Each name can be up to 80 characters long. NOTE: Some of the reader
 software may not support longer than 16 characters long board names.
@@ -250,47 +243,32 @@ This file is optional and needed only in systems with longer board names
 than 16 characters.
 
 
-INFOxy.BBS:
------------
+### INFOxy.BBS
 
 This file contains additional information for the reader software. The
 file must be pure ASCII. The overall format of the file is:
 
-`<label>:<option>`
+    <label>:<option>
 
 The following labels have been currently defined:
 
-```
-Labels:         Options:        Description:
+ Label:Option                | Description
+ :---------------------------|:----------------------------------------------
+ `ORIGIN:<name>`             | The program that created the messagefile
+ `SYSOP:<name>`              | Name of the system operator
+ `C_SET:{IBM or ISO or SF7}` | Preferred character set in the system
+ `MSGNUM:{BOARD or BASE}`    | Msgs numbered board-by-board or whole base
+ `CHAINS:{ON or OFF}`        | Msgs packed by reply chain (ON) or numerically
+ `SELECT:{ON or OFF}`        | Whether offline board selection is supported
 
-ORIGIN          -               Name of the program that created the
-                                messagefile
-
-SYSOP           -               Name of the system operator
-
-C_SET           {IBM|ISO|SF7}   Preferred character set in the system
-
-MSGNUM          {BOARD|BASE}    Indicates whether the system
-                                numbers the messages board by board
-                                or the whole base in one sequence
-
-CHAINS          {ON|OFF}        Indicates whether the messages in
-                                the file are packed following the
-                                reply chain (ON) or in numerical
-                                order (OFF).
-
-SELECT          {ON|OFF}        Indicates whether the system supports
-                                offline board selections.
-```
-
-This file is optional and all of the reader software do not use the
+This file is optional and not all of the reader software use the
 information provided in this file.
 
 ---------------------------------------------------------------------
 
 
 OMEN at home - Overview
-=======================
+-----------------------
 
 The offline OMEN can be implemented into the terminal software or be
 used as a separate program. The program should provide an interface for
@@ -317,10 +295,10 @@ Extra Space bytes should be set to zero.
 
 Optional files that can be added to the package are:
 
-```
-SKIPxy.PST      Unwanted subjects
-TRASHxy.PST     Names of unwanted writers
-```
+ File           | Description
+ :--------------|:-------------------------------------
+ `SKIPxy.PST`   | Unwanted subjects
+ `TRASHxy.PST`  | Names of unwanted writers
 
 The HEADERxy.BBS, optional SKIPxy.PST and TRASHxy.PST files, and all of
 the MSGxynn.TXT files must be compressed with PKZIP or alike to a file
@@ -329,8 +307,8 @@ the BBS-OMEN.
 
 A structure of the files follows:
 
-HEADERxy.BBS:
-=============
+
+### HEADERxy.BBS
 
 ```
   Array[1..?] of ActionRecord;
@@ -353,30 +331,33 @@ ActionRecord:
   MoveHighBoard: Byte;           /* High byte of MoveBoard, See below! */
   MsgHighNumber: word;           /* High 16-bits of the message number */
   ExtraSpace:    Array[1..4] of Byte;
-
-Command:
-
-  Bit 0:  Save Message
-  Bit 1:  Delete Message
-  Bit 2:  Toggle Private/Public
-  Bit 3:  Move message
-  Bit 4:  Make message private
-  Bit 5:  Alias used with message
-  Bit 6 - 7:  Reserved for future use
 ```
+
+#### Command
+
+ Bit | Description
+ ---:|:-----------------------
+ 0   | Save Message
+ 1   | Delete Message
+ 2   | Toggle Private/Public
+ 3   | Move message
+ 4   | Make message private
+ 5   | Alias used with message
+ 6-7 | Reserved for future use
 
 Only bits 0 & 4 and 3 & 4 can be combined allowing the message to be
 made private when written on a board which is both for public and
 private messages as well as when a message is moved to another board. 0
 & 5 is also allowed when message is to be saved with an alias.
 
-```
-NetAttrib:
 
-  Bit 0:  Kill after sent
-  Bit 1:  CrashMail
-  Bit 2 - 7:  Reserved for future use
-```
+#### NetAttrib
+
+ Bit | Description
+ ---:|:-----------------------
+ 0   | Kill after sent
+ 1   | CrashMail
+ 2-7 | Reserved for future use
 
 Information placed in the header block for each operation:
 
@@ -420,20 +401,16 @@ NOTE! If either CurBoard of MoveBoard exceedes 255, high bytes are
 placed in the CurHighBoard and MoveHighBoard fields.
 
 
-MSGxynn.TXT
------------
+### MSGxynn.TXT
 
 Each file contains the ASCII text of a message. The number nn is the
 number of the header block relative to the message, starting from zero
 and padded with a leading zero for the first 10 messages.
 
 
-SKIPxy.PST
-----------
+### SKIPxy.PST
 
-```
-  Array[1..?] of Subject;
-```
+    Array[1..?] of Subject;
 
 This file contains the subjects that the user does not wish to be packed
 in the next message file. The subjects must be in the string[72] format
@@ -445,8 +422,7 @@ NOTE: All the BBS-OMENs may not support the message skipping by
 subjects.
 
 
-TRASHxy.PST
------------
+### TRASHxy.PST
 
 This file contains the names of the users whose messages are not wanted
 to be packed in the message file. The names must be in pure ASCII
@@ -457,8 +433,7 @@ uploaded to the BBS-OMEN immediately before message packing.
 NOTE: All the BBS-OMENs may not support message skipping by writers.
 
 
-WORDSKIP.PST
-------------
+### WORDSKIP.PST
 
 This file contains keywords, one word or string on a line followed by
 CR+LF. Messages with subjects containing any of these keywords are not
@@ -467,8 +442,7 @@ packed in the message file.
 NOTE: All the BBS-OMENs may not support message skipping by keywords.
 
 
-SELECTxy.CNF
-------------
+### SELECTxy.CNF
 
 This file contains the numbers of boards user wants to select. This file
 is pure ASCII and each board number is on its own line followed by
