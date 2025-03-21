@@ -33,11 +33,11 @@ OMEN in a BBS - Overview
 OMEN can be implemented into Bulletin Board Systems that comply with the
 following rules:
 
-1. Message boards are numbered from 0 up to max. 65535
-2. Board names are up to max. 80 characters long.
-3. Messages are numbered from 1 up to max. 4294967295.
-4. User names are max. 35 characters long.
-5. Message subjects are max. 72 characters long.
+ 1. Message boards are numbered from 0 up to max. 65535
+ 2. Board names are up to max. 80 characters long.
+ 3. Messages are numbered from 1 up to max. 4294967295.
+ 4. User names are max. 35 characters long.
+ 5. Message subjects are max. 72 characters long.
 
 Longer board names, user names and subjects must be truncated to the
 mentioned lengths. Software compatible with earlier revisions of the
