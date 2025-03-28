@@ -48,14 +48,14 @@ color.) This can be used to good effect with a light-background scheme
 like aqua.col. Here I'm using the standard iso-8859-1 character set, 10x20
 font.
 
-![](s_marble_packet.webp)     | ![](s_marble_letter.webp)
+![](marble_packet.webp)       | ![](marble_letter.webp)
 :----------------------------:|:------------------------:
 Startup screen -- expert mode | Letter window
 
 The standard color scheme, but with the background set to blue and made
 transparent.
 
-![](s_trans_areas.webp)  | ![](s_trans_letter.webp)
+![](trans_areas.webp)    | ![](trans_letter.webp)
 :-----------------------:|:-----------------------:
 Area list -- expert mode | Letter window
 
@@ -74,18 +74,15 @@ cases, changing the font can help. Anyway, the "lowest common denominator"
 MultiMail display looks something like this (contributed by Alan Zisman):
 
 | ![](darwin.webp) |
-|:---:|
-| MultiMail running under Macintosh OS X, aka Darwin |
+| :---: |
+| Older Macintosh OS X |
 
-I'm happy to report that performance under Mac OS X's Terminal has
-improved since that snapshot was taken; colors and box-drawing characters
-now work. (The background is still made up of octothorpes, but that's the
-same as in xterm without the "-fn vga -tn linux". I should probably work
-on that.)
+I'm happy to report that performance under macOS' Terminal has
+improved since that snapshot was taken.
 
-| ![](darwin2.webp) |
-|:---:|
-| With OS X 10.3.9 |
+| ![](darwin3.webp) |
+| :---: |
+| With macOS 15.3.2 |
 
 ---
 *[MultiMail](https://wmcbrine.com/MultiMail/)*
