@@ -114,7 +114,7 @@ indicated in the third byte of the BrdRecord.
 
  Bit | Description
  ---:|:-----------------------------
- 0   | Write rigths
+ 0   | Write rights
  1   | SysOp rights
  2   | Private board
  3   | Public board
