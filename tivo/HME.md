@@ -22,9 +22,9 @@ Typically a device will initiate a connection after discovering an
 application using Rendezvous. Once the connection is established the
 application sends an 8-byte handshake message to the device:
 
-Magic Number        | Reserved  | Major Version | Minor Version
-------------------- | --------- | ------------- | -------------
-0x53 0x42 0x54 0x56 | 0x00 0x00 | 0             | 44
+ Magic Number        | Reserved  | Major Version | Minor Version
+ :-------------------|:----------|--------------:|--------------:
+ 0x53 0x42 0x54 0x56 | 0x00 0x00 | 0             | 44
 
 When the device receives the handshake it decides whether it supports the
 protocol version reported by the client. If it does, it sends its own
@@ -45,14 +45,14 @@ event.
 
 Here is an example of how a command or event sequence could be encoded:
 
-Description | Length    | Data
------------ | --------- | -----------------
-Chunk 1     | 0x00 0x08 | 8 bytes of data
-Chunk 2     | 0x01 0x00 | 256 bytes of data
-Terminator  | 0x00 0x00 | -
-Chunk 1     | 0x00 0x12 | 18 bytes of data
-Terminator  | 0x00 0x00 | -
-...         |           |
+ Description | Length    | Data
+ :-----------|:----------|:-----------------
+ Chunk 1     | 0x00 0x08 | 8 bytes of data
+ Chunk 2     | 0x01 0x00 | 256 bytes of data
+ Terminator  | 0x00 0x00 | -
+ Chunk 1     | 0x00 0x12 | 18 bytes of data
+ Terminator  | 0x00 0x00 | -
+ ...         |           |
 
 Chunks can be between 1 and 65535 bytes long. A command or event can be
 broken up into chunks of varying sizes. This is entirely up to the encoder
@@ -101,16 +101,16 @@ resource.
 The protocol uses simple on-the-wire data types. The following data types
 are used:
 
-Data Type | Bytes | Description
---------- | ----- | --------------------------------------------------
-bool      | 1     | 0 = false, otherwise true
-byte      | 1     | 8-bit signed integer
-int       | 4     | 32-bit signed integer, most significant byte first
-float     | 4     | 4-byte IEEE floating point number
-vint      | 1..n  | variable length signed integer
-vuint     | 1..n  | variable length unsigned integer
-string    | 1..n  | UTF8 encoded string (see below)
-vdata     | 1..n  | variable length collection of bytes (see below)
+ Data Type | Bytes | Description
+ :---------|------:|:--------------------------------------------------
+ bool      | 1     | 0 = false, otherwise true
+ byte      | 1     | 8-bit signed integer
+ int       | 4     | 32-bit signed integer, most significant byte first
+ float     | 4     | 4-byte IEEE floating point number
+ vint      | 1..n  | variable length signed integer
+ vuint     | 1..n  | variable length unsigned integer
+ string    | 1..n  | UTF8 encoded string (see below)
+ vdata     | 1..n  | variable length collection of bytes (see below)
 
 ### 1.5 Variable Length Integers
 
@@ -164,31 +164,31 @@ previously identified by the ID inaccessible.
 The following object identifiers are predefined and can be used
 immediately:
 
-ID                  | Value | Description
-------------------- | ----- | ------------------------------------
-ID_NULL             | 0     | empty resource
-ID_ROOT_STREAM      | 1     | resource id of the application
-ID_ROOT_VIEW        | 2     | root view of the application
-ID_DEFAULT_TTF      | 10    | default true type font
-ID_SYSTEM_TTF       | 11    | system true type font
-ID_BONK_SOUND       | 20    | “bonk” sound
-ID_UPDOWN_SOUND     | 21    | up/down arrow sound
-ID_THUMBSUP_SOUND   | 22    | thumbs up sound
-ID_THUMBSDOWN_SOUND | 23    | thumbs down sound
-ID_SELECT_SOUND     | 24    | select sound
-ID_TIVO_SOUND       | 25    | TiVo® sound
-ID_LEFT_SOUND       | 26    | left arrow sound
-ID_RIGHT_SOUND      | 27    | right arrow sound
-ID_PAGEUP_SOUND     | 28    | page up sound
-ID_PAGEDOWN_SOUND   | 29    | page down sound
-ID_ALERT_SOUND      | 30    | alert sound
-ID_DESELECT_SOUND   | 31    | deselect sound
-ID_ERROR_SOUND      | 32    | error sound
-ID_SLOWDOWN1_SOUND  | 33    | trickplay slow down sound
-ID_SPEEDUP1_SOUND   | 34    | trickplay speedup 1 sound
-ID_SPEEDUP2_SOUND   | 35    | trickplay speedup 2 sound
-ID_SPEEDUP3_SOUND   | 36    | trickplay speedup 3 sound
-ID_CLIENT           | 2048  | first ID that can be used by the app
+ ID                  | Value | Description
+ :-------------------|------:|:------------------------------------
+ ID_NULL             | 0     | empty resource
+ ID_ROOT_STREAM      | 1     | resource id of the application
+ ID_ROOT_VIEW        | 2     | root view of the application
+ ID_DEFAULT_TTF      | 10    | default true type font
+ ID_SYSTEM_TTF       | 11    | system true type font
+ ID_BONK_SOUND       | 20    | “bonk” sound
+ ID_UPDOWN_SOUND     | 21    | up/down arrow sound
+ ID_THUMBSUP_SOUND   | 22    | thumbs up sound
+ ID_THUMBSDOWN_SOUND | 23    | thumbs down sound
+ ID_SELECT_SOUND     | 24    | select sound
+ ID_TIVO_SOUND       | 25    | TiVo® sound
+ ID_LEFT_SOUND       | 26    | left arrow sound
+ ID_RIGHT_SOUND      | 27    | right arrow sound
+ ID_PAGEUP_SOUND     | 28    | page up sound
+ ID_PAGEDOWN_SOUND   | 29    | page down sound
+ ID_ALERT_SOUND      | 30    | alert sound
+ ID_DESELECT_SOUND   | 31    | deselect sound
+ ID_ERROR_SOUND      | 32    | error sound
+ ID_SLOWDOWN1_SOUND  | 33    | trickplay slow down sound
+ ID_SPEEDUP1_SOUND   | 34    | trickplay speedup 1 sound
+ ID_SPEEDUP2_SOUND   | 35    | trickplay speedup 2 sound
+ ID_SPEEDUP3_SOUND   | 36    | trickplay speedup 3 sound
+ ID_CLIENT           | 2048  | first ID that can be used by the app
 
 ### 2.2 Views
 
@@ -199,18 +199,18 @@ other than the root view, has a single parent view.
 
 Views have the following attributes:
 
-Attribute     | Type          | Description
-------------- | ------------- | ---------------------------------------
-id            | signed int 32 | view identifier
-parent        | view          | parent view
-children      | view[]        | zero or more child views
-x, y          | signed int 32 | position in parent’s coordinate system
-width, height | signed int 32 | view dimensions
-tx, ty        | signed int 32 | translation of view’s coordinate system
-sx, sy        | float         | scale of the view’s coordinate system
-visible       | bool          | determines whether the view is visible
-transparency  | float         | 0.0 – 1.0 (1.0 is entirely transparent)
-resource      | resource      | resource displayed in the view
+ Attribute     | Type          | Description
+ :-------------|:--------------|:---------------------------------------
+ id            | signed int 32 | view identifier
+ parent        | view          | parent view
+ children      | view[]        | zero or more child views
+ x, y          | signed int 32 | position in parent’s coordinate system
+ width, height | signed int 32 | view dimensions
+ tx, ty        | signed int 32 | translation of view’s coordinate system
+ sx, sy        | float         | scale of the view’s coordinate system
+ visible       | bool          | determines whether the view is visible
+ transparency  | float         | 0.0 – 1.0 (1.0 is entirely transparent)
+ resource      | resource      | resource displayed in the view
 
 Views inherit the coordinate system of the parent view in which they are
 embedded. The clipping rectangle is also inherited from the view’s
@@ -228,16 +228,16 @@ displayed in the view as well as any children the view may have.
 A resource is an object that can be displayed in a view. The following
 resource types are defined:
 
-Command               | Resource
---------------------- | -----------------------------------
-[CMD_RSRC_ADD_COLOR]  | color
-[CMD_RSRC_ADD_TTF]    | TrueType® font
-[CMD_RSRC_ADD_FONT]   | font
-[CMD_RSRC_ADD_TEXT]   | UTF8 text
-[CMD_RSRC_ADD_IMAGE]  | GIF, PNG, JPEG, or single frame MPG
-[CMD_RSRC_ADD_SOUND]  | sound effect
-[CMD_RSRC_ADD_STREAM] | streaming resource
-[CMD_RSRC_ADD_ANIM]   | animation
+ Command               | Resource
+ :---------------------|:-----------------------------------
+ [CMD_RSRC_ADD_COLOR]  | color
+ [CMD_RSRC_ADD_TTF]    | TrueType® font
+ [CMD_RSRC_ADD_FONT]   | font
+ [CMD_RSRC_ADD_TEXT]   | UTF8 text
+ [CMD_RSRC_ADD_IMAGE]  | GIF, PNG, JPEG, or single frame MPG
+ [CMD_RSRC_ADD_SOUND]  | sound effect
+ [CMD_RSRC_ADD_STREAM] | streaming resource
+ [CMD_RSRC_ADD_ANIM]   | animation
 
 Once a resource is created it can be assigned to multiple views. For
 example, a background image can be used in many views without reloading it
@@ -248,16 +248,16 @@ again.
 Events are sent to applications in response to user input and status
 changes.
 
-Type                  | Value | Description
---------------------- | ----- | --------------------------------
-[EVT_DEVICE_INFO]     | 1     | device information
-[EVT_APP_INFO]        | 2     | application status change
-[EVT_RSRC_INFO]       | 3     | resource status change
-[EVT_KEY]             | 4     | remote control event
-[EVT_IDLE]            | 5     | receiver idle state change event
-[EVT_FONT_INFO]       | 6     | font info event
-[EVT_INIT_INFO]       | 7     | init info event
-[EVT_RESOLUTION_INFO] | 8     | resolution info event
+ Type                  | Value | Description
+ :---------------------|------:|:--------------------------------
+ [EVT_DEVICE_INFO]     | 1     | device information
+ [EVT_APP_INFO]        | 2     | application status change
+ [EVT_RSRC_INFO]       | 3     | resource status change
+ [EVT_KEY]             | 4     | remote control event
+ [EVT_IDLE]            | 5     | receiver idle state change event
+ [EVT_FONT_INFO]       | 6     | font info event
+ [EVT_INIT_INFO]       | 7     | init info event
+ [EVT_RESOLUTION_INFO] | 8     | resolution info event
 
 Key events are sent to the active resource. It is possible to make a
 different resource active with [CMD_RSRC_SET_ACTIVE]. Some stream
@@ -299,11 +299,11 @@ in/out value. A negative ease (ease in) will gradually accelerate before
 achieving a linear speed. A positive ease (ease out) will move linearly
 and then decelerate. An ease of zero is entirely linear.
 
-Type     | Value | Description
--------- | ----- | -------------------------------
-ease in  | -1..0 | acceleration, then linear speed
-linear   | 0     | linear speed
-ease out | 0..1  | linear speed, then deceleration
+ Type     | Value | Description
+ :--------|------:|:-------------------------------
+ ease in  | -1..0 | acceleration, then linear speed
+ linear   | 0     | linear speed
+ ease out | 0..1  | linear speed, then deceleration
 
 For example, to fade in some text you can change the transparency of the
 view from 1 (entirely transparent) to 0 (not transparent) over a period of
@@ -379,16 +379,16 @@ This command creates a new view with the specified parent, and dimensions.
 An ID for the new view must be provided by the application. The ID can
 later be used to refer to this view again.
 
-Field     | Type | Description
---------- | ---- | ---------------------------------
-cmd       | vint | 1
-id        | vint | ID of the new view
-parent-id | vint | ID of the parent view, must exist
-x         | vint | x position (horizontal)
-y         | vint | y position (vertical)
-w         | vint | width, must be >= 0
-h         | vint | height, must be >= 0
-visible   | bool | true if visible
+ Field     | Type | Description
+ :---------|:-----|:---------------------------------
+ cmd       | vint | 1
+ id        | vint | ID of the new view
+ parent-id | vint | ID of the parent view, must exist
+ x         | vint | x position (horizontal)
+ y         | vint | y position (vertical)
+ w         | vint | width, must be >= 0
+ h         | vint | height, must be >= 0
+ visible   | bool | true if visible
 
 The newly created view is created with no translation, scaling, or
 transparency. To create top-level views the predefined ROOT_VIEW_ID must
@@ -400,15 +400,15 @@ Sets the bounds of the view to the newly specified values. All resources
 and child views contained in this view will be clipped to the new
 boundary.
 
-Field     | Type | Description
---------- | ---- | --------------------------------------------
-cmd       | vint | 2
-id        | vint | ID of the view
-x         | vint | x position
-y         | vint | y position
-w         | vint | width, must be >= 0
-h         | vint | height, must be >= 0
-animation | vint | ID of the animation or ID_NULL for immediate
+ Field     | Type | Description
+ :---------|:-----|:--------------------------------------------
+ cmd       | vint | 2
+ id        | vint | ID of the view
+ x         | vint | x position
+ y         | vint | y position
+ w         | vint | width, must be >= 0
+ h         | vint | height, must be >= 0
+ animation | vint | ID of the animation or ID_NULL for immediate
 
 If an animation is specified, the view’s boundary change is animated
 according to the specified animation resource.
@@ -419,13 +419,13 @@ Changes the horizontal and/or vertical scale of the view. The scaling
 factor may not be negative. The scale of a view affects all of its
 content, including any resources and child views.
 
-Field     | Type  | Description
---------- | ----- | ------------------------------
-cmd       | vint  | 3
-id        | vint  | ID of the view
-sx        | float | horizontal scale, must be >= 0
-sy        | float | vertical scale, must be >= 0
-animation | vint  | ID of the animation or ID_NULL
+ Field     | Type  | Description
+ :---------|:------|:------------------------------
+ cmd       | vint  | 3
+ id        | vint  | ID of the view
+ sx        | float | horizontal scale, must be >= 0
+ sy        | float | vertical scale, must be >= 0
+ animation | vint  | ID of the animation or ID_NULL
 
 If an animation is specified the view’s scale change is animated according
 to the specified animation resource.
@@ -437,13 +437,13 @@ coordinate system. The translation affects all of the view’s content,
 including its children. Translation can be used to scroll the content of a
 view.
 
-Field     | Type | Description
---------- | ---- | ------------------------------
-cmd       | vint | 4
-id        | vint | ID of the view
-tx        | vint | horizontal translation
-ty        | vint | vertical translation
-animation | vint | ID of the animation or ID_NULL
+ Field     | Type | Description
+ :---------|:-----|:------------------------------
+ cmd       | vint | 4
+ id        | vint | ID of the view
+ tx        | vint | horizontal translation
+ ty        | vint | vertical translation
+ animation | vint | ID of the animation or ID_NULL
 
 If an animation is specified, the view’s translation change is animated
 according to the specified animation resource.
@@ -455,12 +455,12 @@ view’s content, including any child views. The default transparency of a
 view is 0.0. If the transparency is set to 1.0, the view will be 100%
 transparent and its content will not be visible.
 
-Field        | Type  | Description
------------- | ----- | ------------------------------
-cmd          | vint  | 5
-id           | vint  | ID of the view
-transparency | float | 0.0 = opaque, 1.0 = clear
-animation    | vint  | ID of the animation or ID_NULL
+ Field        | Type  | Description
+ :------------|:------|:------------------------------
+ cmd          | vint  | 5
+ id           | vint  | ID of the view
+ transparency | float | 0.0 = opaque, 1.0 = clear
+ animation    | vint  | ID of the animation or ID_NULL
 
 If an animation is specified, the view’s transparency change is animated
 according to the specified animation resource.
@@ -470,12 +470,12 @@ according to the specified animation resource.
 Set the visibility of a view. This affects all of the view’s content,
 including any child views.
 
-Field     | Type | Description
---------- | ---- | ------------------------------
-cmd       | vint | 6
-id        | vint | ID of the view
-visible   | bool | true if visible
-animation | vint | ID of the animation or ID_NULL
+ Field     | Type | Description
+ :---------|:-----|:------------------------------
+ cmd       | vint | 6
+ id        | vint | ID of the view
+ visible   | bool | true if visible
+ animation | vint | ID of the animation or ID_NULL
 
 If an animation is specified, the view’s visibility change takes effect
 only after the specified animation has completed.
@@ -488,11 +488,11 @@ is turned back on. This feature is used to make sure that a series of
 changes to a view hierarchy do not affect the display until all of the
 changes are complete.
 
-Field     | Type | Description
---------- | ---- | -------------------------
-cmd       | vint | 7
-id        | vint | ID of the view
-painting  | bool | true means painting is on
+ Field     | Type | Description
+ :---------|:-----|:-------------------------
+ cmd       | vint | 7
+ id        | vint | ID of the view
+ painting  | bool | true means painting is on
 
 #### 3.1.8 CMD_VIEW_SET_RESOURCE
 
@@ -501,27 +501,27 @@ resource previously assigned to the view. Note that resources may be
 assigned to multiple views, but that views can only contain one resource
 each.
 
-Field     | Type | Description
---------- | ---- | -----------------------------
-cmd       | vint | 8
-id        | vint | ID of the view
-resource  | vint | ID of the resource or ID_NULL
-flags     | vint | see below
+ Field     | Type | Description
+ :---------|:-----|:-----------------------------
+ cmd       | vint | 8
+ id        | vint | ID of the view
+ resource  | vint | ID of the resource or ID_NULL
+ flags     | vint | see below
 
 The following flags affect how the resource is displayed in the view:
 
-Font Style         | Value  | Description
------------------- | ------ | -----------------------------------
-RSRC_HALIGN_LEFT   | 0x0001 | horizontally left aligned
-RSRC_HALIGN_CENTER | 0x0002 | horizontally centered (default)
-RSRC_HALIGN_RIGHT  | 0x0004 | horizontally right aligned
-RSRC_VALIGN_TOP    | 0x0010 | vertically top aligned
-RSRC_VALIGN_CENTER | 0x0020 | vertically centered (default)
-RSRC_VALIGN_BOTTOM | 0x0040 | vertically bottom aligned
-RSRC_TEXT_WRAP     | 0x0100 | wrap long text strings
-RSRC_IMAGE_HFIT    | 0x1000 | fit horizontally, keep aspect ratio
-RSRC_IMAGE_VFIT    | 0x2000 | fit vertically, keep aspect ratio
-RSRC_IMAGE_BESTFIT | 0x4000 | fit using the larger dimension
+ Font Style         | Value  | Description
+ :------------------|:------:|:-----------------------------------
+ RSRC_HALIGN_LEFT   | 0x0001 | horizontally left aligned
+ RSRC_HALIGN_CENTER | 0x0002 | horizontally centered (default)
+ RSRC_HALIGN_RIGHT  | 0x0004 | horizontally right aligned
+ RSRC_VALIGN_TOP    | 0x0010 | vertically top aligned
+ RSRC_VALIGN_CENTER | 0x0020 | vertically centered (default)
+ RSRC_VALIGN_BOTTOM | 0x0040 | vertically bottom aligned
+ RSRC_TEXT_WRAP     | 0x0100 | wrap long text strings
+ RSRC_IMAGE_HFIT    | 0x1000 | fit horizontally, keep aspect ratio
+ RSRC_IMAGE_VFIT    | 0x2000 | fit vertically, keep aspect ratio
+ RSRC_IMAGE_BESTFIT | 0x4000 | fit using the larger dimension
 
 #### 3.1.9 CMD_VIEW_REMOVE
 
@@ -529,11 +529,11 @@ Remove a view. After this operation the ID of the view is no longer valid.
 The view is removed from its parent; in addition all of its child views
 are removed.
 
-Field     | Type | Description
---------- | ---- | ------------------------------
-cmd       | vint | 9
-id        | vint | ID of the view
-animation | vint | ID of the animation or ID_NULL
+ Field     | Type | Description
+ :---------|:-----|:------------------------------
+ cmd       | vint | 9
+ id        | vint | ID of the view
+ animation | vint | ID of the animation or ID_NULL
 
 If an animation is specified, the view is removed after the specified
 animation completes.
@@ -549,11 +549,11 @@ Create a color resource. The color is specified in 32-bit ARGB format. The
 alpha component is stored in bits 24-31, and 0xFF is opaque, 0x00 is
 transparent.
 
-Field | Type             | Description
------ | ---------------- | ----------------------
-cmd   | vint             | 20
-id    | vint             | ID of the new resource
-color | 4 unsigned bytes | ARGB
+ Field | Type             | Description
+ :-----|:-----------------|:----------------------
+ cmd   | vint             | 20
+ id    | vint             | ID of the new resource
+ color | 4 unsigned bytes | ARGB
 
 When a color resource is assigned to a view. The entire visible area of
 the view is filled with the color.
@@ -564,11 +564,11 @@ Add a TrueType Font resource. This command is used to download a new
 TrueType font to the device. The length of the TTF data is implied by the
 terminator in the underlying chunked-stream.
 
-Field         | Type | Description
-------------- | ---- | ----------------------
-cmd           | vint | 21
-id            | vint | ID of the new resource
-TrueType-font | data | raw TrueType font data
+ Field         | Type | Description
+ :-------------|:-----|:----------------------
+ cmd           | vint | 21
+ id            | vint | ID of the new resource
+ TrueType-font | data | raw TrueType font data
 
 A TTF resource cannot be assigned to a view.
 
@@ -577,22 +577,22 @@ A TTF resource cannot be assigned to a view.
 Add a font resource to the system. A font is created from a TrueType-Font
 given a size and style.
 
-Field  | Type  | Description
------- | ----- | -------------------------
-cmd    | vint  | 22
-id     | vint  | ID of the new resource
-ttf-id | vint  | TrueType font resource id
-style  | vint  | see below
-size   | float | point size
+ Field  | Type  | Description
+ :------|:------|:-------------------------
+ cmd    | vint  | 22
+ id     | vint  | ID of the new resource
+ ttf-id | vint  | TrueType font resource id
+ style  | vint  | see below
+ size   | float | point size
 
 The following font styles are defined:
 
-Font Style      | Value
---------------- | -----
-FONT_PLAIN      | 0x00
-FONT_BOLD       | 0x01
-FONT_ITALIC     | 0x02
-FONT_BOLDITALIC | 0x03
+ Font Style      | Value
+ :---------------|:-----:
+ FONT_PLAIN      | 0x00
+ FONT_BOLD       | 0x01
+ FONT_ITALIC     | 0x02
+ FONT_BOLDITALIC | 0x03
 
 A font resource cannot be assigned to a view.
 
@@ -602,13 +602,13 @@ Add a text resource. A text resource is constructed given a font resource,
 a color, a text string, and some flags which control the text formatting.
 The text may contain ‘\n’ characters, which force a line break.
 
-Field   | Type   | Description
-------- | ------ | -------------------------
-cmd     | vint   | 23
-id      | vint   | ID of the new resource
-font-id | vint   | font resource id
-color   | vint   | color resource id
-text    | string | the text in UTF8 format
+ Field   | Type   | Description
+ :-------|:-------|:-------------------------
+ cmd     | vint   | 23
+ id      | vint   | ID of the new resource
+ font-id | vint   | font resource id
+ color   | vint   | color resource id
+ text    | string | the text in UTF8 format
 
 A text resource can be assigned to a view. It is displayed inside the
 view’s boundary according to the specified alignment.
@@ -619,11 +619,11 @@ Create an image resource. The image data can be in JPEG or PNG format. The
 length of the image data is implied by the terminated in the underlying
 chunked input stream.
 
-Field | Type | Description
------ | ---- | ----------------------------------
-cmd   | vint | 24
-id    | vint | ID of the new resource
-image | data | GIF, JPEG, PNG or single frame MPG
+ Field | Type | Description
+ :-----|:-----|:----------------------------------
+ cmd   | vint | 24
+ id    | vint | ID of the new resource
+ image | data | GIF, JPEG, PNG or single frame MPG
 
 An image resource can be assigned to a view.
 
@@ -632,11 +632,11 @@ An image resource can be assigned to a view.
 Create a sound resource that can be played for simple sound effect.
 Currently only a single audio format is supported.
 
-Field | Type | Description
------ | ---- | ---------------------------------------------
-cmd   | vint | 25
-id    | vint | ID of the new resource
-sound | data | 8,000 Hz signed 16-bit little endian mono PCM
+ Field | Type | Description
+ :-----|:-----|:---------------------------------------------
+ cmd   | vint | 25
+ id    | vint | ID of the new resource
+ sound | data | 8,000 Hz signed 16-bit little endian mono PCM
 
 A sound resource cannot be assigned to a view.
 
@@ -645,13 +645,13 @@ A sound resource cannot be assigned to a view.
 Create a resource from a URL. The device will connect to the URL and
 download or stream the resource depending on its content type.
 
-Field        | Type   | Description
------------- | ------ | -----------------------------------------
-cmd          | vint   | 26
-id           | vint   | ID of the new resource
-url          | string | URL of the resource
-content-type | string | content-type hint
-play         | bool   | if true, the resource plays automatically
+ Field        | Type   | Description
+ :------------|:-------|:-----------------------------------------
+ cmd          | vint   | 26
+ id           | vint   | ID of the new resource
+ url          | string | URL of the resource
+ content-type | string | content-type hint
+ play         | bool   | if true, the resource plays automatically
 
 See [Section 2.7] for more information on how streamed resources are
 handled.
@@ -662,12 +662,12 @@ Create an animation resource. Animation resources can be supplied as
 parameters to some commands to animate the command instead of effecting
 the change immediately.
 
-Field    | Type  | Description
--------- | ----- | --------------------------------------------
-cmd      | vint  | 27
-id       | vint  | ID of the new resource
-duration | vint  | duration of the animation in milliseconds
-ease     | float | -1..0 = ease in, 0 = linear, 0..1 = ease out
+ Field    | Type  | Description
+ :--------|:------|:--------------------------------------------
+ cmd      | vint  | 27
+ id       | vint  | ID of the new resource
+ duration | vint  | duration of the animation in milliseconds
+ ease     | float | -1..0 = ease in, 0 = linear, 0..1 = ease out
 
 See [Section 2.6] for more information on animation resources.
 
@@ -676,11 +676,11 @@ See [Section 2.6] for more information on animation resources.
 Make a resource the active resource. Events are automatically routed to
 the currently active resource.
 
-Field  | Type | Description
------- | ---- | ------------------
-cmd    | vint | 40
-id     | vint | ID of the resource
-active | bool | true if active
+ Field  | Type | Description
+ :------|:-----|:------------------
+ cmd    | vint | 40
+ id     | vint | ID of the resource
+ active | bool | true if active
 
 An application can deactivate itself by calling this method on its own
 stream resource (ID_ROOT_STREAM). An application will be notified using an
@@ -692,11 +692,11 @@ Sets the position at which the resource is played back. Resources which
 are playing are immediately repositioned. Resources which are not yet
 started will begin playing at this position.
 
-Field    | Type | Description
--------- | ---- | ---------------------
-cmd      | vint | 41
-id       | vint | ID of the resource
-position | vint | millisecs from origin
+ Field    | Type | Description
+ :--------|:-----|:---------------------
+ cmd      | vint | 41
+ id       | vint | ID of the resource
+ position | vint | millisecs from origin
 
 #### 3.2.11 CMD_RSRC_SET_SPEED
 
@@ -705,22 +705,22 @@ a resource has effect for those streaming media types that support
 multiple speeds. For example, MP3 streams can have a speed of 0 (paused),
 or 1 (playing).
 
-Field | Type  | Description
------ | ----- | -------------------
-cmd   | vint  | 42
-id    | vint  | ID of the resource
-speed | float | 0 = pause, 1 = play
+ Field | Type  | Description
+ :-----|:------|:-------------------
+ cmd   | vint  | 42
+ id    | vint  | ID of the resource
+ speed | float | 0 = pause, 1 = play
 
 #### 3.2.12 CMD_RSRC_SEND_EVENT
 
 Send an event to a resource.
 
-Field      | Type | Description
----------- | ---- | ---------------------------------------------
-cmd        | vint | 44
-id         | vint | ID of the target resource, ID_NULL for parent
-animation  | vint | ID of the animation, ID_NULL for immediate
-event data | data | event data
+ Field      | Type | Description
+ :----------|:-----|:---------------------------------------------
+ cmd        | vint | 44
+ id         | vint | ID of the target resource, ID_NULL for parent
+ animation  | vint | ID of the animation, ID_NULL for immediate
+ event data | data | event data
 
 An event can be send to the parent of the application by specifying
 ID_NULL as the id. If an animation is specified, the event is delivered
@@ -731,20 +731,20 @@ when the animation has completed.
 Close the stream associated with a streaming resource. This will stop
 playing the resource immediately.
 
-Field | Type | Description
------ | ---- | ------------------
-cmd   | vint | 45
-id    | vint | ID of the resource
+ Field | Type | Description
+ :-----|:-----|:------------------
+ cmd   | vint | 45
+ id    | vint | ID of the resource
 
 #### 3.2.14 CMD_RSRC_REMOVE
 
 Remove a resource. If it is a stream resource, the stream will stop
 playing. The resource ID of this resource is no longer usable.
 
-Field | Type | Description
------ | ---- | ------------------
-cmd   | vint | 46
-id    | vint | ID of the resource
+ Field | Type | Description
+ :-----|:-----|:------------------
+ cmd   | vint | 46
+ id    | vint | ID of the resource
 
 ### 3.3 Receiver Commands
 
@@ -756,11 +756,11 @@ that operate on the receiver.
 Notifies the receiver that the application acknowledged the receipt of the
 [EVT_IDLE] event.
 
-Field   | Type | Description
-------- | ---- | --------------
-cmd     | vint | 60
-id      | vint | ID_ROOT_STREAM
-handled | bool | see below
+ Field   | Type | Description
+ :-------|:-----|:--------------
+ cmd     | vint | 60
+ id      | vint | ID_ROOT_STREAM
+ handled | bool | see below
 
 "handled" indicates whether the application handled the idle event by
 screensaving. If false, the receiver will take action to prevent burn-in.
@@ -776,14 +776,14 @@ destination. Data can be passed between the two applications via the
 params argument. The application requesting the transition may wish to
 retain some state, this can be done by passing data in the memento.
 
-Field       | Type   | Description
------------ | ------ | -----------------------------------------
-cmd         | vint   | 61
-id          | vint   | ID_ROOT_STREAM
-destination | string | URI to which to transition
-type        | vint   | enum (see [3.3.2.1 Transition Types])
-param       | dict   | parameters for the next (or previous) app
-memento     | vdata  | app state to put on the navigation stack
+ Field       | Type   | Description
+ :-----------|:-------|:-----------------------------------------
+ cmd         | vint   | 61
+ id          | vint   | ID_ROOT_STREAM
+ destination | string | URI to which to transition
+ type        | vint   | enum (see [3.3.2.1 Transition Types])
+ param       | dict   | parameters for the next (or previous) app
+ memento     | vdata  | app state to put on the navigation stack
 
 If this command succeeds the current application will exit and the
 application at the destination URI will be started with the given
@@ -791,22 +791,22 @@ parameters. If this command fails the receiver will send an app info event
 ([EVT_APP_INFO]) indicating failure to transition. Below is a table of
 error codes which will be included in the case of a transition failure:
 
-Error Code                   | Condition
----------------------------- | ------------------------------------------
-APP_ERROR_BAD_ARGUMENT       | can't transition to the given URI
-APP_ERROR_BAD_COMMAND        | the receiver can't perform transitions
-APP_ERROR_INVALID_TRANSITION | from embedded app, or 'back' with no stack
+ Error Code                   | Condition
+ :----------------------------|:------------------------------------------
+ APP_ERROR_BAD_ARGUMENT       | can't transition to the given URI
+ APP_ERROR_BAD_COMMAND        | the receiver can't perform transitions
+ APP_ERROR_INVALID_TRANSITION | from embedded app, or 'back' with no stack
 
 ##### 3.3.2.1 Transition Types
 
 There are three different types of transitions. The following table
 outlines the types and what a device supporting transitions must do.
 
-Transition Type     | Value | Effect
-------------------- | ----- | ------------------------------------
-TRANSITION_FORWARD  | 1     | forward, store app's url and memento
-TRANSITION_BACK     | 2     | back to a previous application
-TRANSITION_TELEPORT | 3     | teleport, empty the stack
+ Transition Type     | Value | Effect
+ :-------------------|------:|:------------------------------------
+ TRANSITION_FORWARD  | 1     | forward, store app's url and memento
+ TRANSITION_BACK     | 2     | back to a previous application
+ TRANSITION_TELEPORT | 3     | teleport, empty the stack
 
 When executing a transition forward the device pushes the transitioning
 application's URL and provided memento onto a navigation stack for recall
@@ -838,14 +838,14 @@ resolution formats provided in the most recently received
 [EVT_RESOLUTION_INFO] events.  Requesting an unsupported resolution will
 result in an [EVT_APP_INFO] error event.
 
-Field           | Type | Description
---------------- | ---- | ------------------------------------
-cmd             | vint | 62
-id              | vint | ID_ROOT_STREAM
-width           | vint | buffer width in pixels
-height          | vint | buffer height in pixels
-PAR numerator   | vint | pixel aspect ratio (PAR) numerator
-PAR denominator | vint | pixel aspect ratio (PAR) denominator
+ Field           | Type | Description
+ :---------------|:-----|:------------------------------------
+ cmd             | vint | 62
+ id              | vint | ID_ROOT_STREAM
+ width           | vint | buffer width in pixels
+ height          | vint | buffer height in pixels
+ PAR numerator   | vint | pixel aspect ratio (PAR) numerator
+ PAR denominator | vint | pixel aspect ratio (PAR) denominator
 
 
 4 HME Events
@@ -855,46 +855,46 @@ PAR denominator | vint | pixel aspect ratio (PAR) denominator
 
 A device info event is sent when the protocol handshake is complete.
 
-Field | Type   | Description
------ | ------ | -------------------------
-type  | vint   | 1
-id    | vint   | ID_ROOT_STREAM
-count | vint   | number of key value pairs
-key   | string | first key
-value | string | first value
-...   |        |
+ Field | Type   | Description
+ :-----|:-------|:-------------------------
+ type  | vint   | 1
+ id    | vint   | ID_ROOT_STREAM
+ count | vint   | number of key value pairs
+ key   | string | first key
+ value | string | first value
+ ...   |        |
 
 This event contains a list of key value pairs that provide information
 about the device. The following keys are defined:
 
-Key      | Description
--------- | ------------------------
-brand    | manufacturer brand
-platform | underlying platform
-version  | software release version
+ Key      | Description
+ :--------|:------------------------
+ brand    | manufacturer brand
+ platform | underlying platform
+ version  | software release version
 
 ### 4.2 EVT_APP_INFO
 
 An application info event is generated when the status of an application
 changes. This event has the following layout:
 
-Field | Type   | Description
------ | ------ | -------------------------
-type  | vint   | 2
-id    | vint   | ID_ROOT_STREAM
-count | vint   | number of key value pairs
-key   | string | first key
-value | string | first value
-...   |        |
+ Field | Type   | Description
+ :-----|:-------|:-------------------------
+ type  | vint   | 2
+ id    | vint   | ID_ROOT_STREAM
+ count | vint   | number of key value pairs
+ key   | string | first key
+ value | string | first value
+ ...   |        |
 
 This event contains a list of key value pairs that provide information
 about the application. The following keys are defined:
 
-Key        | Description
----------- | -------------------------
-active     | whether the app is active
-error.code | error code (see below)
-error.text | error text
+ Key        | Description
+ :----------|:-------------------------
+ active     | whether the app is active
+ error.code | error code (see below)
+ error.text | error text
 
 #### 4.2.1 Application Errors
 
@@ -902,17 +902,17 @@ When an error occurs on the device an application event is generated and a
 warning code and text are include. The following warning codes are
 defined:
 
-Warning                      | Value | Description
----------------------------- | ----- | ------------------------------
-APP_ERROR_UNKNOWN            | 0     | unknown error occured
-APP_ERROR_BAD_ARGUMENT       | 1     | bad argument passed to command
-APP_ERROR_BAD_COMMAND        | 2     | command not understood
-APP_ERROR_RSRC_NOT_FOUND     | 3     | resource id was not found
-APP_ERROR_VIEW_NOT_FOUND     | 4     | view id was not found
-APP_ERROR_OUT_OF_MEMORY      | 5     | out of memory
-APP_ERROR_INVALID_TRANSITION | 6     | invalid transition attempt
-APP_ERROR_INVALID_RESOLUTION | 7     | invalid resolution request
-APP_ERROR_OTHER              | 100   | consult error text for details
+ Warning                      | Value | Description
+ :----------------------------|------:|:------------------------------
+ APP_ERROR_UNKNOWN            | 0     | unknown error occured
+ APP_ERROR_BAD_ARGUMENT       | 1     | bad argument passed to command
+ APP_ERROR_BAD_COMMAND        | 2     | command not understood
+ APP_ERROR_RSRC_NOT_FOUND     | 3     | resource id was not found
+ APP_ERROR_VIEW_NOT_FOUND     | 4     | view id was not found
+ APP_ERROR_OUT_OF_MEMORY      | 5     | out of memory
+ APP_ERROR_INVALID_TRANSITION | 6     | invalid transition attempt
+ APP_ERROR_INVALID_RESOLUTION | 7     | invalid resolution request
+ APP_ERROR_OTHER              | 100   | consult error text for details
 
 error.text contains the invalid resolution in the following string format:
 `Resolution <width>x<height> PAR <numerator>/<denominator> invalid.`
@@ -922,25 +922,25 @@ error.text contains the invalid resolution in the following string format:
 A resource info event is generated when the status of a resource changes.
 This event has the following layout:
 
-Field  | Type   | Description
------- | ------ | ---------------------------
-type   | vint   | 3
-id     | vint   | id of the resource
-status | vint   | resource status (see below)
-count  | vint   | number of key value pairs
-key    | string | first key
-value  | string | first value
-...    |        |
+ Field  | Type   | Description
+ :------|:-------|:---------------------------
+ type   | vint   | 3
+ id     | vint   | id of the resource
+ status | vint   | resource status (see below)
+ count  | vint   | number of key value pairs
+ key    | string | first key
+ value  | string | first value
+ ...    |        |
 
 This event contains a list of key value pairs that provide information
 about the resource. The following keys are defined:
 
-Key        | Description
----------- | ---------------------------------------------
-error.code | error code (see below)
-error.text | error text
-speed      | current speed of the resource
-pos        | DEPRECATED: `<position>/<duration>` of stream
+ Key        | Description
+ :----------|:---------------------------------------------
+ error.code | error code (see below)
+ error.text | error text
+ speed      | current speed of the resource
+ pos        | DEPRECATED: `<position>/<duration>` of stream
 
 In addition to the above keys, each media type may add keys that are
 specific to the media type (see below).  The initial EVT_RSRC_INFO event
@@ -962,19 +962,19 @@ completely before they can be used.
 
 The following resource states are defined:
 
-Status                 | Value | Description
----------------------- | ----- | ---------------------
-RSRC_STATUS_UNKNOWN    | 0     | not initialized
-RSRC_STATUS_CONNECTING | 1     | waiting to connect
-RSRC_STATUS_CONNECTED  | 2     | a connection was made
-RSRC_STATUS_LOADING    | 3     | loading first frame
-RSRC_STATUS_READY      | 4     | first frame loaded
-RSRC_STATUS_PLAYING    | 5     | media is playing
-RSRC_STATUS_PAUSED     | 6     | media is paused
-RSRC_STATUS_SEEKING    | 7     | media is seeking
-RSRC_STATUS_CLOSED     | 8     | stream closed
-RSRC_STATUS_COMPLETE   | 9     | download complete
-RSRC_STATUS_ERROR      | 10    | some error occurred
+ Status                 | Value | Description
+ :----------------------|------:|:---------------------
+ RSRC_STATUS_UNKNOWN    | 0     | not initialized
+ RSRC_STATUS_CONNECTING | 1     | waiting to connect
+ RSRC_STATUS_CONNECTED  | 2     | a connection was made
+ RSRC_STATUS_LOADING    | 3     | loading first frame
+ RSRC_STATUS_READY      | 4     | first frame loaded
+ RSRC_STATUS_PLAYING    | 5     | media is playing
+ RSRC_STATUS_PAUSED     | 6     | media is paused
+ RSRC_STATUS_SEEKING    | 7     | media is seeking
+ RSRC_STATUS_CLOSED     | 8     | stream closed
+ RSRC_STATUS_COMPLETE   | 9     | download complete
+ RSRC_STATUS_ERROR      | 10    | some error occurred
 
 Not all states apply to every resource type. For example, when downloading
 a JPEG image, the media states will be CONNECTING, CONNECTED, LOADING,
@@ -985,20 +985,20 @@ while downloading,
 
 The following resource errors are defined:
 
-Field                         | Value | Description
------------------------------ | ----- | ---------------------------------
-RSRC_ERROR_UNKNOWN            | 0     | unknown error occurred
-RSRC_ERROR_BAD_DATA           | 1     | data format error
-RSRC_ERROR_BAD_MAGIC          | 2     | bad magic number for content-type
-RSRC_ERROR_BAD_VERSION        | 3     | media version not supported
-RSRC_ERROR_CONNECTION_LOST    | 4     | connection was lost unexpectedly
-RSRC_ERROR_CONNECTION_TIMEOUT | 5     | connection timedout
-RSRC_ERROR_CONNECT_FAILED     | 6     | connect failed
-RSRC_ERROR_HOST_NOT_FOUND     | 7     | hostname was not found
-RSRC_ERROR_INCOMPATIBLE       | 8     | incompatible media version
-RSRC_ERROR_NOT_SUPPORTED      | 9     | media type not supported
-RSRC_ERROR_BAD_ARGUMENT       | 20    | bad argument
-RSRC_ERROR_BAD_STATE          | 21    | bad state
+ Field                         | Value | Description
+ :-----------------------------|------:|:---------------------------------
+ RSRC_ERROR_UNKNOWN            | 0     | unknown error occurred
+ RSRC_ERROR_BAD_DATA           | 1     | data format error
+ RSRC_ERROR_BAD_MAGIC          | 2     | bad magic number for content-type
+ RSRC_ERROR_BAD_VERSION        | 3     | media version not supported
+ RSRC_ERROR_CONNECTION_LOST    | 4     | connection was lost unexpectedly
+ RSRC_ERROR_CONNECTION_TIMEOUT | 5     | connection timedout
+ RSRC_ERROR_CONNECT_FAILED     | 6     | connect failed
+ RSRC_ERROR_HOST_NOT_FOUND     | 7     | hostname was not found
+ RSRC_ERROR_INCOMPATIBLE       | 8     | incompatible media version
+ RSRC_ERROR_NOT_SUPPORTED      | 9     | media type not supported
+ RSRC_ERROR_BAD_ARGUMENT       | 20    | bad argument
+ RSRC_ERROR_BAD_STATE          | 21    | bad state
 
 #### 4.3.3 Media type specific keys
 
@@ -1009,12 +1009,12 @@ The following keys are sent for specific media types.
 The following keys are optionally sent for video resources in addition to
 the common keys specified above:
 
-Key         | Description
------------ | ------------------------------------------------
-framerate   | frames of video per second in the media
-channel     | a Trio Mind globally unique channel identifier
-audiotrack  | the current audio track selected
-audiotracks | available audio tracks in a comma separated list
+ Key         | Description
+ :-----------|:------------------------------------------------
+ framerate   | frames of video per second in the media
+ channel     | a Trio Mind globally unique channel identifier
+ audiotrack  | the current audio track selected
+ audiotracks | available audio tracks in a comma separated list
 
 The format for an audio track is `<language> <modifier> <text>`, where:
 
@@ -1035,23 +1035,23 @@ audiotrack value if sent.
 
 A key event has the following layout:
 
-Field   | Type | Description
-------- | ---- | ----------------------
-type    | vint | 4
-id      | vint | ID of the resource
-action  | vint | key action (see below)
-code    | vint | key code (see below)
-rawcode | vint | raw IR code
+ Field   | Type | Description
+ :-------|:-----|:----------------------
+ type    | vint | 4
+ id      | vint | ID of the resource
+ action  | vint | key action (see below)
+ code    | vint | key code (see below)
+ rawcode | vint | raw IR code
 
 #### 4.4.1 Key Actions
 
 The following key actions are specified:
 
-Action      | Type | Description
------------ | ---- | -------------------------------
-KEY_PRESS   | 1    | key was pressed
-KEY_REPEAT  | 2    | key is repeated (ie still down)
-KEY_RELEASE | 3    | key was released
+ Action      | Type | Description
+ :-----------|-----:|:-------------------------------
+ KEY_PRESS   | 1    | key was pressed
+ KEY_REPEAT  | 2    | key is repeated (ie still down)
+ KEY_RELEASE | 3    | key was released
 
 When a key is pressed on the remote control a key event is generated with
 action set to KEY_PRESS. When the key is released an KEY_RELEASE key event
@@ -1062,83 +1062,83 @@ KEY_REPEAT events are generated at regular intervals.
 
 The following key codes are recognized:
 
-Code            | Type     | Description
---------------- | -------- | ----------------------
-KEY_UNKNOWN     | 0        | key not known
-KEY_TIVO[^1]    | 1        | TiVo® or equivalent
-KEY_UP          | 2        | arrow up
-KEY_DOWN        | 3        | arrow down
-KEY_LEFT        | 4        | arrow left
-KEY_RIGHT       | 5        | arrow right
-KEY_SELECT      | 6        | select
-KEY_PLAY        | 7        | play
-KEY_PAUSE       | 8        | pause
-KEY_SLOW        | 9        | play slowly
-KEY_REVERSE     | 10       | reverse
-KEY_FORWARD     | 11       | fast forward
-KEY_REPLAY      | 12       | instant replay
-KEY_ADVANCE     | 13       | advance to next marker
-KEY_THUMBSUP    | 14       | thumbs up
-KEY_THUMBSDOWN  | 15       | thumbs down
-KEY_VOLUMEUP    | 16       | volume up
-KEY_VOLUMEDOWN  | 17       | volume down
-KEY_CHANNELUP   | 18       | channel up
-KEY_CHANNELDOWN | 19       | channel down
-KEY_MUTE        | 20       | mute
-KEY_RECORD      | 21       | record
-KEY_LIVETV[^1]  | 23       | back to live TV
-KEY_INFO        | 25       | info
-KEY_DISPLAY     | KEY_INFO | display, same as info
-KEY_CLEAR       | 28       | clear
-KEY_ENTER       | 29       | enter
-KEY_NUM0        | 40       | 0
-KEY_NUM1        | 41       | 1
-KEY_NUM2        | 42       | 2
-KEY_NUM3        | 43       | 3
-KEY_NUM4        | 44       | 4
-KEY_NUM5        | 45       | 5
-KEY_NUM6        | 46       | 6
-KEY_NUM7        | 47       | 7
-KEY_NUM8        | 48       | 8
-KEY_NUM9        | 49       | 9
+ Code            | Type     | Description
+ :---------------|:--------:|:----------------------
+ KEY_UNKNOWN     | 0        | key not known
+ KEY_TIVO[^1]    | 1        | TiVo® or equivalent
+ KEY_UP          | 2        | arrow up
+ KEY_DOWN        | 3        | arrow down
+ KEY_LEFT        | 4        | arrow left
+ KEY_RIGHT       | 5        | arrow right
+ KEY_SELECT      | 6        | select
+ KEY_PLAY        | 7        | play
+ KEY_PAUSE       | 8        | pause
+ KEY_SLOW        | 9        | play slowly
+ KEY_REVERSE     | 10       | reverse
+ KEY_FORWARD     | 11       | fast forward
+ KEY_REPLAY      | 12       | instant replay
+ KEY_ADVANCE     | 13       | advance to next marker
+ KEY_THUMBSUP    | 14       | thumbs up
+ KEY_THUMBSDOWN  | 15       | thumbs down
+ KEY_VOLUMEUP    | 16       | volume up
+ KEY_VOLUMEDOWN  | 17       | volume down
+ KEY_CHANNELUP   | 18       | channel up
+ KEY_CHANNELDOWN | 19       | channel down
+ KEY_MUTE        | 20       | mute
+ KEY_RECORD      | 21       | record
+ KEY_LIVETV[^1]  | 23       | back to live TV
+ KEY_INFO        | 25       | info
+ KEY_DISPLAY     | KEY_INFO | display, same as info
+ KEY_CLEAR       | 28       | clear
+ KEY_ENTER       | 29       | enter
+ KEY_NUM0        | 40       | 0
+ KEY_NUM1        | 41       | 1
+ KEY_NUM2        | 42       | 2
+ KEY_NUM3        | 43       | 3
+ KEY_NUM4        | 44       | 4
+ KEY_NUM5        | 45       | 5
+ KEY_NUM6        | 46       | 6
+ KEY_NUM7        | 47       | 7
+ KEY_NUM8        | 48       | 8
+ KEY_NUM9        | 49       | 9
 
 #### 4.4.3 Optional Key Codes
 
 The following key codes are recognized, but considered optional from the
 standpoint of support by the protocol.
 
-Code              | Type           | Description
------------------ | -------------- | ----------------------------------
-KEY_OPT_WINDOW    | 22             | window
-KEY_OPT_PIP       | KEY_OPT_WINDOW | picture in picture, same as window
-KEY_OPT_ASPECT    | KEY_OPT_WINDOW | aspect, same code as window
-KEY_OPT_EXIT[^1]  | 24             | exit
-KEY_OPT_LIST[^1]  | 26             | list now playing
-KEY_OPT_GUIDE[^1] | 27             | guide
-KEY_OPT_STOP      | 51             | stop
-KEY_OPT_MENU      | 52             | dvd menu
-KEY_OPT_TOP_MENU  | 53             | dvd top menu
-KEY_OPT_ANGLE     | 54             | angle
-KEY_OPT_DVD[^1]   | 55             | dvd
-KEY_OPT_A         | 56             | 'A' key or yellow triangle key
-KEY_OPT_B         | 57             | 'B' key or blue square key
-KEY_OPT_C         | 58             | 'C' key or red circle key
-KEY_OPT_D         | 59             | 'D' key or green diamond key
-KEY_OPT_TV_POWER  | 60             | TV power key
-KEY_OPT_TV_INPUT  | 61             | TV input key
-KEY_OPT_VOD       | 62             | video on demand or VOD key
-KEY_OPT_POWER     | 63             | power key for the set top box
+ Code              | Type           | Description
+ :-----------------|:--------------:|:----------------------------------
+ KEY_OPT_WINDOW    | 22             | window
+ KEY_OPT_PIP       | KEY_OPT_WINDOW | picture in picture, same as window
+ KEY_OPT_ASPECT    | KEY_OPT_WINDOW | aspect, same code as window
+ KEY_OPT_EXIT[^1]  | 24             | exit
+ KEY_OPT_LIST[^1]  | 26             | list now playing
+ KEY_OPT_GUIDE[^1] | 27             | guide
+ KEY_OPT_STOP      | 51             | stop
+ KEY_OPT_MENU      | 52             | dvd menu
+ KEY_OPT_TOP_MENU  | 53             | dvd top menu
+ KEY_OPT_ANGLE     | 54             | angle
+ KEY_OPT_DVD[^1]   | 55             | dvd
+ KEY_OPT_A         | 56             | 'A' key or yellow triangle key
+ KEY_OPT_B         | 57             | 'B' key or blue square key
+ KEY_OPT_C         | 58             | 'C' key or red circle key
+ KEY_OPT_D         | 59             | 'D' key or green diamond key
+ KEY_OPT_TV_POWER  | 60             | TV power key
+ KEY_OPT_TV_INPUT  | 61             | TV input key
+ KEY_OPT_VOD       | 62             | video on demand or VOD key
+ KEY_OPT_POWER     | 63             | power key for the set top box
 
 ### 4.5 EVT_IDLE
 
 The idle event is generated whenever the receiver enters or leaves the
 idle state.
 
-Field | Type | Description
------ | ---- | -------------------------------------
-type  | vint | 5
-id    | vint | ID_ROOT_STREAM
-idle  | bool | true if the receiver is entering idle
+ Field | Type | Description
+ :-----|:-----|:-------------------------------------
+ type  | vint | 5
+ id    | vint | ID_ROOT_STREAM
+ idle  | bool | true if the receiver is entering idle
 
 Receivers may decide to become idle at any time, but generally after some
 long pause in user input.  EVT_IDLE events that indicate the receiver is
@@ -1150,21 +1150,21 @@ entering the idle state should be acknowledged with an
 A font info event is generated when a font resource is created.  It
 describes the true type font metrics for the new font.
 
-Field                | Type    | Description
--------------------- | ------- | -------------------------------------
-type                 | vint    | 6
-id                   | vint    | id of the font resource
-ascent               | float   | ascent of the font above the baseline
-descent              | float   | descent of the font (always positive)
-height               | float   | height (distance between baselines)
-line gap             | float   | gap between lines (AKA the leading)
-metrics per glyph    | vint    | (currently 3)
-glyph count          | vint    | number of glyphs having metrics
-glyph id             | vint    | character id of a glyph
-glyph advance width  | float   | pen advance width
-glyph bounding width | float   | total width
-`<unknown metric>`   | 4 bytes | as of yet undefined
-...                  |         |
+ Field                | Type    | Description
+ :--------------------|:--------|:-------------------------------------
+ type                 | vint    | 6
+ id                   | vint    | id of the font resource
+ ascent               | float   | ascent of the font above the baseline
+ descent              | float   | descent of the font (always positive)
+ height               | float   | height (distance between baselines)
+ line gap             | float   | gap between lines (AKA the leading)
+ metrics per glyph    | vint    | (currently 3)
+ glyph count          | vint    | number of glyphs having metrics
+ glyph id             | vint    | character id of a glyph
+ glyph advance width  | float   | pen advance width
+ glyph bounding width | float   | total width
+ `<unknown metric>`   | 4 bytes | as of yet undefined
+ ...                  |         |
 
 The glyph specific metrics are grouped consecutively in duples after the
 global font metrics (ascent, descent, height and line gap).  The number of
@@ -1186,12 +1186,12 @@ An initialization info event which is generated when an application is
 started. This event is intended to return navigation state information to
 the application when it is started via a transition command.
 
-Field   | Type  | Description
-------- | ----- | ------------------------------------
-type    | vint  | 7
-id      | vint  | ID_ROOT_STREAM
-params  | dict  | arguments for the application
-memento | vdata | saved state for transitioning "back"
+ Field   | Type  | Description
+ :-------|:------|:------------------------------------
+ type    | vint  | 7
+ id      | vint  | ID_ROOT_STREAM
+ params  | dict  | arguments for the application
+ memento | vdata | saved state for transitioning "back"
 
 ### 4.8 EVT_RESOLUTION_INFO
 
@@ -1209,23 +1209,23 @@ performance that lower preference entries.  Note that the current
 resolution format is always also listed in the available formats, though
 not necessarily with the highest preference.
 
-Field                   | Type | Description
------------------------ | ---- | -----------------------------------
-type                    | vint | 8
-id                      | vint | ID_ROOT_STREAM
-field count             | vint | fields per resolution (currently 4)
-current width           | vint | buffer width in pixels
-current height          | vint | buffer height in pixels
-current PAR numerator   | vint | pixel aspect ratio numerator
-current PAR denominator | vint | pixel aspect ratio denominator
-...                     |      | extra resolution fields (vints)
-resolution count        | vint | Number of available resolutions
-available width         | vint | Available buffer width in pixels
-available height        | vint | Available buffer height in pixels
-available PAR numerator | vint | Available PAR numerator
-available PAR denom.    | vint | Available PAR denominator
-...                     |      | extra resolution fields (vints)
-...                     |      | extra available resolution n-tuples
+ Field                   | Type | Description
+ :-----------------------|:-----|:-----------------------------------
+ type                    | vint | 8
+ id                      | vint | ID_ROOT_STREAM
+ field count             | vint | fields per resolution (currently 4)
+ current width           | vint | buffer width in pixels
+ current height          | vint | buffer height in pixels
+ current PAR numerator   | vint | pixel aspect ratio numerator
+ current PAR denominator | vint | pixel aspect ratio denominator
+ ...                     |      | extra resolution fields (vints)
+ resolution count        | vint | Number of available resolutions
+ available width         | vint | Available buffer width in pixels
+ available height        | vint | Available buffer height in pixels
+ available PAR numerator | vint | Available PAR numerator
+ available PAR denom.    | vint | Available PAR denominator
+ ...                     |      | extra resolution fields (vints)
+ ...                     |      | extra available resolution n-tuples
 
 
 5 Limits
@@ -1236,17 +1236,17 @@ available PAR denom.    | vint | Available PAR denominator
 At a minimum, all HME devices can accept the following types of data.
 Devices are not required to accept data that exceeds these limits.
 
-Command                   | Minimum
-------------------------- | -----------------------------
-[CMD_RSRC_ADD_FONT]       | point size cannot exceed 256
-[CMD_RSRC_ADD_TTF]        | fonts can be up to 1 MB
-[CMD_RSRC_ADD_TEXT]       | text can be up to 16 KB
-[CMD_RSRC_ADD_IMAGE]      | up to 512 KB, 1024x768 pixels
-[CMD_RSRC_ADD_SOUND]      | sounds can be up to 128 KB
-[CMD_RSRC_ADD_STREAM]     | URL can be up to 1 KB
-[CMD_RECEIVER_TRANSITION] | URL can be up to 1 KB
-[CMD_RSRC_SEND_EVENT]     | event can be up to 4 KB
-[CMD_RECEIVER_TRANSITION] | memento cannot exceed 10KB
+ Command                   | Minimum
+ :-------------------------|:-----------------------------
+ [CMD_RSRC_ADD_FONT]       | point size cannot exceed 256
+ [CMD_RSRC_ADD_TTF]        | fonts can be up to 1 MB
+ [CMD_RSRC_ADD_TEXT]       | text can be up to 16 KB
+ [CMD_RSRC_ADD_IMAGE]      | up to 512 KB, 1024x768 pixels
+ [CMD_RSRC_ADD_SOUND]      | sounds can be up to 128 KB
+ [CMD_RSRC_ADD_STREAM]     | URL can be up to 1 KB
+ [CMD_RECEIVER_TRANSITION] | URL can be up to 1 KB
+ [CMD_RSRC_SEND_EVENT]     | event can be up to 4 KB
+ [CMD_RECEIVER_TRANSITION] | memento cannot exceed 10KB
 
 
 6 Miscellaneous
