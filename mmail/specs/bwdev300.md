@@ -486,34 +486,18 @@ reserved fields in the structures.
 
 The following data types are used in the structure definitions:
 
-#### `tBYTE`
+ Type     | Description             | Allowable values
+ :--------|:------------------------|:------------------------------:
+ `tBYTE`  | unsigned 8-bit integer  | 0 to 255
+ `tCHAR`  | unsigned 8-bit integer  | 0 to 255
+ `tINT`   | signed 16-bit integer   | -32,768 to 32,767
+ `tWORD`  | unsigned 16-bit integer | 0 to 65,535
+ `tLONG`  | signed 32-bit integer   | -2,147,483,648 to 2,147,483,647
+ `tDWORD` | unsigned 32-bit integer | 0 to 4,294,967,295
 
-An unsigned 8-bit integer. Allowable values range from 0 to 255.
-
-#### `tCHAR`
-
-An unsigned 8-bit integer. Allowable values range from 0 to 255. Used to
-define an array of ASCII characters, aka a "string". (Strings are stored
-in C fashion: Zero or more characters terminated with an ASCII 0
-character.)
-
-#### `tINT`
-
-A signed 16-bit integer. Allowable values range from -32,768 to 32,767.
-
-#### `tWORD`
-
-An unsigned 16-bit integer. Allowable values range from 0 to 65,535.
-
-#### `tLONG`
-
-A signed 32-bit integer. Allowable values range from -2,147,483,648 to
-2,147,483,647.
-
-#### `tDWORD`
-
-An unsigned 32-bit integer. Allowable values range from 0 to
-4,294,967,295.
+`tCHAR` is used to define an array of ASCII characters, aka a "string".
+Strings are stored in C fashion: zero or more characters, terminated with
+an ASCII 0 character.
 
 Since the Blue Wave format was originally designed for the IBM Personal
 Computer and compatible systems, multi-byte data types (`tINT`, `tWORD`,
