@@ -254,7 +254,7 @@ The following labels have been currently defined:
 
  Label   | Option              | Description
  :-------|:--------------------|:----------------------------------------------
- `ORIGIN`|`<name>`             | The program that created the messagefile
+ `ORIGIN`|`<name>`             | The program that created the message file
  `SYSOP` |`<name>`             | Name of the system operator
  `C_SET` |`{IBM or ISO or SF7}`| Preferred character set in the system
  `MSGNUM`|`{BOARD or BASE}`    | Msgs numbered board-by-board or whole base
