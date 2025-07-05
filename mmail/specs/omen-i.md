@@ -252,14 +252,14 @@ file must be pure ASCII. The overall format of the file is:
 
 The following labels have been currently defined:
 
- Label:Option                | Description
- :---------------------------|:----------------------------------------------
- `ORIGIN:<name>`             | The program that created the messagefile
- `SYSOP:<name>`              | Name of the system operator
- `C_SET:{IBM or ISO or SF7}` | Preferred character set in the system
- `MSGNUM:{BOARD or BASE}`    | Msgs numbered board-by-board or whole base
- `CHAINS:{ON or OFF}`        | Msgs packed by reply chain (ON) or numerically
- `SELECT:{ON or OFF}`        | Whether offline board selection is supported
+ Label   | Option              | Description
+ :-------|:--------------------|:----------------------------------------------
+ `ORIGIN`|`<name>`             | The program that created the messagefile
+ `SYSOP` |`<name>`             | Name of the system operator
+ `C_SET` |`{IBM or ISO or SF7}`| Preferred character set in the system
+ `MSGNUM`|`{BOARD or BASE}`    | Msgs numbered board-by-board or whole base
+ `CHAINS`|`{ON or OFF}`        | Msgs packed by reply chain (ON) or numerically
+ `SELECT`|`{ON or OFF}`        | Whether offline board selection is supported
 
 This file is optional and not all of the reader software use the
 information provided in this file.
