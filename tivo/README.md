@@ -42,12 +42,11 @@ interpreter.)
 
 Although the "Crestron" interface used here is [now officially (though
 incompletely) documented][remdoc], I developed this program based on
-discoveries by TCF user Omikron (see the thread, below).
+discoveries by TCF user Omikron.
 
 * [Download version 0.32][remote]
 * [macOS app]
 * [Demo video]
-* [TCF thread][1]
 * [![Get it from the Mac App Store](appstore.svg)][appstore]
 
 
@@ -64,7 +63,6 @@ app.
 This program is compatible with Python 3.
 
 * [Download version 0.7][rproxy]
-* [TCF thread][2]
 
 
 pyTivo
@@ -92,7 +90,6 @@ fork.
 * [HMO] (Home Media Option) specification
 * [TiVo Connect Discovery] -- the pre-Zeroconf method for TiVos and HMO
   servers to find each other on the LAN
-* [TCF thread][3]
 
 
 tivodecode-ng
@@ -149,7 +146,6 @@ Bernardis]' "Jukebox" and "pyTivo Video Manager".
 
 * [Download version 0.20][hme4py]
 * [HME] (Home Media Engine) specification
-* [TCF thread][4]
 
 
 ### HME/VLC video streamer
@@ -175,7 +171,6 @@ Many of the streams have been discontinued since the last release of
 HME/VLC, with no replacements available.
 
 * [Download version 3.6][hmevlc]
-* [TCF thread][5]
 
 
 ### Reversi
@@ -200,8 +195,6 @@ new TiVos when their "Add an App" feature was broken, and finally shut
 down when I lost my old static IP. (Adding apps had relied on IPs rather
 than domain names, presumably for ease of entry via the remote, but
 complicating hosting.)
-
-* [TCF thread][6]
 
 ---
 *[Home]*
@@ -238,12 +231,5 @@ complicating hosting.)
 
 [Jeff Bernardis]: https://github.com/jbernardis
 [Reversi.py]: https://github.com/wilbeibi/AI_Reversi/blob/master/reversi.py
-
-[1]: https://www.tivocommunity.com/community/index.php?threads/tivo-ui-control-via-telnet-no-hacking-required.392385/
-[2]: https://www.tivocommunity.com/community/index.php?threads/multiple-network-remotes.517604/
-[3]: https://www.tivocommunity.com/community/index.php?threads/pytivo-transcoding-server.328459/
-[4]: https://www.tivocommunity.com/community/index.php?threads/hme-for-python.382883/
-[5]: https://www.tivocommunity.com/community/index.php?threads/hme-vlc-video-streamer-v1-0-watch-nasa-tv-etc.403174/
-[6]: https://www.tivocommunity.com/community/index.php?threads/reversi-new-game-on-apps-tv.408432/
 
 [Home]: https://wmcbrine.com/
