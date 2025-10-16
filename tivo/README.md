@@ -1,14 +1,14 @@
 Projects for the [TiVo]®
 ========================
 
-These require [Python] 2.x, unless otherwise noted. (macOS and Linux
-users should already be set.) All except Reversi are open source, with
-code repositories available on [GitHub]. Most of these projects
-originated in TiVo Community Forum threads, where they were first
-distributed as attachments, so I've linked to those threads as well.
+These require [Python] 2.x, unless otherwise noted. All except Reversi are
+open source, with code repositories available on [GitHub]. Most of these
+projects originated in TiVo Community Forum threads, where they were first
+distributed as attachments. (I used to link to those threads here, but
+those links no longer work.)
 
-Please note that I'm not an employee of TiVo Inc., and these aren't
-TiVo products.
+Please note that I'm not (and have never been) an employee of TiVo Inc.,
+and these aren't TiVo products.
 
 
 Network Remote Control for TiVo
