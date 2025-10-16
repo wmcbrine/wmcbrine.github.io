@@ -47,7 +47,8 @@ discoveries by TCF user Omikron.
 * [Download version 0.32][remote]
 * [macOS app]
 * [Demo video]
-* [![Get it from the Mac App Store](appstore.svg)][appstore]
+
+[![Get it from the Mac App Store](appstore.svg)][appstore]
 
 
 ### Remote Proxy for TiVo
