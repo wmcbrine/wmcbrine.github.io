@@ -44,7 +44,7 @@ Although the "Crestron" interface used here is [now officially (though
 incompletely) documented][remdoc], I developed this program based on
 discoveries by TCF user Omikron.
 
-* [Download version 0.32][remote]
+* [Download version 0.33][remote]
 * [macOS app]
 * [Demo video]
 
