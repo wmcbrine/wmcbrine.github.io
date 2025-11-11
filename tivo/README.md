@@ -201,7 +201,7 @@ complicating hosting.)
 ---
 *[Home]*
 
-[remote]: network-remote-0.32.zip
+[remote]: https://github.com/wmcbrine/tivoremote/archive/refs/tags/0.33.zip
 [hme4py]: hme-python-0.20.zip
 [hmevlc]: hme-vlc-3.6.zip
 
@@ -222,7 +222,7 @@ complicating hosting.)
 
 [GitHub]: https://github.com/wmcbrine/
 [My pyTivo fork]: http://pytivo.org/
-[macOS app]: https://github.com/wmcbrine/tivoremote/releases/download/0.32/network-remote-0.32b.dmg
+[macOS app]: https://github.com/wmcbrine/tivoremote/releases/download/0.33/network-remote-0.33b.dmg
 [appstore]: https://itunes.apple.com/us/app/network-remote-for-tivo/id914331224?ls=1&amp;mt=12
 [Demo video]: https://youtube.com/watch?v=OSAPzpQ9j6I
 
